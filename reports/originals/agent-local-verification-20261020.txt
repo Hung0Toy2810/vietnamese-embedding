@@ -1,0 +1,65 @@
+# Agent local — kiểm tra tích hợp 20/10/2026
+
+Dùng LangChain 1.4.6 (`create_agent`, chạy trên LangGraph 1.2.16), langchain-ollama 1.1.0 và Qwen3.5:9B có sẵn. Ollama báo model hỗ trợ `tools` và `thinking`. Phần riêng trong `legal_rag/agent.py`; chưa thay pipeline chunk hay checkpoint.
+
+## Kiểm tra bằng thư viện thật
+
+- 32 kiểm tra RAG/API/agent qua. Agent tests chạy vòng lặp LangGraph thật với model giả: đọc điều, gọi sơ đồ, trả JSON; sơ đồ thiếu điều được yêu cầu bị tool từ chối để agent bổ sung.
+- Giữ kiểm tra quote và từ chối quote giả. Middleware từ chối stream chưa `done` hoặc dừng do giới hạn token.
+- API ánh xạ nguồn local sang đúng PDF/trang, nguồn web sang URL riêng. Corpus vẫn giới hạn theo PDF đang chọn.
+- DDGS tìm web thật trả URL thuộc Chính phủ; Requests + Trafilatura đọc một trang Chính phủ thành 6.104 ký tự nội dung. Đây là kiểm tra mạng/đọc trang, không phải đánh giá pháp lý hay lượt agent web tự động hoàn chỉnh.
+
+## Lượt Qwen thật
+
+Yêu cầu: “Đọc Điều 22 và Điều 23, tạo mindmap hai điều này rồi giải thích ngắn phòng vệ chính đáng là gì.”
+
+Sau sửa kiểm tra sơ đồ, lượt chạy hoàn tất trong khoảng 91.2 giây. Tra cứu đầu tiên ưu tiên đúng số điều; model gọi `create_mindmap` với hai nguồn. Đáp án qua kiểm tra bằng chứng; sơ đồ có node Điều 22, Điều 23 và gốc. Cytoscape headless dựng layout từ chính dữ liệu này thành công.
+
+Lượt đầu trước sửa bỏ sót Điều 23 trong sơ đồ, nên đã thêm kiểm tra các điều được nêu rõ trong yêu cầu. Không kết luận agent luôn chọn đủ nguồn từ một lượt thử thành công.
+
+## Phạm vi
+
+LLM chạy local. Checkbox web mặc định tắt; bật thì query/nội dung truy xuất đi qua mạng. Chỉ đọc HTML của miền nhà nước được cho phép, chưa tự đọc PDF web. Sơ đồ hiện gồm nguồn và dẫn chiếu số điều, chưa phải knowledge graph thực thể pháp lý và chưa dùng graph để chunk.
+
+Chưa kiểm tra thao tác trực quan trong Chrome do quyền điều khiển màn hình chưa được cấp. HTTP/static assets, ánh xạ nguồn, cú pháp JavaScript và layout Cytoscape đã kiểm tra; chúng không thay thế kiểm tra giao diện trực tiếp.
+
+## Kiểm tra câu hỏi tổng quan
+
+Câu “Trộm cắp tài sản bị xử lý như thế nào?” được chạy thật với Qwen. Hoàn tất trong 188,5 giây; trả đủ Khoản 1–5 của Điều 173 và evidence tương ứng cả năm đoạn. Các ngưỡng và điều kiện trong lượt này được đối chiếu với nguyên điều đã tải. Đây là một ca kiểm tra, không phải benchmark pháp luật.
+
+Đã bỏ giới hạn 180 từ và thêm validator Pydantic kiểm tra độ bao phủ khoản có chế tài trong nguồn chính; `ToolStrategy` tự yêu cầu sửa khi thiếu khoản. Unit test cố ý trả thiếu bốn khoản ở lần đầu đã được framework yêu cầu trả lại và nhận bản đủ ở lần thứ hai.
+
+Trước thay đổi về hỏi làm rõ, một lượt HTTP có lịch sử chat đã tự đổi query thành “trộm cắp tài sản” đúng ngữ cảnh, nhưng chỉ từ chối và không đặt câu hỏi. Đã thêm validator yêu cầu câu hỏi bổ sung với các mẫu yêu cầu làm rõ được nhận diện; không khẳng định mọi tình huống thiếu dữ kiện đều được nhận diện.
+
+Lượt từ chối ngoài phạm vi (lương ban đêm, web tắt) qua HTTP đã hoàn tất sau khoảng 231,7 giây, không trả bằng chứng hay chế tài bịa. Lượt này chạy trước giới hạn hai truy vấn bổ sung, nên thời gian không đại diện cho cấu hình cuối.
+
+Markdown được kiểm tra bằng JSDOM + Marked/DOMPurify thật: giữ in đậm, loại script/ảnh và nhãn nguồn vẫn mở đúng trang. Đây là DOM unit test, không phải điều khiển trình duyệt.
+
+Thêm kiểm tra framework tự yêu cầu gọi `FinalAnswer` nếu model kết thúc bằng văn bản thường thay vì tool có cấu trúc. Lỗi này đã xuất hiện trong lượt thử làm rõ dữ kiện; bản cuối không coi văn bản thường là một lần từ chối hợp lệ. Các vòng sửa vẫn chịu giới hạn số lượt model, không cắt ngang suy luận.
+
+## Hội thoại làm rõ dữ kiện
+
+Lượt HTTP sau sửa đã hoàn tất khoảng 160 giây, sử dụng lịch sử đúng chủ đề và trả ba câu hỏi trong `follow_up`. Bản đầu hỏi quá dài, nên đã giới hạn 180 ký tự mỗi câu và yêu cầu hỏi sự kiện thay vì người dùng tự phân loại tăng nặng/giảm nhẹ.
+
+Lượt Qwen thật sau chỉnh văn phong, được cung cấp sẵn Điều 173 và Điều 12 để kiểm tra riêng phần diễn đạt, hoàn tất khoảng 56 giây và trả ba câu hỏi trong giới hạn độ dài. Đây không phải lượt đánh giá retrieval vì nguồn đã cho trước. Toàn bộ 32 unit/integration tests và Pyright (29 file) đều qua. Các kiểm tra không bảo đảm mọi câu hỏi pháp luật đều được giải thích đầy đủ hoặc đúng.
+
+## Rà soát độ phức tạp — 20/10/2026
+
+- Bỏ NetworkX khỏi code và dependency trực tiếp: sơ đồ chỉ cần danh sách node/edge, Cytoscape.js vẫn phụ trách vẽ.
+- Dùng chung `Answer` và `Evidence` trong `grounding.py`; CLI sinh JSON schema từ kiểu dữ liệu này thay vì duy trì một bản dict riêng.
+- Bỏ sửa prompt bằng `.replace()` và rút phần hướng dẫn agent bị lặp; prompt nền dùng chung, mỗi đường chạy tự nêu định dạng kết thúc.
+- Gom liên kết PDF/web vào `source_link()`, dùng chung cho bằng chứng và node sơ đồ.
+- Bỏ tập `seen` trùng với danh sách nguồn; đánh số bốn phần trong `research()` và viết lại README chỉ rõ đường terminal/web.
+- Không tạo thêm tầng abstraction hoặc file ứng dụng. Backend Python giảm 1.438 → 1.411 dòng (27 dòng, khoảng 1,9%); đây là dọn phần thừa, không phải một lần rút gọn lớn. Không dùng minify để giảm số dòng.
+- `agent.py` vẫn là phần khó nhất: năm tool, kết quả có cấu trúc và validator nằm trong cùng `research()`. Nhận diện câu tổng quan/làm rõ bằng mẫu chữ còn đơn giản. Giữ để tránh mất hành vi đã kiểm tra; không xem là kiểm chứng ngữ nghĩa.
+- Giữ đường CLI cơ bản để học retrieval, đường agent cho web, hàng đợi tuần tự để hạn chế RAM, kiểm tra quote và yêu cầu Ollama hoàn tất.
+
+Xác minh sau chỉnh:
+
+- 32 kiểm tra RAG/API/agent/stream chạy qua; gồm lập chỉ mục PDF upload bằng encoder thật.
+- Pyright: 29 file, 0 lỗi, 0 cảnh báo. JavaScript app/resize qua kiểm tra cú pháp; frontend không đổi.
+- Qwen3.5:9B thật hoàn tất sau 110,5 giây với Điều 22/23: hai bằng chứng hợp lệ, sơ đồ ba node (root và hai điều). Dùng retrieval giả trả hai điều có thật để cô lập agent; đây không phải phép đo chất lượng retrieval.
+- Server đã khởi động lại, `/` trả HTTP 200 và `/api/health` báo Ollama sẵn sàng.
+
+- Đường CLI: hai lượt đầu bị từ chối mặc dù có đáp án; lượt thu JSON gốc cho thấy model dùng `source=135` (số phiên bản văn bản) thay vì số nhãn nguồn. Bộ kiểm tra chặn đúng nguồn không tồn tại. Đã sửa prompt dùng chung để nêu rõ source là n trong `[Nguồn n]`, không phải số văn bản/số điều. Cùng câu hỏi sau chỉnh hoàn tất 123,6 giây, source=1, passage=1, quote có thật và đáp án được hiển thị. Đây là một phép thử hồi quy, không bảo đảm model luôn chọn nguồn đúng.
+- Chạy lại toàn bộ 32 kiểm tra sau sửa prompt: qua trong 3,377 giây. Không thay đổi hoặc nới lỏng kiểm tra bằng chứng.

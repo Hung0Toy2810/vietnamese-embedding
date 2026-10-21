@@ -1,0 +1,198 @@
+{
+  "models": [
+    "gemma3:4b",
+    "qwen3.5:9b",
+    "qwen3-vl:8b"
+  ],
+  "questions": [
+    "Trộm cắp tài sản từ 2 triệu đồng thì bị xử lý như thế nào?",
+    "Người lần đầu trộm tài sản trị giá 3 triệu đồng, không có tình tiết tăng nặng, có nhất thiết phải từng bị xử phạt hoặc kết án mới chịu trách nhiệm hình sự không?",
+    "Trộm tài sản dưới 2 triệu đồng có phải lúc nào cũng không bị truy cứu trách nhiệm hình sự không?"
+  ],
+  "system_prompt": "Bạn trả lời câu hỏi tra cứu Bộ luật Hình sự bằng tiếng Việt, ngắn gọn. Chỉ dùng các nguồn được cung cấp. Nêu đúng số điều và nguồn. Giữ rõ điều kiện và ngoại lệ. Không trộn các tội khác nhau. Nếu chưa đủ căn cứ thì nói rõ. Trả lời tối đa 180 từ.",
+  "parents": [
+    {
+      "id": "173",
+      "title": "Điều 173. Tội trộm cắp tài sản",
+      "chapter": "Chương XVI CÁC TỘI XÂM PHẠM SỞ HỮU",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 72
+        },
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 73
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 173. Tội trộm cắp tài sản\n1. Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\na) Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nb) Đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nc) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nd) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\nđ) Tài sản là di vật, cổ vật.\n2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\na) Có tổ chức;\nb) Có tính chất chuyên nghiệp;\nc) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nd) Dùng thủ đoạn xảo quyệt, nguy hiểm;\nđ) Hành hung để tẩu thoát;\ne) Tài sản là bảo vật quốc gia;\ng) Tái phạm nguy hiểm.\n3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\na) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nb) Lợi dụng thiên tai, dịch bệnh.\n4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\na) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nb) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n5. Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng."
+    },
+    {
+      "id": "168",
+      "title": "Điều 168. Tội cướp tài sản",
+      "chapter": "Chương XVI CÁC TỘI XÂM PHẠM SỞ HỮU",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 67
+        },
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 68
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 168. Tội cướp tài sản\n1. Người nào dùng vũ lực, đe dọa dùng vũ lực ngay tức khắc hoặc có hành vi khác làm cho người bị tấn công lâm vào tình trạng không thể chống cự được nhằm chiếm đoạt tài sản, thì bị phạt tù từ 03 năm đến 10 năm.\n2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\na) Có tổ chức;\nb) Có tính chất chuyên nghiệp;\nc) Gây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 11% đến 30%;\nd) Sử dụng vũ khí, phương tiện hoặc thủ đoạn nguy hiểm khác;\nđ) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\ne) Phạm tội đối với người dưới 16 tuổi, phụ nữ mà biết là có thai, người già yếu hoặc người không có khả năng tự vệ;\ng) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nh) Tái phạm nguy hiểm.\n3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\na) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nb) Gây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 31% đến 60%;\nc) Lợi dụng thiên tai, dịch bệnh.\n4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 18 năm đến 20 năm hoặc tù chung thân:\na) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nb) Gây thương tích hoặc gây tổn hại cho sức khỏe của 01 người mà tỷ lệ tổn thương cơ thể 61% trở lên hoặc gây thương tích hoặc gây tổn hại cho sức khỏe của 02 người trở lên mà tỷ lệ tổn thương cơ thể của mỗi người 31% trở lên;\nc) Làm chết người;\nd) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n5. Người chuẩn bị phạm tội này, thì bị phạt tù từ 01 năm đến 05 năm.\n6. Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, phạt quản chế, cấm cư trú từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản."
+    },
+    {
+      "id": "172",
+      "title": "Điều 172. Tội công nhiên chiếm đoạt tài sản",
+      "chapter": "Chương XVI CÁC TỘI XÂM PHẠM SỞ HỮU",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 70
+        },
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 71
+        },
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 72
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 172. Tội công nhiên chiếm đoạt tài sản\n1. Người nào công nhiên chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\na) Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nb) Đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 173, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nc) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nd) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ.\n2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\na) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nb) Hành hung để tẩu thoát;\nc) Tái phạm nguy hiểm;\nd) Chiếm đoạt tài sản là hàng cứu trợ;\nđ) (được bãi bỏ)\n3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\na) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nb) (được bãi bỏ)\nc) Lợi dụng thiên tai, dịch bệnh.\n4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\na) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nb) (được bãi bỏ)\nc) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n5. Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng."
+    },
+    {
+      "id": "171",
+      "title": "Điều 171. Tội cướp giật tài sản",
+      "chapter": "Chương XVI CÁC TỘI XÂM PHẠM SỞ HỮU",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 70
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 171. Tội cướp giật tài sản\n1. Người nào cướp giật tài sản của người khác, thì bị phạt tù từ 01 năm đến 05 năm.\n2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 03 năm đến 10 năm:\na) Có tổ chức;\nb) Có tính chất chuyên nghiệp;\nc) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nd) Dùng thủ đoạn nguy hiểm;\nđ) Hành hung để tẩu thoát;\ne) Gây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 11% đến 30%;\ng) Phạm tội đối với người dưới 16 tuổi, phụ nữ mà biết là có thai, người già yếu hoặc người không có khả năng tự vệ;\nh) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\ni) Tái phạm nguy hiểm.\n3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\na) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nb) Gây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 31% đến 60%;\nc) Lợi dụng thiên tai, dịch bệnh.\n4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\na) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nb) Gây thương tích hoặc gây tổn hại cho sức khỏe của 01 người mà tỷ lệ tổn thương cơ thể 61% trở lên hoặc gây thương tích hoặc gây tổn hại cho sức khỏe của 02 người trở lên mà tỷ lệ tổn thương cơ thể của mỗi người 31% trở lên;\nc) Làm chết người;\nd) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n5. Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng."
+    },
+    {
+      "id": "174",
+      "title": "Điều 174. Tội lừa đảo chiếm đoạt tài sản",
+      "chapter": "Chương XVI CÁC TỘI XÂM PHẠM SỞ HỮU",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 73
+        },
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 74
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 174. Tội lừa đảo chiếm đoạt tài sản\n1. Người nào bằng thủ đoạn gian dối chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\na) Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nb) Đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 173, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nc) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nd) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ.\n2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\na) Có tổ chức;\nb) Có tính chất chuyên nghiệp;\nc) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nd) Tái phạm nguy hiểm;\nđ) Lợi dụng chức vụ, quyền hạn hoặc lợi dụng danh nghĩa cơ quan, tổ chức;\ne) Dùng thủ đoạn xảo quyệt;\ng) (được bãi bỏ)\n3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\na) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nb) (được bãi bỏ)\nc) Lợi dụng thiên tai, dịch bệnh.\n4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\na) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nb) (được bãi bỏ)\nc) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n5. Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản."
+    }
+  ],
+  "results": [
+    {
+      "model": "gemma3:4b",
+      "question": "Trộm cắp tài sản từ 2 triệu đồng thì bị xử lý như thế nào?",
+      "answer": "Dựa trên Điều 173 Bộ luật Hình sự, nếu người phạm tội trộm cắp tài sản trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng, và không thuộc các trường hợp đặc biệt nêu trong điều 173, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm. (Nguồn 1)",
+      "done_reason": "stop",
+      "seconds": 12.32,
+      "prompt_eval_count": 3158,
+      "eval_count": 103,
+      "think": false
+    },
+    {
+      "model": "gemma3:4b",
+      "question": "Người lần đầu trộm tài sản trị giá 3 triệu đồng, không có tình tiết tăng nặng, có nhất thiết phải từng bị xử phạt hoặc kết án mới chịu trách nhiệm hình sự không?",
+      "answer": "Theo Điều 173 Bộ luật Hình sự, người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng (tức là 3 triệu đồng) thì có thể chịu trách nhiệm hình sự, ngay cả khi chưa từng bị xử phạt hoặc kết án trước đây.\n\nĐiều kiện để xác định trách nhiệm hình sự là:\n\n*   **Tài sản bị thiệt hại:** Tài sản trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng.\n*   **Hành vi phạm tội:** Trộm cắp tài sản.\n\nTuy nhiên, nếu có tình tiết tăng nặng (ví dụ: có tổ chức, có tính chất chuyên nghiệp, gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội, tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ), người này sẽ bị phạt tù từ 06 tháng đến 03 năm.\n\nNguồn: Điều 173 Bộ luật Hình sự.",
+      "done_reason": "stop",
+      "seconds": 5.83,
+      "prompt_eval_count": 3179,
+      "eval_count": 243,
+      "think": false
+    },
+    {
+      "model": "gemma3:4b",
+      "question": "Trộm tài sản dưới 2 triệu đồng có phải lúc nào cũng không bị truy cứu trách nhiệm hình sự không?",
+      "answer": "Không, trộm tài sản dưới 2.000.000 đồng không phải lúc nào cũng không bị truy cứu trách nhiệm hình sự.\n\nTheo Điều 173 Bộ luật Hình sự, người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm.\n\nCác trường hợp này bao gồm:\n\n*   Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm.\n*   Đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm.\n*   Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội.\n*   Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ.\n*   Tài sản là di vật, cổ vật.\n\nDo đó, nếu hành vi trộm cắp tài sản dưới 2.000.000 đồng không thuộc một trong các trường hợp ngoại lệ nêu trên, vẫn có thể bị truy cứu trách nhiệm hình sự. (Nguồn: Điều 173 Bộ luật Hình sự)",
+      "done_reason": "stop",
+      "seconds": 8.64,
+      "prompt_eval_count": 3163,
+      "eval_count": 361,
+      "think": false
+    },
+    {
+      "model": "qwen3.5:9b",
+      "question": "Trộm cắp tài sản từ 2 triệu đồng thì bị xử lý như thế nào?",
+      "answer": "Theo Điều 173 Bộ luật Hình sự (Nguồn 1), trộm cắp tài sản trị giá dưới 2.000.000 đồng sẽ bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm nếu thuộc một trong các trường hợp sau:\na) Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nb) Đã bị kết án về tội này hoặc các tội liên quan (Điều 168, 169, 170, 171, 172, 174, 175 và 290), chưa được xóa án tích mà còn vi phạm;\nc) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nd) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\nđ) Tài sản là di vật, cổ vật.\n\nNgoài ra, người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng.",
+      "done_reason": "stop",
+      "seconds": 30.26,
+      "prompt_eval_count": 3062,
+      "eval_count": 252,
+      "think": false
+    },
+    {
+      "model": "qwen3.5:9b",
+      "question": "Người lần đầu trộm tài sản trị giá 3 triệu đồng, không có tình tiết tăng nặng, có nhất thiết phải từng bị xử phạt hoặc kết án mới chịu trách nhiệm hình sự không?",
+      "answer": "Không. Theo Điều 173 Bộ luật Hình sự (Nguồn 1), đối với tội trộm cắp tài sản trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng, người phạm tội chỉ bị xử lý hình sự nếu thuộc các trường hợp quy định tại khoản 1 Điều này (như đã bị xử phạt vi phạm hành chính, đã bị kết án chưa xóa án tích, gây ảnh hưởng xấu..., tài sản là phương tiện kiếm sống chính...).\n\nTuy nhiên, câu hỏi nêu rõ người phạm tội \"lần đầu\" và \"không có tình tiết tăng nặng\". Do đó, nếu giá trị tài sản là 3.000.000 đồng (thuộc mức cơ bản) và không thuộc bất kỳ trường hợp nào tại khoản 1 Điều 173 (bao gồm cả điều kiện về tiền xử phạt hoặc tiền án), thì hành vi này **không** cấu thành tội phạm hình sự theo quy định hiện hành của Bộ luật Hình sự. Việc bị xử phạt vi phạm hành chính trước đó là một trong các điều kiện bắt buộc để truy cứu trách nhiệm hình sự đối với mức giá trị này nếu không có các tình tiết khác.",
+      "done_reason": "stop",
+      "seconds": 13.96,
+      "prompt_eval_count": 3084,
+      "eval_count": 258,
+      "think": false
+    },
+    {
+      "model": "qwen3.5:9b",
+      "question": "Trộm tài sản dưới 2 triệu đồng có phải lúc nào cũng không bị truy cứu trách nhiệm hình sự không?",
+      "answer": "Không, trộm tài sản dưới 2.000.000 đồng vẫn có thể bị truy cứu trách nhiệm hình sự theo **Điều 173** của Bộ luật Hình sự.\n\nCăn cứ khoản 1 Điều 173, hành vi này sẽ bị xử lý hình sự nếu thuộc một trong các trường hợp sau:\n*   Đã bị xử phạt vi phạm hành chính về chiếm đoạt tài sản mà còn vi phạm;\n*   Đã bị kết án về tội trộm cắp hoặc các tội liên quan (Điều 168, 169, 170, 171, 172, 174, 175, 290) chưa được xóa án tích mà còn vi phạm;\n*   Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\n*   Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\n*   Tài sản là di vật, cổ vật.\n\nNếu không thuộc các trường hợp trên, hành vi chỉ bị xử lý theo quy định về vi phạm hành chính.",
+      "done_reason": "stop",
+      "seconds": 13.32,
+      "prompt_eval_count": 3068,
+      "eval_count": 240,
+      "think": false
+    },
+    {
+      "model": "qwen3-vl:8b",
+      "think": false,
+      "question": "Trộm cắp tài sản từ 2 triệu đồng thì bị xử lý như thế nào?",
+      "answer": "",
+      "done_reason": "length",
+      "seconds": 82.63,
+      "prompt_eval_count": 3098,
+      "eval_count": 800,
+      "thinking_characters": 2928
+    }
+  ],
+  "settings": {
+    "temperature": 0,
+    "num_ctx": 16384,
+    "num_predict": 800,
+    "think": false,
+    "answer_mode": "free_generation_same_context_and_prompt"
+  },
+  "interrupted_trials": [
+    {
+      "model": "qwen3.5:9b",
+      "think": true,
+      "num_predict": 4096,
+      "status": "stopped_after_more_than_120_seconds_without_final_answer; not_scored"
+    },
+    {
+      "model": "qwen3-vl:8b",
+      "status": "remaining trials stopped after first empty response at token limit; not_scored"
+    }
+  ],
+  "thinking_retry_report": "qwen-thinking-complete-20261020.json"
+}

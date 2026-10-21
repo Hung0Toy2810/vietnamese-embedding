@@ -1,0 +1,12 @@
+{"source":"synthetic_retail_demo","query":"Cửa hàng cho đổi hàng trong bao lâu?","positive":"Khách có thể đổi hàng trong vòng bảy ngày sau khi mua.","negative":"Cửa hàng mở cửa lúc tám giờ sáng."}
+{"source":"synthetic_retail_demo","query":"Mấy giờ cửa hàng mở cửa?","positive":"Cửa hàng mở cửa lúc tám giờ sáng.","negative":"Hóa đơn điện tử được gửi qua email."}
+{"source":"synthetic_retail_demo","query":"Tôi nhận hóa đơn điện tử ở đâu?","positive":"Hóa đơn điện tử được gửi qua email.","negative":"Nhân viên kiểm kê kho vào cuối ngày."}
+{"source":"synthetic_retail_demo","query":"Nhân viên kiểm kê kho khi nào?","positive":"Nhân viên kiểm kê kho vào cuối ngày.","negative":"Khách có thể đổi hàng trong vòng bảy ngày sau khi mua."}
+{"source":"synthetic_retail_demo","query":"Cửa hàng có giao hàng không?","positive":"Cửa hàng nhận giao hàng trong phạm vi năm kilômét.","negative":"Khách có thể thanh toán bằng tiền mặt hoặc chuyển khoản."}
+{"source":"synthetic_retail_demo","query":"Có thể thanh toán bằng cách nào?","positive":"Khách có thể thanh toán bằng tiền mặt hoặc chuyển khoản.","negative":"Sản phẩm cần bảo hành được tiếp nhận tại quầy dịch vụ."}
+{"source":"synthetic_retail_demo","query":"Tôi mang sản phẩm bảo hành tới đâu?","positive":"Sản phẩm cần bảo hành được tiếp nhận tại quầy dịch vụ.","negative":"Cửa hàng nhận giao hàng trong phạm vi năm kilômét."}
+{"source":"synthetic_retail_demo","query":"Hàng thực phẩm cần được bảo quản thế nào?","positive":"Thực phẩm đông lạnh được bảo quản trong tủ đông theo nhiệt độ ghi trên bao bì.","negative":"Quản lý lập lịch làm việc cho tuần sau vào thứ sáu."}
+{"source":"synthetic_retail_demo","query":"Ai lập lịch làm việc cho tuần tới?","positive":"Quản lý lập lịch làm việc cho tuần sau vào thứ sáu.","negative":"Hàng bị lỗi được đưa vào khu vực chờ kiểm tra."}
+{"source":"synthetic_retail_demo","query":"Hàng bị lỗi được xử lý ra sao?","positive":"Hàng bị lỗi được đưa vào khu vực chờ kiểm tra.","negative":"Thực phẩm đông lạnh được bảo quản trong tủ đông theo nhiệt độ ghi trên bao bì."}
+{"source":"synthetic_retail_demo","query":"Cần làm gì khi bàn giao ca?","positive":"Nhân viên hai ca cùng kiểm đếm tiền và ký biên bản bàn giao.","negative":"Khách được tích điểm khi cung cấp số điện thoại thành viên."}
+{"source":"synthetic_retail_demo","query":"Làm sao để tích điểm thành viên?","positive":"Khách được tích điểm khi cung cấp số điện thoại thành viên.","negative":"Nhân viên hai ca cùng kiểm đếm tiền và ký biên bản bàn giao."}

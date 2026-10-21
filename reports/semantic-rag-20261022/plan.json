@@ -1,0 +1,13 @@
+{
+  "rationale": "Semantic chunking plan based on meaning and dependencies.",
+  "topics": [],
+  "similarity_quantile": 0.65,
+  "community_resolution": 1.0,
+  "parent_token_limit": 1200,
+  "child_token_limit": 224,
+  "verify_relations": true,
+  "coverage_notes": [
+    "Topic diversity risk: Mixing policy rules with safety instructions may dilute retrieval relevance.",
+    "Coverage risk: Exceptions (custom-made items) are scattered; general rules might be retrieved without exception context."
+  ]
+}

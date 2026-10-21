@@ -1,0 +1,93 @@
+{
+  "question": "Sản phẩm đặt làm theo yêu cầu cá nhân có được đổi hàng không?",
+  "elapsed": 248.8711702823639,
+  "job": {
+    "id": "f93b185a724247298c551e24583186ce",
+    "document_id": "5a05690bd67f567265e44e43",
+    "kind": "answer",
+    "status": "done",
+    "message": "Complete",
+    "payload": {
+      "document_id": "5a05690bd67f567265e44e43",
+      "question": "Sản phẩm đặt làm theo yêu cầu cá nhân có được đổi hàng không?",
+      "use_web": false,
+      "history": [],
+      "version": "f3e3f6a7fcf7419f923ddbd1f299c7f8"
+    },
+    "result": {
+      "answer": "The available sources do not contain enough evidence to answer this question.",
+      "evidence": [],
+      "follow_up": [],
+      "mindmap": null,
+      "steps": [
+        {
+          "tool": "search_documents",
+          "input": "Sản phẩm đặt làm theo yêu cầu cá nhân có được đổi hàng không?"
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        }
+      ],
+      "coverage": {
+        "requested": [
+          "Sản phẩm đặt làm theo yêu cầu cá nhân có được đổi hàng không?"
+        ],
+        "unsupported": [
+          "Sản phẩm đặt làm theo yêu cầu cá nhân có được đổi hàng không?"
+        ]
+      },
+      "completion": "model_round_budget_exhausted",
+      "version": "f3e3f6a7fcf7419f923ddbd1f299c7f8"
+    },
+    "created": 1792680624.893464
+  }
+}

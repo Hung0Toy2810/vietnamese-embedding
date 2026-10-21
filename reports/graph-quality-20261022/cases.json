@@ -1,0 +1,80 @@
+[
+  {
+    "id": "theft-overview",
+    "question": "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173.",
+    "gold_atoms": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      21
+    ],
+    "expected": "All four custody ranges, noncustodial alternative, value thresholds, subthreshold conditions and optional fine of VND 5-50 million. Do not import life imprisonment or fines from fraud.",
+    "answerable": true
+  },
+  {
+    "id": "theft-value",
+    "question": "Chỉ xét tình tiết giá trị tài sản trong Điều 173: trộm cắp 300 triệu đồng thuộc khung phạt tù nào? Không suy đoán mức án cụ thể.",
+    "gold_atoms": [
+      13,
+      16
+    ],
+    "expected": "7-15 years under Article 173; a statutory range, not a predicted sentence.",
+    "answerable": true
+  },
+  {
+    "id": "fraud-value",
+    "question": "Theo Điều 174 trong tài liệu, gian dối chiếm đoạt 600 triệu đồng thuộc khung phạt tù nào?",
+    "gold_atoms": [
+      22,
+      28
+    ],
+    "expected": "12-20 years or life imprisonment; do not confuse with theft.",
+    "answerable": true
+  },
+  {
+    "id": "trust-value",
+    "question": "Theo Điều 175, riêng trường hợp lạm dụng tín nhiệm chiếm đoạt tài sản trị giá 300 triệu đồng có khung phạt tù nào?",
+    "gold_atoms": [
+      30,
+      36
+    ],
+    "expected": "5-12 years, not 7-15 years from theft or fraud.",
+    "answerable": true
+  },
+  {
+    "id": "theft-fine",
+    "question": "Ngoài hình phạt chính, Điều 173 quy định người phạm tội trộm cắp tài sản còn có thể bị phạt tiền bao nhiêu?",
+    "gold_atoms": [
+      13,
+      21
+    ],
+    "expected": "Optional fine VND 5-50 million, not mandatory and not VND 10-100 million.",
+    "answerable": true
+  },
+  {
+    "id": "snatching-value",
+    "question": "Chỉ xét giá trị tài sản, cướp giật tài sản 60 triệu đồng theo Điều 171 thuộc khung phạt tù nào?",
+    "gold_atoms": [
+      0,
+      1
+    ],
+    "expected": "3-10 years, not 2-7 years from theft.",
+    "answerable": true
+  },
+  {
+    "id": "absent-tax",
+    "question": "Theo tài liệu này, thuế suất thuế thu nhập doanh nghiệp năm 2026 là bao nhiêu?",
+    "gold_atoms": [],
+    "expected": "Refuse to invent a tax rate; absence of evidence in this excerpt is not absence from all law.",
+    "answerable": false
+  },
+  {
+    "id": "absent-employment",
+    "question": "Theo tài liệu này, người lao động nghỉ việc được hưởng trợ cấp thôi việc bao nhiêu tháng lương?",
+    "gold_atoms": [],
+    "expected": "Refuse to invent an employment benefit.",
+    "answerable": false
+  }
+]

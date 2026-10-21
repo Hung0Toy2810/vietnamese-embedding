@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Document workspace</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <svg
+      class="icon-library"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol id="icon-file" viewBox="0 0 24 24">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <path d="M14 2v6h6M8 13h8M8 17h5" />
+      </symbol>
+      <symbol id="icon-upload" viewBox="0 0 24 24">
+        <path
+          d="M12 16V3m-5 5 5-5 5 5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"
+        />
+      </symbol>
+      <symbol id="icon-chat" viewBox="0 0 24 24">
+        <path
+          d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"
+        />
+      </symbol>
+      <symbol id="icon-send" viewBox="0 0 24 24">
+        <path d="m5 12 7-7 7 7M12 5v14" />
+      </symbol>
+      <symbol id="icon-external" viewBox="0 0 24 24">
+        <path
+          d="M15 3h6v6m0-6L10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"
+        />
+      </symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12h14" />
+      </symbol>
+    </svg>
+
+    <main class="workspace">
+      <div
+        class="column-resizer"
+        role="separator"
+        tabindex="0"
+        aria-orientation="vertical"
+        aria-label="Resize document list"
+        data-divider="0"
+        title="Drag to resize · Double-click to reset"
+      ></div>
+      <div
+        class="column-resizer"
+        role="separator"
+        tabindex="0"
+        aria-orientation="vertical"
+        aria-label="Resize document and chat panels"
+        data-divider="1"
+        title="Drag to resize · Double-click to reset"
+      ></div>
+      <aside class="documents panel" id="drop-area" aria-label="Document list">
+        <div class="panel-title">
+          <span>DOCUMENTS</span><span id="document-count" class="count">0</span>
+        </div>
+        <div class="upload-area">
+          <button id="upload-button" class="button primary">
+            <svg><use href="#icon-upload" /></svg>Upload documents
+          </button>
+          <input
+            id="file-input"
+            type="file"
+            accept=".pdf,.docx,.pptx,.xlsx,.html,.htm,.md,.txt"
+            multiple
+            hidden
+          />
+          <p>PDF, Office, HTML, Markdown, TXT · up to 25 MB per file</p>
+          <div
+            id="upload-message"
+            role="status"
+            class="upload-message"
+            hidden
+          ></div>
+        </div>
+        <div id="document-list" class="document-list"></div>
+        <div class="sidebar-bottom">
+          <svg><use href="#icon-upload" /></svg
+          ><span>Drop documents here to upload</span>
+        </div>
+      </aside>
+
+      <section class="viewer panel" aria-label="Document viewer">
+        <div class="viewer-header">
+          <div class="file-tab">
+            <svg><use href="#icon-file" /></svg
+            ><span id="viewer-title">Select a document</span>
+          </div>
+          <button id="return-pdf" class="viewer-back" type="button" hidden>
+            Back to document
+          </button>
+          <a
+            id="open-pdf"
+            class="icon-button"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open original document"
+            title="Open in a new tab"
+            hidden
+            ><svg><use href="#icon-external" /></svg
+          ></a>
+        </div>
+        <div id="viewer-empty" class="viewer-empty">
+          <svg><use href="#icon-file" /></svg>
+          <h2>Document preview</h2>
+          <p>
+            Select a file in the left panel.<br />Its preview will appear here.
+          </p>
+        </div>
+        <div
+          id="mindmap-viewer"
+          aria-label="Semantic source graph"
+          hidden
+        ></div>
+        <iframe
+          sandbox="allow-same-origin"
+          id="pdf-viewer"
+          title="Document content"
+          hidden
+        ></iframe>
+        <div class="viewer-footer">
+          <span id="viewer-info">No document selected</span><span>PDF</span>
+        </div>
+      </section>
+
+      <section class="chat panel" aria-label="Document questions">
+        <div class="chat-header">
+          <div>
+            <svg><use href="#icon-chat" /></svg><strong>Chat</strong>
+          </div>
+          <button
+            id="new-chat"
+            class="icon-button"
+            title="New conversation"
+            aria-label="New conversation"
+          >
+            <svg><use href="#icon-plus" /></svg>
+          </button>
+        </div>
+        <div class="chat-context">
+          <span class="small-dot"></span
+          ><span id="chat-context">Select a document to start</span>
+        </div>
+        <div id="chat-scroll" class="chat-scroll" aria-live="polite">
+          <div id="chat-empty" class="chat-empty">
+            <span class="chat-empty-icon"
+              ><svg><use href="#icon-chat" /></svg
+            ></span>
+            <h1>What would you like to know?</h1>
+            <p>
+              Ask about the selected document.<br />Answers include sources for
+              verification.
+            </p>
+            <div id="suggestions" class="suggestions"></div>
+          </div>
+          <div id="messages" class="messages"></div>
+        </div>
+        <form id="chat-form" class="composer-area">
+          <label class="web-option"
+            ><input id="use-web" type="checkbox" /> Search the internet for
+            additional information</label
+          >
+          <div class="document-actions">
+            <button
+              id="index-document"
+              class="button primary"
+              type="button"
+              hidden
+            >
+              Build semantic index</button
+            ><button
+              id="approve-document"
+              class="button primary"
+              type="button"
+              hidden
+            >
+              Accept extraction warnings</button
+            ><button
+              id="show-document-graph"
+              class="button"
+              type="button"
+              hidden
+            >
+              View semantic graph
+            </button>
+          </div>
+          <div id="document-notice" class="document-notice" hidden></div>
+          <div class="composer">
+            <textarea
+              id="question"
+              rows="3"
+              maxlength="2000"
+              placeholder="Ask a question about this document…"
+              aria-label="Question"
+              disabled
+            ></textarea>
+            <div class="composer-bottom">
+              <span>Enter to send · Shift+Enter for a new line</span
+              ><button
+                id="send-button"
+                class="button primary send-button"
+                type="submit"
+                aria-label="Send question"
+                disabled
+              >
+                <svg><use href="#icon-send" /></svg>
+              </button>
+            </div>
+          </div>
+          <p class="chat-note">
+            LLMs can make mistakes. Verify important information before making
+            decisions.
+          </p>
+        </form>
+      </section>
+    </main>
+    <script src="/static/vendor/cytoscape.min.js" defer></script>
+    <script src="/static/vendor/marked.js" defer></script>
+    <script src="/static/vendor/dompurify.js" defer></script>
+    <script src="/static/app.js" defer></script>
+    <script src="/static/resize.js" defer></script>
+    <script src="/static/locale.js" defer></script>
+  </body>
+</html>

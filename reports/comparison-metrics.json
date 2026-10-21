@@ -1,0 +1,1015 @@
+{
+  "checkpoint_step": 249740,
+  "previous_checkpoint_step": 108000,
+  "captured_at": "2026-10-19T11:13:56.443276+07:00",
+  "original_dataset_sha256": "88944eb96cdbc04244ba1bfd7bc77b009d723b403fc32ec8ed6b843ec3b3f619",
+  "checkpoint_sha256": "bf1c86152de601c6ade9d0a3c8e4305e2f41d1a3c9c9969b556270d35e342fbc",
+  "device": "cpu",
+  "threads": 2,
+  "training_modified": false,
+  "script_sha256": "75df917293d52e2ba7bbcaa1f251d8109260f0e41d6bc638195c5a48e328187a",
+  "encoder_script_sha256": "606e65c5e8880fa30d0a87c34a6f7136246fad85d56ae8b12e40cfe61719f354",
+  "query_count": 1000,
+  "candidate_count": 3763,
+  "leakage_audit": {
+    "ledger_mode": "read-only",
+    "reserved_keys_checked": 230519,
+    "seen_checks": 14580,
+    "exact_query_document_train_collisions": 0,
+    "excluded": {
+      "document_contiguous_sentence_span": 73,
+      "query_positive_excluded": 24
+    },
+    "excluded_document_indices": [
+      68,
+      99,
+      277,
+      328,
+      334,
+      338,
+      358,
+      486,
+      716,
+      771,
+      781,
+      861,
+      927,
+      955,
+      1054,
+      1149,
+      1165,
+      1210,
+      1271,
+      1284,
+      1289,
+      1342,
+      1346,
+      1390,
+      1430,
+      1491,
+      1603,
+      1654,
+      1749,
+      1752,
+      1842,
+      1872,
+      1900,
+      1961,
+      2023,
+      2100,
+      2122,
+      2145,
+      2166,
+      2245,
+      2297,
+      2337,
+      2374,
+      2378,
+      2471,
+      2578,
+      2639,
+      2660,
+      2811,
+      2890,
+      2909,
+      2996,
+      3092,
+      3126,
+      3150,
+      3191,
+      3192,
+      3223,
+      3276,
+      3315,
+      3352,
+      3485,
+      3570,
+      3591,
+      3599,
+      3643,
+      3707,
+      3711,
+      3741,
+      3760,
+      3764,
+      3795,
+      3810
+    ],
+    "excluded_query_indices": [
+      6,
+      10,
+      15,
+      83,
+      122,
+      133,
+      165,
+      168,
+      303,
+      310,
+      438,
+      448,
+      456,
+      468,
+      482,
+      490,
+      645,
+      649,
+      712,
+      891,
+      915,
+      950,
+      965,
+      981
+    ],
+    "retained_queries": 1000,
+    "retained_documents": 3763,
+    "new_overlap_examples": [
+      {
+        "doc_id": "05834780036999ad743cb4d5d1ba0a0ce571aa81d4d9e6bbf8daee4bd1a2c465",
+        "matching_span": "Các nhà sử học tin rằng Shakespeare sinh vào ngày này năm 1564, cùng ngày ông mất năm 1616. Mặc dù các vở kịch của William Shakespeare có thể là tác phẩm được đọc nhiều nhất bằng tiếng Anh, nhưng ít người biết chắc chắn về bản thân nhà viết kịch.",
+        "train_key": "0a4cd4fa384a50fdba1bf18b81b3302305bd70eced9bfa9e4dda5f46c08a9643"
+      },
+      {
+        "doc_id": "07d6602f477a877e82cf8faaad1ed14f213dc083bec667c531c6f8a0e0c7737c",
+        "matching_span": "Có nhiều loại gián khác nhau trên khắp thế giới, dựa trên các khu vực chúng sinh sống. Gián có thể sống trong nhà, bên ngoài nhà hoặc cả hai. Nếu một con gián thích trú ngụ bên ngoài, nó được gọi là gián hoang.",
+        "train_key": "10ce9108670906c17318940b0bbfa22b1a76ad2a375540ec1eb55397b22d4b9d"
+      },
+      {
+        "doc_id": "10e191a33f765fe0340e59f5ead16b0a579e4911af1c3664f4bf65fbb96fc263",
+        "matching_span": "Một chủ nhà có thể sơn một căn phòng rộng 15 x 20 foot với giá $ 205, chi phí vật liệu và một nhà thầu tính phí $ 1,842, bao gồm cả nhân công và vật liệu. Nhập Mã ZIP của bạn và điều chỉnh chi phí cải tiến và sửa chữa cho nơi bạn sống. Giờ.",
+        "train_key": "9cfbfc0a0dfed01abfe71ce21012084c0cd41e6ae974a27c8177b0e3af64ba3b"
+      },
+      {
+        "doc_id": "13fdce38037bc6928ebb55b52810cda43662f6edb6a331397bb1955965f74eef",
+        "matching_span": "Active Directory là một cơ sở dữ liệu theo dõi tất cả các tài khoản người dùng và mật khẩu trong tổ chức của bạn. Nó cho phép bạn lưu trữ tài khoản người dùng và mật khẩu của mình ở một vị trí được bảo vệ, cải thiện tính bảo mật cho tổ chức của bạn. Active Directory được chia thành một hoặc nhiều miền. Miền là một ranh giới bảo mật.",
+        "train_key": "50b33f2b06ad31f9809e949149c781ab96b056ae3d390ade05ca47f3a30ada7c"
+      },
+      {
+        "doc_id": "14896d87abff9fa8897f9d4eb807c3c04733d86671e0ce385e952b09b65a4712",
+        "matching_span": "Học phí dự kiến ​​cho năm 2015-16 là $ 48,193 cho cư dân Florida và $ 52,698 cho sinh viên ngoại bang. Phí sử dụng kính hiển vi / phòng thí nghiệm là $ 100 là bắt buộc đối với sinh viên năm thứ nhất.",
+        "train_key": "020c2759e5418bc8ca6455e64015f037725f036444612b7caff1f6fa530c7dfa"
+      },
+      {
+        "doc_id": "14d592b0aef9b605b55666df11e19a1958484576bf146a0492a01646fd5b2e11",
+        "matching_span": "Lái xe liều lĩnh được coi là một hành vi vi phạm giao thông hình sự nghiêm trọng ở Bang Washington. Là một tội nhẹ, nó có mức án tối đa là một năm tù giam và khoản tiền phạt $ 5,000.00. Nếu bị kết tội Lái xe liều lĩnh ở Washington, Bộ Cấp giấy phép sẽ đình chỉ bằng lái xe trong 30 ngày.",
+        "train_key": "283d2b9de17490ff43d6685de497bc5bf49e6cd6d5061de8bd419b7ff468819a"
+      },
+      {
+        "doc_id": "16478b579a96736c56e6350c11722c1a694315817a5982481750ec3c7b32b56f",
+        "matching_span": "Đế chế Songhai, còn được gọi là Đế chế Songhay, là một quốc gia nằm ở phía tây châu Phi. Từ đầu thế kỷ 15 đến cuối thế kỷ 16, Songhai là một trong những đế chế Hồi giáo lớn nhất trong lịch sử. [3] Đế chế này mang cùng tên với nhóm dân tộc hàng đầu của nó, Songhai.",
+        "train_key": "88cd710c6dcf2c10253ff9e3e18435c68b26e981a9be3d39f813f028152ee476"
+      },
+      {
+        "doc_id": "1fff42ba43acc9d6aa1058cc3b23c0beaec0527f7e72c1eed997d3e2928c2eaa",
+        "matching_span": "Mức lương trung bình hàng năm cho Người lên lịch phẫu thuật là $ 32584 dựa trên số liệu thống kê ở Hoa Kỳ tính đến năm 2015. Mức lương cao nhất được ghi nhận là $ 42169. Mức lương thấp nhất được báo cáo là $ 25797. Những số liệu này sẽ thay đổi tùy theo từng tiểu bang vì đây là mức trung bình của tất cả 50 tiểu bang.",
+        "train_key": "94dd3a271bd24015025e28b951515e1fab3bb937b5ed670db028a1291da4c7e8"
+      },
+      {
+        "doc_id": "305a08c63875a963c27c752bad966f2e23804b1e5840f1770ef77d792cd2c8c3",
+        "matching_span": "Một số người sử dụng tinh dầu bạc hà để đuổi chuột. Mặc dù đây là một cách thân thiện với môi trường để ngăn chặn chuột xâm nhập vào nhà, ga ra, chuồng trại và thiết bị nông trại của bạn, nhưng nó không được thể hiện trong các so sánh độc lập là cách tự nhiên hiệu quả nhất để đuổi chuột.",
+        "train_key": "cc91926021e11fcc4b96baa785bcc5fced9d7bca6f2b450697a74b56a56f98e5"
+      },
+      {
+        "doc_id": "342d208bf2b2cdd3650770b64bc56ed8ed6f94d9cd956289a483d9d24eb8f22c",
+        "matching_span": "John Kasich sinh ngày 13 tháng 5 năm 1952 tại McKees Rocks, Pennsylvania, Hoa Kỳ với tên gọi John Richard Kasich. Anh đã kết hôn với Karen Waldbilllig từ ngày 22 tháng 3 năm 1997. Họ có hai con.",
+        "train_key": "3c73a655ad1dc58f62987918519386b54f3e1a84534e3c2609b2606ab0a6e4c9"
+      },
+      {
+        "doc_id": "34f8b3ee08e737079a813dd0e876ad6e9891cd7a7b43aea61846b1e18ace699b",
+        "matching_span": "Viêm mạch đôi khi có thể phát triển sau khi nhiễm trùng đến và biến mất. Thông thường trong những trường hợp này, nhiễm trùng gây ra phản ứng bất thường trong hệ thống miễn dịch của người đó, làm hỏng các mạch máu. Viêm mạch cũng có thể liên quan đến các bệnh khác của hệ thống miễn dịch mà người đó đã mắc phải trong nhiều tháng hoặc nhiều năm.",
+        "train_key": "9582ced0a87bb14d2238d1ff6a82ddbd565ac6d596c72eddd21d9c8278cf5802"
+      },
+      {
+        "doc_id": "3a420537aba71385367f91f6b016dd95306c9c1775004be4d0d04c8dfaf9de84",
+        "matching_span": "Bảng tính. Ngoài ra còn được gọi là trang tính, bảng tính là một tệp được tạo thành từ các hàng và cột giúp sắp xếp dữ liệu, sắp xếp dữ liệu dễ dàng và tính toán dữ liệu số. Điều làm cho một chương trình phần mềm bảng tính trở nên độc đáo là khả năng tính toán các giá trị bằng cách sử dụng các công thức toán học và dữ liệu trong các ô.",
+        "train_key": "59a3e16ec160176bd07d0828ac26d1a6733d14389dd5e6c7ea7fcce1aae3e276"
+      },
+      {
+        "doc_id": "3e29368946c05887562dbc92ce20880ce9cd8033238acdb5956db2e374919985",
+        "matching_span": "Kích thước chai rượu vang điển hình là 750 ml chứa 25,4 ounce chất lỏng. Kích thước ly xác định bao nhiêu phần ăn. Ví dụ: bạn sẽ nhận được khoảng sáu phần ăn mỗi chai khi sử dụng ly rượu vang 4 ounce so với năm phần ăn sử dụng ly 5 ounce.",
+        "train_key": "07200c138dd629809215b4b9d32baa051ebcaae36ed1212c7f850b67cd5eb1cf"
+      },
+      {
+        "doc_id": "3fe5f6a80e86ac6f7c8e09d306e9fb730939197a3a4e4f59942e8ab6151f70d1",
+        "matching_span": "Những hình xăm có hình con sói trong thiết kế của họ không chỉ đẹp như tranh vẽ mà còn mang một số ý nghĩa biểu tượng. Có một số lượng lớn các thiết kế dựa trên con sói tùy thuộc vào cảm xúc và biểu tượng mà bạn muốn hình xăm của mình thể hiện.",
+        "train_key": "32733824565a61495ac9bffde5f7849b1962693008cec7e27209a82995512290"
+      },
+      {
+        "doc_id": "462e05dade439d02d010c1313e965c1de8e3085d62e5cf01595893aa48d55d77",
+        "matching_span": "Động mạch chủ mang máu có oxy đến cơ thể. Động mạch phổi mang máu đã khử oxy đến phổi và nó là động mạch duy nhất mang máu đã khử oxy. Có hai tĩnh mạch liên kết với tim.",
+        "train_key": "b98e91b76d983b7b86f0d1281464595c54d19b6bf0fbab5ac4c79e0a47942cd2"
+      },
+      {
+        "doc_id": "4cd54c2813dafa19ea39a150c9954dbda608d1a2f8e413c896a3503374ac699b",
+        "matching_span": "Xé cổ tay quay có thể do chấn thương cấp tính như ngã hoặc có thể do hao mòn mãn tính với sự thoái hóa của gân. Sự cản trở của mặt trước của xương bả vai, chỗ lõm, trên gân được cho là nguyên nhân chính gây ra rách túi hơi ở những người trên 40 tuổi.",
+        "train_key": "9c18b857ad90dd5a5d4a1aaf83cfb34385e28801dc31625b4390bf7e7a469062"
+      },
+      {
+        "doc_id": "4e1221664168e86f6325398ec245012d62409ae29652ab2a770894486a9a7687",
+        "matching_span": "Trước khi tập tạ, hãy uống khoảng 10 - 20 gam whey protein để tăng cường sức mạnh cơ bắp, tăng sức bền và giảm sự cố cơ bắp. Sau khi tập luyện, hãy dùng 20-40 gram whey để tăng cường phục hồi cơ và tăng cường tổng hợp protein cho cơ.",
+        "train_key": "ae944a090bd0e2615cf0e7ca0df68e9898dfadbd69cdba2c78d52486cb4413c1"
+      },
+      {
+        "doc_id": "5199e18e6035cdfd7b8ed76701b5a45c1e3e19e2675b816425c9ee1f84d5dae1",
+        "matching_span": "Giấm táo có thể hỗ trợ giảm cân. Để kiểm soát cân nặng hàng ngày, hãy thêm 2 thìa cà phê giấm táo vào 16 ounce nước. Pha chế này có thể được nhấm nháp trong suốt cả ngày.",
+        "train_key": "3a0fa38f4b9d2cd51abf9b3691c428b72132ad15b636aabab96ed6ab7125701a"
+      },
+      {
+        "doc_id": "56980def6ab4e47ab27d01c9ae4a039092bddde2e31cc88c688ba7512fdaaf28",
+        "matching_span": "Bởi Regina Bailey. Định nghĩa: Nhiễm sắc thể là một tập hợp dài, thành chuỗi của các gen mang thông tin di truyền (DNA) và được hình thành từ chất nhiễm sắc cô đặc.",
+        "train_key": "a9f1abc2d4392f5d65a25e2ff87f2608ef8e919e714683516c44111b59bec42d"
+      },
+      {
+        "doc_id": "5729ab97074a43ed0394aba5b6d65ce2e9cf4cc37cf3ad16f12e27500d634f3d",
+        "matching_span": "Nếu bạn chuẩn bị cho nó thì đó là. Bạn có thể sử dụng phần mềm kiểm tra lý thuyết để giúp bạn điều này. Nhận thức về mối nguy là phần thực tế và hơi khó ở chỗ bạn phải tập trung một trăm phần trăm.",
+        "train_key": "c1f3f73b0f0db7cc018961b9490033a1a16131f658fc803195ccdad417600b0d"
+      },
+      {
+        "doc_id": "576e09b2764c18955f7101a5d6e1029db78d667fd20f6be665194b3f1fd57194",
+        "matching_span": "'Cán cân Thương mại - BOT' là gì. Cán cân thương mại (BOT) là chênh lệch giữa nhập khẩu và xuất khẩu của một quốc gia trong một khoảng thời gian nhất định. Cán cân thương mại là thành phần lớn nhất của cán cân thanh toán (BOP) của đất nước.",
+        "train_key": "2f785dd596c6af20d42f30456cff0377df11a53372e1a30dd5dacbf01ce78e16"
+      },
+      {
+        "doc_id": "5b02308b23335a5ff3c76b5e855dc4bc598548c0247038623b12f002bdecb3ff",
+        "matching_span": "Nguyên nhân.",
+        "train_key": "6c691a7567d3f944a6cc5c5398be5c6215d33bb51a7f588b72276602a7889a93"
+      },
+      {
+        "doc_id": "5b361a43e373c0a9b446822be9005e8c43dc13a3080ec858764258f3be6e4575",
+        "matching_span": "Các tế bào này truyền thông điệp đến não, nơi xác định mùi hoặc vị cụ thể. 1 Tế bào khứu giác (dây thần kinh khứu giác) bị kích thích bởi mùi xung quanh như mùi thơm từ hoa hồng, mùi nướng bánh mì. 2 Tế bào vị giác (dây thần kinh vị giác) tập trung trong các chồi vị giác của miệng và cổ họng.",
+        "train_key": "863e75554ac18bfd4b13dd63d67deea8986fe27644b1d51e2a132f95cc5e86c7"
+      },
+      {
+        "doc_id": "5de2ab255254fe5996c57c9c6ca091340d16f983c4739230018eecd9551bd777",
+        "matching_span": "Tay trái và cánh tay vung gậy, và cơ thể xoay để hỗ trợ cú vung này và thúc đẩy đòn bẩy của cánh tay. RẤT NHIỀU ĐỂ HIỂU ĐƯỢC ĐIỂM NÀY. Tay trái và cánh tay vung gậy trong động tác đánh gôn. Hành động của cơ thể không bao giờ được cản trở hoặc tệ hơn là vẫn CÒN LẠI, vai trái và cánh tay.",
+        "train_key": "cab68d502f9a77f12d86e15ab52f591ae9a5d9ad837828c6f690ae87461a2de6"
+      },
+      {
+        "doc_id": "603abb425763f24f7ead4314ec0277670233502dc96ab6c9be5e2d4a8e66962a",
+        "matching_span": "Đạo luật tem. Khi Quốc hội thông qua Đạo luật tem vào tháng 3 năm 1765, mọi thứ đã thay đổi. Đây là loại thuế trực thu đầu tiên đánh vào các thuộc địa của Mỹ. Mọi tài liệu pháp lý phải được viết trên giấy có đóng dấu đặc biệt, thể hiện bằng chứng thanh toán.",
+        "train_key": "da8ab5bfd86b98d1c7bbd764c3fc3e5ccbc332f8c3129749b16f351c5cd3ae46"
+      },
+      {
+        "doc_id": "64f06cc4766430feb01dd6f77b0a11fcdd5d15c865aa89df0c8dd58a1c9cb4dd",
+        "matching_span": "Điểm MCAT trung bình mỗi năm là khoảng 24 (8 trong mỗi phần). Điểm tốt (cạnh tranh ở hầu hết các trường MD) là khoảng 30 và điểm xuất sắc ở đâu đó trên 34 đến 36 (cạnh tranh tại các trường y hàng đầu trong nước).",
+        "train_key": "5b4c0d872298e5ae5d6e98acc70615f2e163e3326718254a5885bae9827f1978"
+      },
+      {
+        "doc_id": "6c8d38b961ee401c282176e7359ffba7e5b703ff45f6d67a78898bce90c3b561",
+        "matching_span": "Các vitamin tan trong chất béo bao gồm vitamin A, D, E và K, và quá trình tiêu hóa các vitamin này được tăng cường khi có chất béo. Các vitamin tan trong chất béo được lưu trữ trong gan, ruột và các mô mỡ của cơ thể.",
+        "train_key": "8f000ff2549e1848402edef01c663768e8ee08904e80c1c13e1310733f8733c4"
+      },
+      {
+        "doc_id": "70b79c52e9666e2ae5746f8fecafe17fe193fa14a310dd5510fd7baad330ab07",
+        "matching_span": "Một người được quan tâm đến tài sản trong suốt cuộc đời của họ. Người này được gọi là người thuê nhà trọn đời (LT). Khi người thuê chung sống qua đời, tài sản sẽ tự động được chuyển cho một hoặc nhiều cá nhân hoặc tổ chức khác. Những người hoặc tổ chức nhận được tài sản khi chết được gọi là những người còn lại.",
+        "train_key": "417874c9525c7284fd203a6343693752c5bbb421a8cbb0f5ecb8421b4ad7288b"
+      },
+      {
+        "doc_id": "7738c0a9320ff3664c6c2a70e1afea720b7f6538f2c53110984d81ac0bf5e747",
+        "matching_span": "ZTE Corporation, thường được viết tắt là ZTE, là một công ty thiết bị và hệ thống viễn thông đa quốc gia của Trung Quốc có trụ sở chính tại Thâm Quyến, Quảng Đông. ZTE hoạt động trong ba đơn vị kinh doanh: mạng di động (54%), thiết bị đầu cuối (29%) và viễn thông (17%).",
+        "train_key": "64f935147591834eb5a39ee75fe8d1b1696a923d76f194435ece8ec73da61656"
+      },
+      {
+        "doc_id": "777cf3df4ef0c936704fadfacf14e792fa350efcf267266ffe928b7679b9b4f1",
+        "matching_span": "Sữa, sữa chua và pho mát là những nguồn giàu canxi tự nhiên và là những thực phẩm cung cấp chất dinh dưỡng chính cho người dân ở Hoa Kỳ [1]. Các nguồn thực phẩm không chứa dầu bao gồm các loại rau, chẳng hạn như cải thảo, cải xoăn và bông cải xanh.",
+        "train_key": "91c02b1e3fa225cbe2ac7f207661862c9e617963f8be0b12c7282a7bac896a77"
+      },
+      {
+        "doc_id": "7d2d616ee1d53d82948163f17f80c3294975796e5ef1838bc2782f4dfda0cfc0",
+        "matching_span": "CÔNG DỤNG: Azithromycin được sử dụng để điều trị nhiều loại bệnh nhiễm trùng do vi khuẩn. Nó là một loại kháng sinh thuộc nhóm macrolide. Nó hoạt động bằng cách ngăn chặn sự phát triển của vi khuẩn. Thuốc này sẽ không có tác dụng đối với các bệnh nhiễm trùng do vi rút (chẳng hạn như cảm lạnh thông thường, cúm).",
+        "train_key": "a49cb70b787bc3abdc3e1d2fc3337de6da400c259d6bf6a3b3e220c772496d3a"
+      },
+      {
+        "doc_id": "7f07b3a0d05f96588ebb945fd733cb8237b51c0251322158a6b4d5e87dd10222",
+        "matching_span": "Tương tự như các loài côn trùng khác, kiến ​​cũng có 6 chân và mỗi chân có 3 khớp. Đôi chân này được xây dựng tốt giúp kiến ​​có thể đi nhanh hơn. Đôi chân này khỏe đến nỗi nếu con người có thể có được đôi chân này, chúng có thể chạy nhanh như một con ngựa đua.",
+        "train_key": "db136a57ab818dbfb016315a07774c90464bbd34171cacd5543e6566d9e0237f"
+      },
+      {
+        "doc_id": "81581320f9bdfb48c819811029d2baa22ff74534d332aa1dea987d2736839ddf",
+        "matching_span": "Những ranh giới này đánh dấu sự va chạm giữa hai trong số các mảng kiến ​​tạo của hành tinh. Các mảng này là những mảnh vỏ di chuyển chậm rãi trên bề mặt hành tinh trong hàng triệu năm. Nơi hai mảng kiến ​​tạo gặp nhau tại một vùng hút chìm, một mảng uốn cong và trượt bên dưới tấm kia, uốn cong xuống lớp phủ.",
+        "train_key": "fc96318b4a8a10615befe3be47555a94b1c5c33cc87611aee834d698349da74c"
+      },
+      {
+        "doc_id": "8603c03e934da809eecde044c96e7416178927b750568019215a2d91ecedcefd",
+        "matching_span": "Xét nghiệm ma túy trong nước tiểu có thể phát hiện cần sa ngay sau khi sử dụng từ 2 đến 5 giờ. Tuy nhiên, câu hỏi lớn hơn là nó vẫn sẽ được phát hiện trong bao lâu bằng xét nghiệm THC trong nước tiểu.",
+        "train_key": "b815f4702136f6cc996377efc0b81771159562f0c7c50bb9fc6d3f951a771f95"
+      },
+      {
+        "doc_id": "8a420fe598c9f9f316dfd2caa3550dfc12c1f5740a48d9aa1effff4d84a8f986",
+        "matching_span": "Trôi là một hình thức thanh lọc và thông gió đặc biệt. Trôi cháy bao gồm việc loại bỏ oxy từ một không gian hạn chế bằng cách sử dụng khí trơ (như nitơ, carbon dioxide hoặc argon) để loại bỏ nguy cơ cháy hoặc nổ. Nồng độ oxy giảm xuống dưới mức có thể hỗ trợ quá trình đốt cháy.",
+        "train_key": "9a82cf1b6d4ca24d08643bba742e06065114f3d19661d516fa51f910933e074e"
+      },
+      {
+        "doc_id": "8f018db39e2b8deff94edd89fda04ffe5faba16ac012da7486cfc0d1e0408459",
+        "matching_span": "Chi phí cho một năm của tư cách thành viên cao cấp là $ 95,40. Họ cũng cung cấp gói ba tháng với giá 59,85 đô la hoặc đăng ký một tháng với giá 39,95 đô la. Vì rất nhiều sinh viên eo hẹp về tiền mặt, Course Hero đã tạo ra một chương trình trao đổi; họ sẽ cung cấp cho bạn một tháng tư cách thành viên hàng đầu của họ để đổi lấy tài liệu.",
+        "train_key": "5371350c009c3c936787bd80fa99b0d243e8a11c0892c96dc574b0c69b8b2972"
+      },
+      {
+        "doc_id": "904061a7c46abffb8e360f956360aa8abe099f9e46c6e0c041977f01e1f2217f",
+        "matching_span": "WWAN FCC ID hoặc WLAN FCC ID là số chứng nhận được áp dụng cho các thiết bị không dây. WWAN hoặc WLAN biểu thị nó là một thiết bị không dây được sử dụng để kết nối mạng (thường được tìm thấy trong máy tính xách tay và máy tính xách tay). Số chứng nhận FCC ID này có thể được tìm kiếm tại đây.",
+        "train_key": "db3f38b5fed9a9c20a901c8f426dd4e59ae4f2f879058195ee3eb13dfa8c86d7"
+      },
+      {
+        "doc_id": "925d55ce4b3106bb2c7140cbcc99eeb7893db4f6233107a2d78fcbd67e808f0d",
+        "matching_span": "Chernobyl, hay Chornobyl, là tên của một thành phố nằm ở phía bắc Ukraine, gần biên giới với Belarus.",
+        "train_key": "c1ae18b97ef0d1e63a5940f322e8c49d70c886e13472bb3c6d73177fec2e6c07"
+      },
+      {
+        "doc_id": "93a4270a9e101511c6b3142fbfbd770e6757ceb9b6a2c33daf915e0079f27077",
+        "matching_span": "Cách duy nhất để giảm mỡ là đốt cháy nhiều calo hơn mức bạn tiêu thụ. Loại bỏ mỡ thừa ở vùng bụng dưới của bạn bằng cách thêm 30 phút tập tim mạch vào lối sống của bạn ít nhất ba lần một tuần; điều này cũng sẽ giúp giảm căng thẳng.",
+        "train_key": "9d6baaa8747af988ea8e5e5ec7223799b410ea8498c8489aaab0f3ce8b2701f1"
+      },
+      {
+        "doc_id": "99461871afc2dc17afeaf0dedf8977f97283d689cc74fe059dd2370a946e634b",
+        "matching_span": "Năm 1781, James Watt được cấp bằng sáng chế cho động cơ hơi nước tạo ra chuyển động quay liên tục. Động cơ mười mã lực của Watt cho phép cung cấp năng lượng cho nhiều loại máy móc sản xuất. Động cơ có thể được đặt ở bất cứ nơi nào có thể lấy được nước và nhiên liệu than hoặc củi.",
+        "train_key": "3c9f1c85eeba401a6f6f672a03543de50dc06b633948a443d6de931deda9353c"
+      },
+      {
+        "doc_id": "9c68351d9bd2ff28ed2fa2fdea4f9edc7dc5209657f35589ac00f674bf2bc2f7",
+        "matching_span": "Các bước để thụ phấn cà chua bằng tay. Cà chua, thụ phấn, ong mật, và những thứ tương tự có thể không phải lúc nào cũng đi đôi với nhau. Trong khi hoa cà chua thường được thụ phấn nhờ gió và đôi khi nhờ ong, việc thiếu không khí di chuyển hoặc số lượng côn trùng thấp có thể ức chế quá trình thụ phấn tự nhiên.",
+        "train_key": "7825191d8d51d1ea509de6125e639477e7e89cea566b01082caef3b2ec605d83"
+      },
+      {
+        "doc_id": "9e94a7788d1667630297fe12d8e29ebd89b47c616a341d178738178b276d138f",
+        "matching_span": "Các y tá là nam giới được tăng lương trung bình hàng năm là 3,55%, tăng từ 103.394 đô la năm 2012 lên 107.065 đô la vào năm 2013. Các y tá là phụ nữ đã tăng lương của họ lên 6,75%, từ 91.613 đô la năm 2012 lên 97.797 đô la vào năm 2013.",
+        "train_key": "33d3cc46b9273e1cd1422210a519ce3448f1c9adc12d4d8177a0381e4a195478"
+      },
+      {
+        "doc_id": "a1749d9cec34504136dfbe7a60d620c49046bf75cabdb541af0fb482e5a059a4",
+        "matching_span": "Lantus được hầu hết các chương trình bảo hiểm và Medicare đài thọ. Giá GoodRx thấp nhất cho phiên bản phổ biến nhất của Lantus là khoảng $ 388,96, giảm 10% so với giá bán lẻ trung bình là $ 436,70. So sánh insulin.",
+        "train_key": "50960bb8a2684b173bcb0c959729aab9f6f748046cb07b4ea77b242af414e376"
+      },
+      {
+        "doc_id": "a1820095e1b42f53359a74d18bd10af123a3d42b658b4f361965f553c08d2635",
+        "matching_span": "Rái cá biển ăn nhím, bào ngư, trai, trai, cua, ốc và khoảng 40 loài sinh vật biển khác. Rái cá biển ăn khoảng 25% trọng lượng của chúng trong thức ăn mỗi ngày để hỗ trợ quá trình trao đổi chất cao của chúng.",
+        "train_key": "fbbc2e02657ad59580d7191bef1bd38da6b4846ab4fbe95444d4751555e85e10"
+      },
+      {
+        "doc_id": "a82e5a2237bdb88e556473d979203410b9fa46c1c9a3f73fe0230f54bbe33116",
+        "matching_span": "Đảo bếp hút không gian. Tối thiểu, một hòn đảo phải dài 4 feet và sâu hơn 2 feet một chút, nhưng nó cũng phải có chỗ cho mọi người di chuyển và làm việc xung quanh nó.",
+        "train_key": "317ad15f35a02ca4741ccf26716bb6e37bc3cc71d70c51bc4a7a2c0031c85efb"
+      },
+      {
+        "doc_id": "af98b06495304f5600791a97d85422b776768711db6cbafa2ca2d407aee2024f",
+        "matching_span": "Mất ngôn ngữ là một rối loạn giao tiếp do tổn thương hoặc tổn thương các bộ phận ngôn ngữ của não. Nó phổ biến hơn ở người lớn tuổi, đặc biệt là những người đã bị đột quỵ. Chứng mất ngôn ngữ cản trở khả năng sử dụng hoặc hiểu các từ của một người.",
+        "train_key": "ef7334344c7d0ad86124bf6cf1a01b3b44010974f1e543d86a8aedfd087ddeef"
+      },
+      {
+        "doc_id": "b38113dfe3f50ffe517cee9733eece86ff357285d3bf538d5d6925773f9a30a2",
+        "matching_span": "Khoảng thời gian sống trung bình trong môi trường hoang dã. Tuổi thọ trung bình của sóc xám là cực kỳ ngắn - thường chỉ từ 11 đến 12 tháng, theo Bảo tàng Lịch sử Tự nhiên Quốc gia Smithsonian. Bất chấp tuổi thọ ngắn ngủi này, một số con sóc xám chuyển vùng tự do đã thực sự vượt quá 10 tuổi.",
+        "train_key": "11c6914c11bd3b9264278558d09d782cee27bacfc119c0624b6af71ebe9766a5"
+      },
+      {
+        "doc_id": "b4816009190d3c9fc2545bfa03abff71be8c92f24fbd4ca2de171d58caa9d3d6",
+        "matching_span": "Theo Điều tra Viện Dưỡng lão Quốc gia, thời gian lưu trú trung bình của bệnh nhân hiện đang ở viện dưỡng lão là 892 ngày, tương đương 2,44 năm.",
+        "train_key": "73f532c41bf8440d39c4c575b48dbd98bff71a75d313e4aadeb3d30dc293b5cc"
+      },
+      {
+        "doc_id": "bd2444b8149c054ca12cfaade13a91a08b6cc7482253b4adba862fa0977be8fc",
+        "matching_span": "Chiều dài bình thường là khoảng 7,6 cm và chiều rộng là 4,5 cm. Độ dày trung bình bình thường là 3,0 cm và ở một phụ nữ trưởng thành, tử cung nặng khoảng 60 gam nhưng có thể lên đến 200 gam tùy thuộc vào các điều kiện khác nhau.",
+        "train_key": "3c4bed3745376264c2fd9d3b20ca27966984c94017bae8c13cedca640aed9de0"
+      },
+      {
+        "doc_id": "c20ff89838d45475fe295ee0536aaa9a3ca5ea05d8b9f5674f280e3a15f39d0f",
+        "matching_span": "Cách tốt nhất duy nhất để ngăn ngừa bệnh cúm là tiêm phòng cúm. Mọi người từ 6 tháng tuổi trở lên nên chủng ngừa cúm hàng năm. Thuốc chủng ngừa cúm không thể gây ra bệnh cúm. Chủng ngừa cúm được tiêm bằng kim, thường là ở cánh tay. Nó có thể được tiêm cho những người từ 6 tháng tuổi trở lên. Tại sao tôi cần chủng ngừa cúm hàng năm?",
+        "train_key": "a60bb361d961f43eebf0a0a2769fb103a77fcf3bf6f5addd82e5f503e364b1fe"
+      },
+      {
+        "doc_id": "c309f9f4bf81cfbf55353921857f066fd9e196d8374235c34162e812c0cc6834",
+        "matching_span": "WPA là một định dạng mã hóa không dây và cụm mật khẩu nằm trong phần bảo mật không dây của bộ định tuyến của bạn.",
+        "train_key": "44f5db0933f7932b08d6941a337e115cad410ce355b5a45d9e44d244ee2c31bd"
+      },
+      {
+        "doc_id": "c8f93d0e29469ed8c2652d397807ad21260aaa01f8a3eedcea5da1fa60ba897e",
+        "matching_span": "Số tiền bạn sẽ đóng góp cho IRA Truyền thống của mình mỗi năm. Máy tính này giả định rằng bạn đóng góp vào đầu mỗi năm. Khoản đóng góp IRA hàng năm tối đa là $ 5,500 không đổi cho năm 2015.",
+        "train_key": "18f87356353238ccf2df67c5b651e49b326fbbcce6f11df54d3a67ff0579a9fe"
+      },
+      {
+        "doc_id": "cfaba0115d0adc30b59734ca9223555c2fef50fc14a40bdae939782e8dbdf9a5",
+        "matching_span": "Nguyên nhân của chứng mất trí nhớ. Thật đau thương khi chứng kiến ​​ai đó đánh mất chính mình vì chứng mất trí nhớ. Nghiên cứu đang tiến hành đã làm sáng tỏ các nguyên nhân của chứng sa sút trí tuệ, có thể xuất phát từ hoàn cảnh di truyền, môi trường và / hoặc lối sống.",
+        "train_key": "d2a53784c0ab48b230ad0e14c4dc1514e59e09d77c9a0470cb2e595949a4201d"
+      },
+      {
+        "doc_id": "d205ab7d7b7827728ae97a143732bde6adf6cc5bdfb8f3f5ed80640fd0b6451f",
+        "matching_span": "Tôi đã có một hình xăm, nhưng lần này tôi muốn có một ống tay áo của bộ lạc. Tôi muốn một cái gì đó gần với hình xăm này. http://tattoo-your-body.maxupdates.tv/wp-content/uploads/2010/05/Chest-and-Arm-Tattoos-a.jpg Tôi đã nói chuyện với một vài người bạn của mình, một trong số họ có tay áo xăm hình.",
+        "train_key": "a3e71cab4b9a69c0b3cd513e101a3be049fcf6d688d5557617fc6d53ee7205a8"
+      },
+      {
+        "doc_id": "d3b143233131d59de8412f7e9f13b00fb0add7e07caab81d269afe91b3bd4dcd",
+        "matching_span": "Đơn thuốc có giá trị trong vòng sáu tháng kể từ ngày ghi trên đơn thuốc, trừ khi loại thuốc được kê đơn có chứa một loại thuốc được kiểm soát (xem bên dưới).",
+        "train_key": "8309b9c9a047a905508cab4748492c4b152df772fb5d5fc0d79288f35c2700de"
+      },
+      {
+        "doc_id": "d6f108c98184b1d8e9e690454e5498c59b7c1ecacddd525a6894af13e05be938",
+        "matching_span": "Mất 40 phút để sạc Oral-B 5000 chỉ một lần chải nữa sau khi pin bắt đầu báo sắp hết.",
+        "train_key": "6849e7b0cd6df53e9dad91800c733194af79640809cbf595ec81090f517f8e22"
+      },
+      {
+        "doc_id": "d70491871f59b66b4a252590d34c350b0704b68b639d02749a2f05d35c4c4691",
+        "matching_span": "(Có thể thoa kem chống nắng dạng khối vật lý như titanium dioxide hoặc zinc oxide sau cùng, sau serum hoặc kem dưỡng ẩm.) Tiếp theo thoa serum và cuối cùng là kem dưỡng ẩm nếu bạn cần.",
+        "train_key": "76081c27590d89e06ca44dd8f8f51ffb78d5bbab7947f03fe84cb3f840431a6f"
+      },
+      {
+        "doc_id": "d8d201c9b4f70c38ef0a8835da56726c825b2c7e6c3f3da1e20b74b76f265ac9",
+        "matching_span": "Để được giảm giá, bạn phải gọi điện để lấy nó. Nhấn mạnh rằng bạn muốn giao dịch 6 tháng với $ 25,00 cho Gói lựa chọn hoặc $ 119 cho một năm đối với gói Premium. Sau đó, khi bạn thanh toán, hãy sử dụng thẻ quà tặng Sirius XM mà bạn có thể mua từ Best Buy.",
+        "train_key": "a82ad88f249dca6f374a819c098cefd72a33e682cf618a0940a2fb63bbd52548"
+      },
+      {
+        "doc_id": "dc456548104a69a8720376e174332da22c2604754e1c0e367196dcd5b8a6a597",
+        "matching_span": "A fen là một trong những loại đất ngập nước chính, những loại khác là đầm lầy cỏ, đầm lầy có rừng và đầm lầy than bùn. Cùng với sa lầy, fens là một loại sa lầy.",
+        "train_key": "f0502d6cdf2d0076764ea78c51245f05aec044050bd068a156403055c98d3db8"
+      },
+      {
+        "doc_id": "dec3add5db0dd6a7a73322c5a3ea8ab585c2db1403fd65caa3bffd1eff6228bb",
+        "matching_span": "Khi bạn ăn nhiều thức ăn không lành mạnh, cơ thể bạn sẽ không cảm thấy như ở hình dạng đỉnh đầu.",
+        "train_key": "b10ebc208f94e6c96fa18724694973c85fec3a195c17a4eba8ccdf4bd983114f"
+      },
+      {
+        "doc_id": "e13e2e5e8467bfdabbd0e602a69c6f5a18452a146118ccb7ba59bc8f206c0fbc",
+        "matching_span": "Các quy tắc cơ bản để trích dẫn một bài báo trên tạp chí. Bao gồm tối đa 7 tên tác giả trong danh sách tài liệu tham khảo (trang 184 hướng dẫn APA xuất bản lần thứ 6) Viết hoa từ đầu tiên của tiêu đề bài báo và từ đầu tiên của phụ đề, nếu có, và bất kỳ danh từ riêng nào. KHÔNG in nghiêng tiêu đề bài viết; KHÔNG đặt dấu ngoặc kép xung quanh nó. Tên tạp chí và số tập được in nghiêng.",
+        "train_key": "ae2b3ee78ecacdb4e050a339938f860998600c28d0552f05f50507f45a6c4f24"
+      },
+      {
+        "doc_id": "ea020f40c7706cd1ad67d97e6dcbac29373d11c3454bd4d51e89fe159d55b8b7",
+        "matching_span": "Nếu ngựa của bạn phát triển thành móng có chất lượng hoặc không có nhu cầu đặc biệt về hiệu suất, bạn có thể cho chó con tỉa chân sau mỗi 6 đến 8 tuần. Ở khu vực Indiana của chúng tôi, chi phí cắt tỉa dao động từ $ 30,00 đến $ 40,00 cho mỗi lần khám. Nếu ngựa của bạn cần giày, chi phí trong khu vực của chúng tôi là từ $ 90,00 đến $ 100,00 cho mỗi lần khám.",
+        "train_key": "c1266bf3a1fd070503bb93e47c4e0086b7daf09dbbac6ce54dfa09e0a871fd43"
+      },
+      {
+        "doc_id": "eed6edca17473c6a1e2a1e6ad7132a17d48deadfab1b3e2808acc592c30d71d0",
+        "matching_span": "1X lớn hơn một chút, giống như 16W lớn hơn 16 miss. Tôi chỉ đang đi qua khu vực có cùng kích thước đó, mặc dù bây giờ tôi đã khá nhiều vào kích thước bình thường. Hãy thử các kích thước thông thường, một số trong số chúng sẽ phù hợp với bạn. Tôi vừa mua một chiếc váy cho đám cưới trong một lần bỏ lỡ 16-Tôi đã rất vui mừng!",
+        "train_key": "4a3258c113a05bf24e2321b3b6cf6767a4bac2cde9a1526c0b1f4480f4aae72f"
+      },
+      {
+        "doc_id": "f0797e4bd671630b0956e798812ddd6edaed073cc379b302aa54629e00031bf1",
+        "matching_span": "Giai đoạn cuối cùng của một văn bằng luật là trường luật. Các chương trình của trường luật thường là ba năm. Không giống như bằng đại học của sinh viên, trường luật không cho phép sinh viên chọn tốc độ của riêng họ. Sinh viên luật được hầu hết các trường luật yêu cầu phải hoàn thành chương trình luật trong ba năm.",
+        "train_key": "527d6bdc65bafbaba121dbab3f76e4d8a72a02a18e47545ca11174b03f0f62fc"
+      },
+      {
+        "doc_id": "f183de644c9e96f098713d49cb3308e97bc5b1a4fb7eb11301253f257c5827ba",
+        "matching_span": "Wiktionary (3.",
+        "train_key": "195d5b724861b59b97f3826436edfce01cb1df5031eb483362c1e36b28ed6434"
+      },
+      {
+        "doc_id": "f45d2c5ac0fc83399cf82ac040fc5ebbefbd044608c7ecdefb7570448d9bf22c",
+        "matching_span": "Chụp cắt lớp phát xạ Positron, hay chụp PET, là một loại hình ảnh y học hạt nhân có thể quan sát cơ thể và các cơ quan ở cấp độ tế bào, theo RadiologyInfo.org. Chụp PET đo các chức năng của cơ thể như lưu lượng máu, sử dụng oxy và chuyển hóa glucose hoặc đường.",
+        "train_key": "f91d34459707f54634a8f975f7169f05ad1fcb98bd49675a2b68c2e59eb6f7b6"
+      },
+      {
+        "doc_id": "f808b69fca63a16e918777329b0d9a648d0a8dad1bf5091a3c5258b6a1e7103b",
+        "matching_span": "Cam thảo đen có chứa cam thảo thực tế có thể có tác dụng nhuận tràng nhẹ. Cam thảo thực tế có thể có tác dụng phụ nghiêm trọng; không tiêu thụ số lượng lớn mà không có sự chấp thuận của bác sĩ.",
+        "train_key": "3bc3a91acf90a0026d0cc59ae76257486e27b25a09071a7aa3aa93bd0475b8b4"
+      },
+      {
+        "doc_id": "f86c01569fdbe024dc313831d396d83951b74d8b37cf06f47c4dae274737e902",
+        "matching_span": "Định nghĩa đầy đủ về OVERTONE. 1. a: một trong những âm cao hơn được tạo ra đồng thời với âm cơ bản và âm cơ bản bao gồm một giai điệu âm nhạc phức tạp: hài âm 1a b: hài âm 2. 2.: màu sắc của ánh sáng phản chiếu (như một lớp sơn).",
+        "train_key": "17c2577f8fda1753e789a9b22d3edd77c5e33cd755a52f351324c977274b33bc"
+      },
+      {
+        "doc_id": "fa49bc25a39781bfdd7ae9d2fe7ce35ad2501d044d7b79701e9e59f250f8d4a9",
+        "matching_span": "Dây chằng bị rách có thể mất từ ​​hai tuần đến vài tháng để chữa lành, tùy thuộc vào các yếu tố khác của chấn thương như tuổi của người đó và nơi xảy ra chấn thương. Chấn thương dây chằng đầu gối mất nhiều thời gian nhất để chữa lành.",
+        "train_key": "b2ccd9b0e349697d2b38f70f897a29dab62b39aaf3c4b1d6fb3d10b9afa879d1"
+      },
+      {
+        "doc_id": "fba729fa70b5e55ba331970bb9fa7e44a2e6927ae0acd41820d093d37b6ade6b",
+        "matching_span": "Nguyên nhân nào gây ra đốm trắng trên cổ họng? Có một số lý do khác nhau khiến các đốm hoặc mảng trắng có thể xuất hiện trên cổ họng hoặc amidan của bạn. Dưới đây là những lý do phổ biến nhất: 1. Strep Họng. Một trong những lý do cho sự xuất hiện của các đốm trắng trên cổ họng là nhiễm trùng do vi khuẩn gọi là viêm họng liên cầu.",
+        "train_key": "0cd9525440e458b7468892d7793268d4c70daba8bb156ecf76700c85f16d7fa3"
+      },
+      {
+        "doc_id": "fbdd47404acfb03704f32c0cc05fde01aabdf86da62bed05051940b827db8d08",
+        "matching_span": "Đắp một miếng gạc ấm. Cách điều trị lẹo mắt tại nhà được khuyến nghị là chườm ấm lên mắt trong 10 đến 15 phút, 2 đến 3 lần một ngày. Điều này sẽ làm tăng lưu thông máu đến khu vực này và đẩy nhanh quá trình vỡ và thoát nước của mụn lẹo.",
+        "train_key": "10a7d2ab9a079f6c1e7d8bc2eee29d5200c36960a489c40798163f3c56283aed"
+      },
+      {
+        "doc_id": "fda756a2a6580090331b29775c2ba7019124a7d274d72019e6f5b430ad6c7e73",
+        "matching_span": "Dây chằng buộc bàn chân với cẳng chân. Bong gân mắt cá chân là một chấn thương trong đó bàn chân lật úp vào chân và (các) dây chằng này bị kéo căng ra. Điều quan trọng trong chẩn đoán là xác định xem đó chỉ là bong gân nơi các dây chằng bị kéo căng hay là một vết rách nơi (các) dây chằng bị rách.",
+        "train_key": "d76dbf43279aded02efce4b19369ef4560803451ffe38ab8beb04c0bcb10eb9d"
+      },
+      {
+        "doc_id": "fe845c0900fdc5c94fafb67c8cdd499fa9aa0e7a5c4805bd0090af4ee3b87bdb",
+        "matching_span": "Autosome là một nhiễm sắc thể không phải là một allosome (nhiễm sắc thể giới tính).",
+        "train_key": "b8ef0b83867580807fcd644ff392b161feafe05e374200a5ddcff1fdced47ca4"
+      }
+    ],
+    "comparison_policy": "All checkpoints are rescored on the identical retained queries, documents and original labels; filtering depends only on leakage checks, not model scores.",
+    "limitations": [
+      "Hashes cannot establish absence of all fuzzy/semantic near duplicates in past training text.",
+      "Train reservations include prefetched samples, so exclusions are conservative.",
+      "BKAI training overlap is unknown; its score is a reference."
+    ],
+    "dataset_sha256": "4028aa037b4d6da4e0126560c1005cafcb0d5adfa750a1fd17e0a23eb8b6b55e"
+  },
+  "original_dataset_unchanged": false,
+  "metrics": {
+    "student_step_108000": {
+      "mrr10": 0.808932142857143,
+      "ndcg10": 0.8384552552185008,
+      "recall1": 0.738,
+      "recall5": 0.9,
+      "recall10": 0.929,
+      "mrr10_95ci": [
+        0.7874458333333334,
+        0.8282690773809523
+      ],
+      "hit1": 0.738,
+      "hit10": 0.929
+    },
+    "student_before_finetune": {
+      "mrr10": 0.6960785714285714,
+      "ndcg10": 0.7356020990170107,
+      "recall1": 0.612,
+      "recall5": 0.811,
+      "recall10": 0.859,
+      "mrr10_95ci": [
+        0.6710592658730159,
+        0.7197715476190476
+      ],
+      "hit1": 0.612,
+      "hit10": 0.859
+    },
+    "bkai": {
+      "mrr10": 0.9055285714285715,
+      "ndcg10": 0.921030629376297,
+      "recall1": 0.871,
+      "recall5": 0.954,
+      "recall10": 0.969,
+      "mrr10_95ci": [
+        0.889321130952381,
+        0.9211269642857143
+      ],
+      "hit1": 0.871,
+      "hit10": 0.969
+    },
+    "student_step_190399": {
+      "mrr10": 0.8210876984126984,
+      "ndcg10": 0.8492562839505465,
+      "recall1": 0.752,
+      "recall5": 0.91,
+      "recall10": 0.935,
+      "mrr10_95ci": [
+        0.8000022619047619,
+        0.8405258035714286
+      ],
+      "hit1": 0.752,
+      "hit10": 0.935
+    },
+    "student_current": {
+      "mrr10": 0.809879365079365,
+      "ndcg10": 0.8377477291958847,
+      "recall1": 0.743,
+      "recall5": 0.899,
+      "recall10": 0.923,
+      "mrr10_95ci": [
+        0.7881987103174604,
+        0.8295817757936508
+      ],
+      "hit1": 0.743,
+      "hit10": 0.923
+    },
+    "char_tfidf": {
+      "mrr10": 0.7671444444444444,
+      "ndcg10": 0.8016322451896127,
+      "recall1": 0.687,
+      "recall5": 0.868,
+      "recall10": 0.908,
+      "mrr10_95ci": [
+        0.7440221527777778,
+        0.7886060912698412
+      ],
+      "hit1": 0.687,
+      "hit10": 0.908
+    }
+  },
+  "original_previous_metrics": {
+    "mrr10": 0.807579597594246,
+    "ndcg10": 0.8373726603553525,
+    "recall1": 0.736328125,
+    "recall5": 0.900390625,
+    "recall10": 0.9287109375,
+    "mrr10_95ci": [
+      0.7853141857328868,
+      0.8283093455481151
+    ],
+    "hit1": 0.736328125,
+    "hit10": 0.9287109375
+  },
+  "additional_comparisons": [
+    {
+      "checkpoint_step": 190399,
+      "folder": "runs/holdout-reeval-20261018",
+      "dataset_sha256": "c6196af34b6d3d1ee0f476aeb2338334e94985dd288eee48318c775e5ddd3f93",
+      "embeddings_sha256": "32d8cf81cefd468b225d71a33341bbc0fe8ed316c93b69fff29634ab2201c022"
+    }
+  ],
+  "groups": {
+    "all": {
+      "queries": 1000,
+      "models": {
+        "student_step_108000": {
+          "mrr10": 0.808932142857143,
+          "top1": 0.738,
+          "top10": 0.929
+        },
+        "student_before_finetune": {
+          "mrr10": 0.6960785714285714,
+          "top1": 0.612,
+          "top10": 0.859
+        },
+        "bkai": {
+          "mrr10": 0.9055285714285715,
+          "top1": 0.871,
+          "top10": 0.969
+        },
+        "student_step_190399": {
+          "mrr10": 0.8210876984126984,
+          "top1": 0.752,
+          "top10": 0.935
+        },
+        "student_current": {
+          "mrr10": 0.809879365079365,
+          "top1": 0.743,
+          "top10": 0.923
+        },
+        "char_tfidf": {
+          "mrr10": 0.7671444444444444,
+          "top1": 0.687,
+          "top10": 0.908
+        }
+      },
+      "current_minus_step108000": {
+        "mrr10": 0.0009472222222222215,
+        "clusters": 946,
+        "cluster_bootstrap95ci": [
+          -0.014275110341356026,
+          0.015775160972562582
+        ],
+        "top1_percentage_points": 0.5
+      },
+      "current_minus_step190399": {
+        "mrr10": -0.011208333333333336,
+        "clusters": 946,
+        "cluster_bootstrap95ci": [
+          -0.024380813412856826,
+          0.0013352838665159589
+        ],
+        "top1_percentage_points": -0.8999999999999999
+      }
+    },
+    "mmarco": {
+      "queries": 827,
+      "models": {
+        "student_step_108000": {
+          "mrr10": 0.8469947793708373,
+          "top1": 0.788391777509069,
+          "top10": 0.9431680773881499
+        },
+        "student_before_finetune": {
+          "mrr10": 0.712245926181839,
+          "top1": 0.6372430471584039,
+          "top10": 0.8633615477629988
+        },
+        "bkai": {
+          "mrr10": 0.9421935279553174,
+          "top1": 0.9214026602176542,
+          "top10": 0.9806529625151149
+        },
+        "student_step_190399": {
+          "mrr10": 0.8597699660275235,
+          "top1": 0.8077388149939541,
+          "top10": 0.9443772672309553
+        },
+        "student_current": {
+          "mrr10": 0.8552374234659603,
+          "top1": 0.8029020556227328,
+          "top10": 0.9407496977025392
+        },
+        "char_tfidf": {
+          "mrr10": 0.7862320300953916,
+          "top1": 0.7182587666263603,
+          "top10": 0.909310761789601
+        }
+      },
+      "current_minus_step108000": {
+        "mrr10": 0.008242644095122934,
+        "clusters": 823,
+        "cluster_bootstrap95ci": [
+          -0.005148238466761469,
+          0.022523159927494655
+        ],
+        "top1_percentage_points": 1.4510278113663846
+      },
+      "current_minus_step190399": {
+        "mrr10": -0.004532542561563119,
+        "clusters": 823,
+        "cluster_bootstrap95ci": [
+          -0.017241327189746473,
+          0.007310188311748294
+        ],
+        "top1_percentage_points": -0.48367593712212814
+      }
+    },
+    "qa": {
+      "queries": 173,
+      "models": {
+        "student_step_108000": {
+          "mrr10": 0.6269795394072851,
+          "top1": 0.49710982658959535,
+          "top10": 0.861271676300578
+        },
+        "student_before_finetune": {
+          "mrr10": 0.618793008532893,
+          "top1": 0.4913294797687861,
+          "top10": 0.838150289017341
+        },
+        "bkai": {
+          "mrr10": 0.7302573630608313,
+          "top1": 0.630057803468208,
+          "top10": 0.9132947976878613
+        },
+        "student_step_190399": {
+          "mrr10": 0.6361730433984768,
+          "top1": 0.48554913294797686,
+          "top10": 0.8901734104046243
+        },
+        "student_current": {
+          "mrr10": 0.5930521148729241,
+          "top1": 0.45664739884393063,
+          "top10": 0.838150289017341
+        },
+        "char_tfidf": {
+          "mrr10": 0.6758991650610147,
+          "top1": 0.5375722543352601,
+          "top10": 0.9017341040462428
+        }
+      },
+      "current_minus_step108000": {
+        "mrr10": -0.03392742453436094,
+        "clusters": 123,
+        "cluster_bootstrap95ci": [
+          -0.08765881386390874,
+          0.018890590198110766
+        ],
+        "top1_percentage_points": -4.046242774566474
+      },
+      "current_minus_step190399": {
+        "mrr10": -0.043120928525552805,
+        "clusters": 123,
+        "cluster_bootstrap95ci": [
+          -0.088441430901911,
+          0.003940757011161846
+        ],
+        "top1_percentage_points": -2.8901734104046244
+      }
+    },
+    "positive_1_64_tokens": {
+      "queries": 232,
+      "models": {
+        "student_step_108000": {
+          "mrr10": 0.7965756704980843,
+          "top1": 0.7327586206896551,
+          "top10": 0.9051724137931034
+        },
+        "student_before_finetune": {
+          "mrr10": 0.7370296250684182,
+          "top1": 0.6724137931034483,
+          "top10": 0.8836206896551724
+        },
+        "bkai": {
+          "mrr10": 0.910308908045977,
+          "top1": 0.8793103448275862,
+          "top10": 0.9741379310344828
+        },
+        "student_step_190399": {
+          "mrr10": 0.8205459770114942,
+          "top1": 0.771551724137931,
+          "top10": 0.9051724137931034
+        },
+        "student_current": {
+          "mrr10": 0.8109657224958949,
+          "top1": 0.7586206896551724,
+          "top10": 0.8922413793103449
+        },
+        "char_tfidf": {
+          "mrr10": 0.7819786535303777,
+          "top1": 0.7155172413793104,
+          "top10": 0.9008620689655172
+        }
+      },
+      "current_minus_step108000": {
+        "mrr10": 0.01439005199781062,
+        "clusters": 229,
+        "cluster_bootstrap95ci": [
+          -0.01372215667483372,
+          0.0426989036759779
+        ],
+        "top1_percentage_points": 2.586206896551724
+      },
+      "current_minus_step190399": {
+        "mrr10": -0.00958025451559934,
+        "clusters": 229,
+        "cluster_bootstrap95ci": [
+          -0.03666419428272877,
+          0.016923876231527062
+        ],
+        "top1_percentage_points": -1.293103448275862
+      }
+    },
+    "positive_65_156_tokens": {
+      "queries": 700,
+      "models": {
+        "student_step_108000": {
+          "mrr10": 0.8220549886621314,
+          "top1": 0.7514285714285714,
+          "top10": 0.94
+        },
+        "student_before_finetune": {
+          "mrr10": 0.6939109977324263,
+          "top1": 0.6042857142857143,
+          "top10": 0.8614285714285714
+        },
+        "bkai": {
+          "mrr10": 0.9198707482993197,
+          "top1": 0.8885714285714286,
+          "top10": 0.9714285714285714
+        },
+        "student_step_190399": {
+          "mrr10": 0.8332386621315192,
+          "top1": 0.7614285714285715,
+          "top10": 0.9471428571428572
+        },
+        "student_current": {
+          "mrr10": 0.8302431972789116,
+          "top1": 0.7657142857142857,
+          "top10": 0.94
+        },
+        "char_tfidf": {
+          "mrr10": 0.7729608843537417,
+          "top1": 0.6942857142857143,
+          "top10": 0.9142857142857143
+        }
+      },
+      "current_minus_step108000": {
+        "mrr10": 0.008188208616780046,
+        "clusters": 670,
+        "cluster_bootstrap95ci": [
+          -0.009151750677380171,
+          0.025547618133864334
+        ],
+        "top1_percentage_points": 1.4285714285714286
+      },
+      "current_minus_step190399": {
+        "mrr10": -0.0029954648526077103,
+        "clusters": 670,
+        "cluster_bootstrap95ci": [
+          -0.018794176698566287,
+          0.01222965393866153
+        ],
+        "top1_percentage_points": 0.4285714285714286
+      }
+    },
+    "positive_157_256_tokens": {
+      "queries": 68,
+      "models": {
+        "student_step_108000": {
+          "mrr10": 0.7160014005602241,
+          "top1": 0.6176470588235294,
+          "top10": 0.8970588235294118
+        },
+        "student_before_finetune": {
+          "mrr10": 0.5786764705882353,
+          "top1": 0.4852941176470588,
+          "top10": 0.75
+        },
+        "bkai": {
+          "mrr10": 0.7415791316526611,
+          "top1": 0.6617647058823529,
+          "top10": 0.9264705882352942
+        },
+        "student_step_190399": {
+          "mrr10": 0.6978524743230626,
+          "top1": 0.5882352941176471,
+          "top10": 0.9117647058823529
+        },
+        "student_current": {
+          "mrr10": 0.5965452847805789,
+          "top1": 0.45588235294117646,
+          "top10": 0.8529411764705882
+        },
+        "char_tfidf": {
+          "mrr10": 0.656658496732026,
+          "top1": 0.5147058823529411,
+          "top10": 0.8676470588235294
+        }
+      },
+      "current_minus_step108000": {
+        "mrr10": -0.1194561157796452,
+        "clusters": 62,
+        "cluster_bootstrap95ci": [
+          -0.1900393165610557,
+          -0.04490464344941961
+        ],
+        "top1_percentage_points": -16.176470588235293
+      },
+      "current_minus_step190399": {
+        "mrr10": -0.10130718954248365,
+        "clusters": 62,
+        "cluster_bootstrap95ci": [
+          -0.15411275017253281,
+          -0.05130827294685992
+        ],
+        "top1_percentage_points": -13.23529411764706
+      }
+    }
+  },
+  "top1_changes_by_checkpoint": {
+    "student_step_108000": {
+      "newly_correct": 67,
+      "newly_wrong": 62
+    },
+    "student_step_190399": {
+      "newly_correct": 45,
+      "newly_wrong": 54
+    }
+  },
+  "top1_changes": {
+    "newly_correct": 67,
+    "newly_wrong": 62
+  },
+  "seconds": 331.14085837081075,
+  "limitations": [
+    "Train history retains content hashes, not a complete text journal; exhaustive fuzzy/semantic near-duplicate checking against all past training text is not possible.",
+    "No claim is made about overlap with BKAI's original pretraining/fine-tuning data.",
+    "This is a held-out sample of the streaming sources, not an official full-corpus benchmark.",
+    "Candidate pool is about four thousand passages, not millions; scores should not be presented as full-corpus production accuracy.",
+    "Unjudged relevant passages can be scored as negatives; teacher is not ground truth.",
+    "CPU float32 inference; live training uses CUDA bfloat16.",
+    "This evaluated subset is now development evidence; keep a separate untouched final test for future model selection."
+  ],
+  "numerical_verification": "All dense vectors finite and unit norm; independent rank counting matches full sorting; historical embeddings reproduce historical metrics before any exclusions.",
+  "training_loss_context": {
+    "108000": {
+      "count": 1000,
+      "step_range": [
+        "107001",
+        "108000"
+      ],
+      "loss": 0.19587780231237412,
+      "nce": 0.16459269401431084,
+      "kl": 0.31285107490420344,
+      "weighted_kl": 0.031285108054056765,
+      "grad_norm": 3.445964147567749
+    },
+    "190399": {
+      "count": 1000,
+      "step_range": [
+        "189400",
+        "190399"
+      ],
+      "loss": 0.14661017645103858,
+      "nce": 0.11383013880997896,
+      "kl": 0.327800366749987,
+      "weighted_kl": 0.03278003721963614,
+      "grad_norm": 2.694592293396592
+    },
+    "249740": {
+      "count": 1000,
+      "step_range": [
+        "248741",
+        "249740"
+      ],
+      "loss": 0.12593384107761085,
+      "nce": 0.0939570654090494,
+      "kl": 0.3197677492685616,
+      "weighted_kl": 0.03197677553398535,
+      "grad_norm": 2.347790439993143
+    }
+  },
+  "long_group_source_analysis": {
+    "long_qa": {
+      "queries": 40,
+      "current": {
+        "mrr10": 0.4557936507936507,
+        "top1": 0.275,
+        "top10": 0.825
+      },
+      "step190399": {
+        "mrr10": 0.5821825396825397,
+        "top1": 0.425,
+        "top10": 0.9
+      }
+    },
+    "long_mmarco": {
+      "queries": 28,
+      "current": {
+        "mrr10": 0.7976190476190476,
+        "top1": 0.7142857142857143,
+        "top10": 0.8928571428571429
+      },
+      "step190399": {
+        "mrr10": 0.863095238095238,
+        "top1": 0.8214285714285714,
+        "top10": 0.9285714285714286
+      }
+    }
+  },
+  "interpretation": "No demonstrated aggregate retrieval gain since step 108000. Latest point estimates are below step 190399; overall paired CI includes zero. The pre-specified long-positive subgroup has a negative paired 95% CI. This supports a practical plateau for this run and flags deterioration in that subgroup, not a proof of an architecture ceiling or general overfitting."
+}

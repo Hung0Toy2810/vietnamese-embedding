@@ -1,0 +1,165 @@
+{
+  "document_id": "83a918bbfe6cb68a1ae64a0f",
+  "version": "3cc79d8388c2449fbb90a9faf0bf0528",
+  "source_sha256": "83a918bbfe6cb68a1ae64a0f1bb159a3441bdef03c5372ede324f5ac88bcf697",
+  "graph_sha256": "ba2dab97a91acd15b5b06efea0084d3a2c0af095122ab9e4b8b3dc47a1ebf56d",
+  "graph": {
+    "candidate_edges": 224,
+    "relation_batches": 12,
+    "shortlist_policy": "semantic_subjects_then_distant_navigation",
+    "distant_requested_pairs": 51,
+    "distant_reviewed_pairs": 45,
+    "document_id": "83a918bbfe6cb68a1ae64a0f",
+    "version": "3cc79d8388c2449fbb90a9faf0bf0528",
+    "plan_id": "089efcb636ea7023292f05e2",
+    "note": "LLM relations are hypotheses; endpoint evidence is copied from original units, not generated or proven entailment.",
+    "nodes": 79,
+    "subject_anchors": 17,
+    "semantic_edges": 60,
+    "grouping_edges": 59,
+    "parents": 20,
+    "children": 79
+  },
+  "checks": {
+    "subject_units_checked": 57,
+    "scope_errors": [],
+    "theft_required_links": [
+      {
+        "source": 13,
+        "target": 14,
+        "found": true
+      },
+      {
+        "source": 13,
+        "target": 15,
+        "found": true
+      },
+      {
+        "source": 13,
+        "target": 16,
+        "found": true
+      },
+      {
+        "source": 13,
+        "target": 20,
+        "found": true
+      },
+      {
+        "source": 13,
+        "target": 21,
+        "found": true
+      }
+    ],
+    "parent_source_coverage": true,
+    "endpoint_source_text_matches": true,
+    "maximum_child_tokens_including_specials": 186
+  },
+  "navigation_edges": [
+    {
+      "kind": "redundant_reference",
+      "reason": "Both texts cite the exact same legal provision (Law 12/2017/QH14, Article 2, Clause 3, Item c) abolishing the same content point; they are identical references.",
+      "source_unit": 10,
+      "target_unit": 26
+    }
+  ],
+  "manual_limitations": [
+    "Several amendment notes are attached as substantive conditions/outcomes instead of metadata.",
+    "The sole distant navigation edge joins repeated amendment notes; it has low retrieval value.",
+    "Some generated subject names have imprecise English translations. Original Vietnamese evidence is retained.",
+    "Six distant candidates were omitted and created no edge; they are not counted as reviewed.",
+    "Extraction sometimes combines a continuing rule with an amendment note or the next identifier. Reading-context recovery does not repair the underlying PDF conversion; identifier-only queries are not a validated benchmark."
+  ],
+  "expected_subject_groups": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      5,
+      6,
+      7,
+      8,
+      12
+    ],
+    [
+      13,
+      14,
+      15,
+      16,
+      20,
+      21
+    ],
+    [
+      22,
+      23,
+      24,
+      27,
+      28,
+      29
+    ],
+    [
+      30,
+      31,
+      32,
+      35,
+      36,
+      37,
+      38
+    ],
+    [
+      39,
+      40
+    ],
+    [
+      41,
+      44,
+      45,
+      46,
+      47
+    ],
+    [
+      48,
+      49,
+      54,
+      55,
+      56,
+      57
+    ],
+    [
+      58,
+      59,
+      60,
+      64
+    ],
+    [
+      65,
+      66
+    ],
+    [
+      68
+    ],
+    [
+      69,
+      70
+    ],
+    [
+      72
+    ],
+    [
+      73
+    ],
+    [
+      74,
+      75
+    ],
+    [
+      76
+    ],
+    [
+      77
+    ]
+  ]
+}

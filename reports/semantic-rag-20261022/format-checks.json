@@ -1,0 +1,58 @@
+[
+  {
+    "format": ".docx",
+    "characters": 86,
+    "pages": 0,
+    "warnings": [],
+    "elapsed": 4.396286625007633,
+    "text": "Returns\nCustomers may return items within seven days. Personalized items are excluded."
+  },
+  {
+    "format": ".html",
+    "characters": 53,
+    "pages": 0,
+    "warnings": [],
+    "elapsed": 0.18395841601886787,
+    "text": "Returns\nCustomers may return items within seven days."
+  },
+  {
+    "format": ".md",
+    "characters": 55,
+    "pages": 0,
+    "warnings": [],
+    "elapsed": 0.000872292002895847,
+    "text": "# Returns\nCustomers may return items within seven days."
+  },
+  {
+    "format": ".pdf",
+    "characters": 45,
+    "pages": 1,
+    "warnings": [],
+    "elapsed": 6.598785916983616,
+    "text": "Customers may return items within seven days."
+  },
+  {
+    "format": ".txt",
+    "characters": 45,
+    "pages": 0,
+    "warnings": [],
+    "elapsed": 0.0003841659927275032,
+    "text": "Customers may return items within seven days."
+  },
+  {
+    "format": ".xlsx",
+    "characters": 131,
+    "pages": 1,
+    "warnings": [],
+    "elapsed": 0.11885787500068545,
+    "text": "| Product      |   Return days |\n|--------------|---------------|\n| Standard     |             7 |\n| Personalized |             0 |"
+  },
+  {
+    "format": ".pptx",
+    "characters": 40,
+    "pages": 1,
+    "warnings": [],
+    "elapsed": 0.11200204197666608,
+    "text": "Safety\nDisconnect power before cleaning."
+  }
+]

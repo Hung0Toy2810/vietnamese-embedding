@@ -1,0 +1,41 @@
+{
+  "checkpoint_sha256": "7037aebd48722d9d97965355c47e29bc95f71cb616a5bdbd28b55abf8d548910",
+  "sample_count": 447,
+  "classes": [
+    "Crash_Collision",
+    "Gunshot_Explosion",
+    "Scream_Shout",
+    "Siren"
+  ],
+  "accuracy": 0.6420581655480985,
+  "macro_f1": 0.658834090306415,
+  "confusion_matrix": [
+    [
+      79,
+      41,
+      25,
+      5
+    ],
+    [
+      39,
+      66,
+      3,
+      1
+    ],
+    [
+      15,
+      5,
+      69,
+      8
+    ],
+    [
+      6,
+      2,
+      10,
+      73
+    ]
+  ],
+  "seconds": 30.148258209228516,
+  "split": "test, also used for model selection in retained training script",
+  "input": "Original local preprocessed mel images, deterministic evaluation transforms."
+}

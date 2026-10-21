@@ -1,0 +1,80 @@
+{
+  "CNN": {
+    "matrix": [
+      [
+        79,
+        41,
+        25,
+        5
+      ],
+      [
+        39,
+        66,
+        3,
+        1
+      ],
+      [
+        15,
+        5,
+        69,
+        8
+      ],
+      [
+        6,
+        2,
+        10,
+        73
+      ]
+    ],
+    "classes": [
+      "Crash_Collision",
+      "Gunshot_Explosion",
+      "Scream_Shout",
+      "Siren"
+    ],
+    "source": "cnn/evaluation_report/confusion_matrix.png",
+    "accuracy": 0.6420581655480985,
+    "macro_f1": 0.658834090306415,
+    "count": 447,
+    "source_sha256": "6117deee78e0645c4dbb7960cf148742ddbdb2d65ce0ef4bdcd9671317d474d8"
+  },
+  "AST": {
+    "matrix": [
+      [
+        121,
+        3,
+        4,
+        22
+      ],
+      [
+        3,
+        86,
+        2,
+        0
+      ],
+      [
+        18,
+        3,
+        73,
+        3
+      ],
+      [
+        12,
+        2,
+        0,
+        95
+      ]
+    ],
+    "classes": [
+      "Crash_Collision",
+      "Siren",
+      "Scream_Shout",
+      "Gunshot_Explosion"
+    ],
+    "source": "ast/plots_and_metrics/confusion_matrix.png",
+    "accuracy": 0.8389261744966443,
+    "macro_f1": 0.8462555347495592,
+    "count": 447,
+    "source_sha256": "357c110c125e12ebb384773efd91f7119e445d5298ae1352930e0af940922293"
+  }
+}

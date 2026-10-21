@@ -1,0 +1,17 @@
+{
+  "document_id": "83a918bbfe6cb68a1ae64a0f",
+  "version": "3cc79d8388c2449fbb90a9faf0bf0528",
+  "pages": 10,
+  "status": "ready",
+  "vectors": 79,
+  "graph_sha256": "ba2dab97a91acd15b5b06efea0084d3a2c0af095122ab9e4b8b3dc47a1ebf56d",
+  "source_sha256": "83a918bbfe6cb68a1ae64a0f1bb159a3441bdef03c5372ede324f5ac88bcf697",
+  "url": "http://127.0.0.1:8765",
+  "http_checks": {
+    "document_ready": true,
+    "active_version_matches": true,
+    "graph_nodes": 79,
+    "source_sha256_matches": true,
+    "home_static_preview": true
+  }
+}

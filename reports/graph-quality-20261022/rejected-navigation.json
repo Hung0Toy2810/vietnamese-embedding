@@ -1,0 +1,70 @@
+{
+  "version": "f6fd52f4f21a4d3aae363e1149de1065",
+  "nodes": 79,
+  "semantic_edges": 120,
+  "grouping_edges": 74,
+  "navigation_edges": 46,
+  "rejected_reason": "Distant-pair generation falsely calls distinct offenses exceptions to one another. Answer evaluation was not run on this rejected graph.",
+  "sample_edges": [
+    {
+      "source": "94b164c58369eeab6363a27e",
+      "target": "2709d051873f62763e35feac",
+      "kind": "exception",
+      "reason": "u7 defines a distinct crime (fraud) that is an exception to the general property offense scope in u0."
+    },
+    {
+      "source": "1c66ec11125bfed7db6bd07a",
+      "target": "927b71cd71a9cabedf19f92f",
+      "kind": "exception",
+      "reason": "u12 defines a distinct crime (property damage) that is an exception to the general property offense scope in u1."
+    },
+    {
+      "source": "57f317846677969ee393b9dd",
+      "target": "7f997975d83bb247579406f4",
+      "kind": "exception",
+      "reason": "u13 defines a distinct crime (property damage) that is an exception to the general property offense scope in u2."
+    },
+    {
+      "source": "fda330a9189f963d831245bf",
+      "target": "45b68dd0b65d5d469e6fd006",
+      "kind": "exception",
+      "reason": "u14 defines a distinct crime (property damage) that is an exception to the general property offense scope in u3."
+    },
+    {
+      "source": "489f591412fa00e1db6974db",
+      "target": "2709d051873f62763e35feac",
+      "kind": "exception",
+      "reason": "u7 defines a distinct crime (fraud) that is an exception to the general property offense scope in u4."
+    },
+    {
+      "source": "489f591412fa00e1db6974db",
+      "target": "c2b5d250e5409b9cc75c875b",
+      "kind": "exception",
+      "reason": "u10 defines a distinct crime (abuse of trust) that is an exception to the general property offense scope in u4."
+    },
+    {
+      "source": "2dedc82593a5c084b544e1ea",
+      "target": "6d147b14f46d4d398a099644",
+      "kind": "exception",
+      "reason": "u8 defines a distinct crime (fraud) that is an exception to the general property offense scope in u5."
+    },
+    {
+      "source": "4c6c100be2771d986dff2d8e",
+      "target": "e052f4e5b9d785b31f73f8c2",
+      "kind": "exception",
+      "reason": "u9 defines a distinct crime (fraud) that is an exception to the general property offense scope in u6."
+    },
+    {
+      "source": "4c6c100be2771d986dff2d8e",
+      "target": "05d66b9dff345f12431ebb7e",
+      "kind": "exception",
+      "reason": "u1 defines a penalty range of 12-20 years for specific high-value theft cases, while u8 defines a different penalty range (2-7 years) for 'organized' cases; the"
+    },
+    {
+      "source": "4c6c100be2771d986dff2d8e",
+      "target": "1e21d164c15f0f6645d6b252",
+      "kind": "exception",
+      "reason": "u1 defines penalties for property theft, whereas u15 defines penalties for abuse of family members; the subjects cover distinct legal scopes and are not sem"
+    }
+  ]
+}

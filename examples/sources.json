@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "dataset": "minhnguyent546/mmarco-vietnamese-split",
+      "revision": "afa7c5d9553883fc5a8dca2645ea86b95f0984f8",
+      "files": ["triples/train-00000-of-00080.parquet"],
+      "adapter": "triples_v1",
+      "max_rows": 160000
+    },
+    {
+      "dataset": "2Phuong5Nam4/vietnamese-squad-v2-gg-translated",
+      "revision": "cb9f8d312abb3e23282b5f472fe18d9eede7b0fc",
+      "files": ["data/train-00000-of-00001.parquet"],
+      "adapter": "squad_answer_v1",
+      "max_rows": 20000
+    },
+    {
+      "dataset": "taidng/UIT-ViQuAD2.0",
+      "revision": "406f09a45cc106a8f7b7fd0c25078883fe58cb1f",
+      "files": ["data/train-00000-of-00001.parquet"],
+      "adapter": "squad_answer_v1",
+      "max_rows": 20000
+    }
+  ]
+}

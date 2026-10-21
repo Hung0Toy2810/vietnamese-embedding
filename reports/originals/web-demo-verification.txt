@@ -1,0 +1,17 @@
+# Kiểm tra demo web — 20/10/2026
+
+Giao diện local có ba cột desktop tỷ lệ 1–2–2, nền trắng và nút xanh. HTML/CSS/JS thuần; API FastAPI. Không thay đổi checkpoint hay tokenizer.
+
+## Đã kiểm tra
+
+- 19 unit/integration tests qua: các kiểm tra grounding/stream/RAG có sẵn và 5 kiểm tra web mới.
+- Upload PDF, chống trùng nội dung, xử lý PDF sai/không có lớp chữ, HTTP inline PDF/Range, tách corpus theo file và tác vụ nền không chặn API.
+- Kiểm tra lập chỉ mục hai PDF tạm bằng encoder 77M thật; vector 768 chiều và kết quả truy xuất không lẫn file. Các PDF thử nằm trong thư mục tạm.
+- Một câu hỏi qua API với model/reranker/Ollama thật: “Phòng vệ chính đáng là gì?”. Tác vụ chạy tới hoàn tất; đáp án đưa định nghĩa, bằng chứng thuộc Điều 22, trang PDF 8. Không suy ra độ chính xác tổng quát từ một câu thử.
+- Bằng chứng trả về UI đã qua kiểm tra quote của RAG. PDF upload mang nhãn chưa xác minh phiên bản, không mượn metadata Bộ luật Hình sự.
+
+## Giới hạn kiểm tra
+
+Chưa kiểm tra trực quan và thao tác trong Chrome vì quyền Accessibility/Screen Recording của công cụ điều khiển chưa được cấp. Kiểm tra HTTP và source không thay thế kiểm tra bố cục trong trình duyệt.
+
+PDF scan chưa hỗ trợ OCR; PDF upload dùng parent theo trang nên điều khoản qua nhiều trang có thể bị tách. Lịch sử chat chỉ ở tab và chưa có hội thoại nhiều lượt đưa vào prompt. Kiểm tra quote không bảo đảm mọi diễn giải pháp lý đều đúng.

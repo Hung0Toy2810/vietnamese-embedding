@@ -1,0 +1,89 @@
+{
+  "scope": "Eight frozen single-turn development checks, not a held-out benchmark or legal review.",
+  "result_file": "answers-final.json",
+  "result_sha256": "f2b5ffd8ce6a3248a2732eef40f90b3e17cb94a2df65531619a3e29c50656ccb",
+  "passed": 8,
+  "total": 8,
+  "cases": [
+    {
+      "id": "theft-overview",
+      "manual_verdict": "pass",
+      "reason": "All four ranges, noncustodial alternative, value thresholds, subthreshold conditions including antiques, OR alternatives and optional fine are covered. No life imprisonment or unrelated amendment claim.",
+      "evidence_atoms": [
+        13,
+        14,
+        15,
+        16,
+        20,
+        21
+      ],
+      "seconds": 115.82
+    },
+    {
+      "id": "theft-value",
+      "manual_verdict": "pass",
+      "reason": "300 million is within 200–under 500 million; the response gives the 7–15-year statutory range, not a predicted sentence.",
+      "evidence_atoms": [
+        16
+      ],
+      "seconds": 48.94
+    },
+    {
+      "id": "fraud-value",
+      "manual_verdict": "pass",
+      "reason": "600 million falls within the 500-million-or-more case: 12–20 years or life.",
+      "evidence_atoms": [
+        28
+      ],
+      "seconds": 56.73
+    },
+    {
+      "id": "trust-value",
+      "manual_verdict": "pass",
+      "reason": "The response correctly distinguishes the 5–12-year range from theft/fraud.",
+      "evidence_atoms": [
+        36
+      ],
+      "seconds": 68.77
+    },
+    {
+      "id": "theft-fine",
+      "manual_verdict": "pass",
+      "reason": "The optional 5–50-million fine is correctly attributed to theft, without adding other offenses’ fines.",
+      "evidence_atoms": [
+        21
+      ],
+      "seconds": 58.45
+    },
+    {
+      "id": "snatching-value",
+      "manual_verdict": "pass",
+      "reason": "60 million is within 50–under 200 million; the correct range is 3–10 years.",
+      "evidence_atoms": [
+        1
+      ],
+      "seconds": 55.92
+    },
+    {
+      "id": "absent-tax",
+      "manual_verdict": "pass",
+      "reason": "Refuses without an invented tax rate, with no evidence and the missing request explicitly recorded.",
+      "evidence_atoms": [],
+      "seconds": 56.26
+    },
+    {
+      "id": "absent-employment",
+      "manual_verdict": "pass",
+      "reason": "Refuses without an invented severance formula, with no evidence and the missing request explicitly recorded.",
+      "evidence_atoms": [],
+      "seconds": 55.18
+    }
+  ],
+  "review_method": "Manually compare conclusions, scope, thresholds, OR/modality and absence handling against frozen source text. Mechanically confirm exact source quotes and expected graph subject assignments.",
+  "runtime": {
+    "ollama": "0.40.6",
+    "model": "qwen3.5:9b",
+    "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "local_unified_memory_gib": 16
+  }
+}
