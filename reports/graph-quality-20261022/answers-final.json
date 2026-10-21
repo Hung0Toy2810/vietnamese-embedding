@@ -1,0 +1,2590 @@
+{
+  "document": {
+    "id": "83a918bbfe6cb68a1ae64a0f",
+    "name": "criminal-code-excerpt-pages-70-79.pdf",
+    "suffix": ".pdf",
+    "sha256": "83a918bbfe6cb68a1ae64a0f1bb159a3441bdef03c5372ede324f5ac88bcf697",
+    "size": 213306,
+    "pages": 10,
+    "text_pages": 10,
+    "status": "ready",
+    "message": "Ready for questions",
+    "active_version": "3cc79d8388c2449fbb90a9faf0bf0528",
+    "version": "83a918bbfe6c",
+    "warnings": [],
+    "builtin": false,
+    "created": 1792688416.208682,
+    "access_scope": "local",
+    "pending_version": null
+  },
+  "generation": {
+    "model": "qwen3.5:9b",
+    "reasoning": false,
+    "options": {
+      "temperature": 0.7,
+      "num_ctx": 16384,
+      "num_predict": -1,
+      "repeat_penalty": 1.0,
+      "presence_penalty": 1.5,
+      "frequency_penalty": 0.0,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0.0,
+      "seed": 42
+    },
+    "answer_prompt_sha256": "c5b529ce51684528c8aea9133765922818f866c203fcef36c38352b87c6b43a9"
+  },
+  "graph": {
+    "nodes": 79,
+    "semantic_edges": 60,
+    "grouping_edges": 59,
+    "navigation_edges": 1,
+    "isolated_nodes": 8
+  },
+  "cases": [
+    {
+      "id": "theft-overview",
+      "question": "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173.",
+      "gold_atoms": [
+        13,
+        14,
+        15,
+        16,
+        20,
+        21
+      ],
+      "expected": "All four custody ranges, noncustodial alternative, value thresholds, subthreshold conditions and optional fine of VND 5-50 million. Do not import life imprisonment or fines from fraud.",
+      "answerable": true,
+      "reranked_atoms": [
+        "44ae0f5a6c74c932acf444ea",
+        "94b164c58369eeab6363a27e",
+        "acac49455d07f41bfeb1c4ca",
+        "13cc45bd4f914dd32ce3586e",
+        "489f591412fa00e1db6974db",
+        "b3bca2d8e657490ac74b37e9",
+        "1c66ec11125bfed7db6bd07a",
+        "91fd1c4797fbff86c0278153",
+        "a978831f93f5599c201703aa",
+        "4c6c100be2771d986dff2d8e"
+      ],
+      "context_atoms": [
+        "0518572e4d3aecd9dc46b32d",
+        "05d66b9dff345f12431ebb7e",
+        "08ee55968bdf44bdb2f8e41a",
+        "13cc45bd4f914dd32ce3586e",
+        "1ac5687336af1e799941e2ca",
+        "1c66ec11125bfed7db6bd07a",
+        "2940bba551dc77c0eba2798b",
+        "2c287966e6ec7e3eac20cae3",
+        "2dedc82593a5c084b544e1ea",
+        "44ae0f5a6c74c932acf444ea",
+        "45b68dd0b65d5d469e6fd006",
+        "489f591412fa00e1db6974db",
+        "4a787b9e9a1de4a4686ada17",
+        "4c6c100be2771d986dff2d8e",
+        "51c24440fc228196ce592362",
+        "55b9c80d5c1c59848b475aed",
+        "57f317846677969ee393b9dd",
+        "57fd175d6f4e6c4aa0689239",
+        "5a5f4f6c5903bc19e7569cf2",
+        "5f54ee110d0f00d1e6d3ddce",
+        "6898ff33c1559fdc8980cded",
+        "69b714dc43c1ecf3644261cf",
+        "7055be2be7d878f0795776d8",
+        "7976b3eaf993379b54e693ab",
+        "7f997975d83bb247579406f4",
+        "8641953bb71bf834376bbbea",
+        "8c4fdac19815d930dae57e9f",
+        "91d6af6dd87f3a1f5cbf8be2",
+        "91fd1c4797fbff86c0278153",
+        "927b71cd71a9cabedf19f92f",
+        "94b164c58369eeab6363a27e",
+        "99f39d4f8e8c1ce15def55d9",
+        "a0e55a1f5d59ba44439e9ea8",
+        "a3500e525b939c1b3216451c",
+        "a3569d971aaf5c932f0970be",
+        "a978831f93f5599c201703aa",
+        "acac49455d07f41bfeb1c4ca",
+        "b3bca2d8e657490ac74b37e9",
+        "c2b5d250e5409b9cc75c875b",
+        "c97839e4ebdd6115263c2512",
+        "cdae59a512da11386d5d8a43",
+        "db8c10d1dd1ec5f3c8562c62",
+        "de5f057c02554d7df7441c74",
+        "e8528a77774c748970694464",
+        "f1a324fb04e226c1906279ec",
+        "fb1bd9bc71e95c7aad3822cd",
+        "fda330a9189f963d831245bf",
+        "ff2103fffc3127321afcabda"
+      ],
+      "gold_context_coverage": 1.0,
+      "result": {
+        "answer": "Tội trộm cắp tài sản trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp: đã bị xử phạt vi phạm hành chính về chiếm đoạt tài sản mà còn vi phạm; đã bị kết án về tội này hoặc các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 chưa được xóa án tích mà còn vi phạm; gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội; tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ; hoặc tài sản là di vật, cổ vật thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm. [Source 1]\n\nPhạm tội thuộc một trong các trường hợp: có tổ chức; có tính chất chuyên nghiệp; chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng; dùng thủ đoạn xảo quyệt, nguy hiểm; hành hung để tẩu thoát; tài sản là bảo vật quốc gia; hoặc tái phạm nguy hiểm thì bị phạt tù từ 02 năm đến 07 năm. [Source 1]\n\nPhạm tội thuộc một trong các trường hợp: chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng; hoặc lợi dụng thiên tai, dịch bệnh thì bị phạt tù từ 07 năm đến 15 năm. [Source 1]\n\nPhạm tội thuộc một trong các trường hợp: chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên; hoặc lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp thì bị phạt tù từ 12 năm đến 20 năm. [Source 1]\n\nNgoài hình phạt chính là phạt cải tạo không giam giữ hoặc phạt tù, người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng. [Source 1]",
+        "evidence": [
+          {
+            "source": 1,
+            "passage": 1,
+            "quote": "Tội trộm cắp tài sản\n94 Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\n"
+          },
+          {
+            "source": 1,
+            "passage": 2,
+            "quote": "đ) Tài sản là di vật, cổ vật."
+          },
+          {
+            "source": 1,
+            "passage": 3,
+            "quote": "95 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nDùng thủ đoạn xảo quyệt, nguy hiểm;\nđ) Hành hung để tẩu thoát;\nTài sản là bảo vật quốc gia;\nTái phạm nguy hiểm."
+          },
+          {
+            "source": 1,
+            "passage": 4,
+            "quote": "96 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nLợi dụng thiên tai, dịch bệnh."
+          },
+          {
+            "source": 1,
+            "passage": 8,
+            "quote": "97 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp."
+          },
+          {
+            "source": 1,
+            "passage": 9,
+            "quote": "Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng."
+          }
+        ],
+        "follow_up": [],
+        "parents": [
+          {
+            "id": "b202ae25f71f35efec2af7b3",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "atom_ids": [
+              "44ae0f5a6c74c932acf444ea",
+              "4a787b9e9a1de4a4686ada17",
+              "ff2103fffc3127321afcabda",
+              "55b9c80d5c1c59848b475aed",
+              "fb1bd9bc71e95c7aad3822cd",
+              "57fd175d6f4e6c4aa0689239",
+              "8c4fdac19815d930dae57e9f",
+              "f1a324fb04e226c1906279ec",
+              "a3569d971aaf5c932f0970be"
+            ],
+            "passages": [
+              "Tội trộm cắp tài sản\n94 Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\n",
+              "đ) Tài sản là di vật, cổ vật.",
+              "95 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nDùng thủ đoạn xảo quyệt, nguy hiểm;\nđ) Hành hung để tẩu thoát;\nTài sản là bảo vật quốc gia;\nTái phạm nguy hiểm.",
+              "96 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nLợi dụng thiên tai, dịch bệnh.",
+              "94 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "95 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "96 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "97 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+              "Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng."
+            ],
+            "text": "Tội trộm cắp tài sản\n94 Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\n\n\nđ) Tài sản là di vật, cổ vật.\n\n95 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nDùng thủ đoạn xảo quyệt, nguy hiểm;\nđ) Hành hung để tẩu thoát;\nTài sản là bảo vật quốc gia;\nTái phạm nguy hiểm.\n\n96 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nLợi dụng thiên tai, dịch bệnh.\n\n94 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n95 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n96 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n97 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n\nNgười phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng.",
+            "spans": [
+              {
+                "start": 3836,
+                "end": 3856,
+                "page": 3,
+                "locator": "#/texts/52"
+              },
+              {
+                "start": 3857,
+                "end": 4106,
+                "page": 3,
+                "locator": "#/texts/53"
+              },
+              {
+                "start": 4107,
+                "end": 4185,
+                "page": 3,
+                "locator": "#/texts/54"
+              },
+              {
+                "start": 4186,
+                "end": 4353,
+                "page": 3,
+                "locator": "#/texts/55"
+              },
+              {
+                "start": 4354,
+                "end": 4409,
+                "page": 3,
+                "locator": "#/texts/56"
+              },
+              {
+                "start": 4410,
+                "end": 4481,
+                "page": 3,
+                "locator": "#/texts/57"
+              },
+              {
+                "start": 4482,
+                "end": 4511,
+                "page": 3,
+                "locator": "#/texts/58"
+              },
+              {
+                "start": 4512,
+                "end": 4600,
+                "page": 3,
+                "locator": "#/texts/59"
+              },
+              {
+                "start": 4601,
+                "end": 4612,
+                "page": 3,
+                "locator": "#/texts/60"
+              },
+              {
+                "start": 4613,
+                "end": 4640,
+                "page": 3,
+                "locator": "#/texts/61"
+              },
+              {
+                "start": 4641,
+                "end": 4713,
+                "page": 3,
+                "locator": "#/texts/62"
+              },
+              {
+                "start": 4714,
+                "end": 4749,
+                "page": 3,
+                "locator": "#/texts/63"
+              },
+              {
+                "start": 4750,
+                "end": 4776,
+                "page": 3,
+                "locator": "#/texts/64"
+              },
+              {
+                "start": 4777,
+                "end": 4805,
+                "page": 3,
+                "locator": "#/texts/65"
+              },
+              {
+                "start": 4806,
+                "end": 4825,
+                "page": 3,
+                "locator": "#/texts/66"
+              },
+              {
+                "start": 4826,
+                "end": 4914,
+                "page": 3,
+                "locator": "#/texts/67"
+              },
+              {
+                "start": 4915,
+                "end": 4988,
+                "page": 3,
+                "locator": "#/texts/68"
+              },
+              {
+                "start": 4989,
+                "end": 5019,
+                "page": 3,
+                "locator": "#/texts/69"
+              },
+              {
+                "start": 5020,
+                "end": 5225,
+                "page": 3,
+                "locator": "#/texts/70"
+              },
+              {
+                "start": 5226,
+                "end": 5431,
+                "page": 3,
+                "locator": "#/texts/71"
+              },
+              {
+                "start": 5432,
+                "end": 5637,
+                "page": 3,
+                "locator": "#/texts/72"
+              },
+              {
+                "start": 5638,
+                "end": 5726,
+                "page": 4,
+                "locator": "#/texts/74"
+              },
+              {
+                "start": 5727,
+                "end": 5779,
+                "page": 4,
+                "locator": "#/texts/75"
+              },
+              {
+                "start": 5780,
+                "end": 5832,
+                "page": 4,
+                "locator": "#/texts/76"
+              },
+              {
+                "start": 5833,
+                "end": 5910,
+                "page": 4,
+                "locator": "#/texts/77"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "44ae0f5a6c74c932acf444ea",
+                "opening": "Tội trộm cắp tài sản 94 Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp s"
+              }
+            ]
+          }
+        ],
+        "mindmap": null,
+        "steps": [
+          {
+            "tool": "search_documents",
+            "input": "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173."
+          },
+          {
+            "tool": "read_section",
+            "input": "b202ae25f71f35efec2af7b3"
+          }
+        ],
+        "coverage": {
+          "requested": [
+            "khung hình phạt",
+            "điều kiện đáng chú ý",
+            "hình phạt bổ sung"
+          ],
+          "unsupported": []
+        }
+      },
+      "gold_read_coverage": 1.0,
+      "seconds": 115.82
+    },
+    {
+      "id": "theft-value",
+      "question": "Chỉ xét tình tiết giá trị tài sản trong Điều 173: trộm cắp 300 triệu đồng thuộc khung phạt tù nào? Không suy đoán mức án cụ thể.",
+      "gold_atoms": [
+        13,
+        16
+      ],
+      "expected": "7-15 years under Article 173; a statutory range, not a predicted sentence.",
+      "answerable": true,
+      "reranked_atoms": [
+        "44ae0f5a6c74c932acf444ea",
+        "13cc45bd4f914dd32ce3586e",
+        "91fd1c4797fbff86c0278153",
+        "b3bca2d8e657490ac74b37e9",
+        "e052f4e5b9d785b31f73f8c2",
+        "4c6c100be2771d986dff2d8e",
+        "1c66ec11125bfed7db6bd07a",
+        "cdae59a512da11386d5d8a43",
+        "ff2103fffc3127321afcabda",
+        "2dedc82593a5c084b544e1ea"
+      ],
+      "context_atoms": [
+        "05d66b9dff345f12431ebb7e",
+        "08ee55968bdf44bdb2f8e41a",
+        "13cc45bd4f914dd32ce3586e",
+        "1ac5687336af1e799941e2ca",
+        "1c66ec11125bfed7db6bd07a",
+        "2709d051873f62763e35feac",
+        "2940bba551dc77c0eba2798b",
+        "2c287966e6ec7e3eac20cae3",
+        "2c8bbebcab4597091d55ffa5",
+        "2dedc82593a5c084b544e1ea",
+        "44ae0f5a6c74c932acf444ea",
+        "489f591412fa00e1db6974db",
+        "4a787b9e9a1de4a4686ada17",
+        "4c6c100be2771d986dff2d8e",
+        "55b9c80d5c1c59848b475aed",
+        "57f317846677969ee393b9dd",
+        "57fd175d6f4e6c4aa0689239",
+        "5f54ee110d0f00d1e6d3ddce",
+        "6d147b14f46d4d398a099644",
+        "7055be2be7d878f0795776d8",
+        "725749ff513422b8ff452701",
+        "7976b3eaf993379b54e693ab",
+        "7c1756607b4cb45da3a8d166",
+        "8641953bb71bf834376bbbea",
+        "8c4fdac19815d930dae57e9f",
+        "91fd1c4797fbff86c0278153",
+        "94b164c58369eeab6363a27e",
+        "99f39d4f8e8c1ce15def55d9",
+        "a0e55a1f5d59ba44439e9ea8",
+        "a3500e525b939c1b3216451c",
+        "a3569d971aaf5c932f0970be",
+        "acac49455d07f41bfeb1c4ca",
+        "b3bca2d8e657490ac74b37e9",
+        "c2b5d250e5409b9cc75c875b",
+        "c97839e4ebdd6115263c2512",
+        "cd721b5fc9b3758d97436108",
+        "cdae59a512da11386d5d8a43",
+        "db8c10d1dd1ec5f3c8562c62",
+        "de5f057c02554d7df7441c74",
+        "e052f4e5b9d785b31f73f8c2",
+        "e7ed021ba5ecba54a509f39f",
+        "e8528a77774c748970694464",
+        "f1a324fb04e226c1906279ec",
+        "fb1bd9bc71e95c7aad3822cd",
+        "fda330a9189f963d831245bf",
+        "ff2103fffc3127321afcabda"
+      ],
+      "gold_context_coverage": 1.0,
+      "result": {
+        "answer": "Trộm cắp tài sản trị giá 300 triệu đồng thuộc khung phạt tù từ 07 năm đến 15 năm. [Source 1]",
+        "evidence": [
+          {
+            "source": 1,
+            "passage": 4,
+            "quote": "96 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nLợi dụng thiên tai, dịch bệnh."
+          }
+        ],
+        "follow_up": [],
+        "parents": [
+          {
+            "id": "b202ae25f71f35efec2af7b3",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "atom_ids": [
+              "44ae0f5a6c74c932acf444ea",
+              "4a787b9e9a1de4a4686ada17",
+              "ff2103fffc3127321afcabda",
+              "55b9c80d5c1c59848b475aed",
+              "fb1bd9bc71e95c7aad3822cd",
+              "57fd175d6f4e6c4aa0689239",
+              "8c4fdac19815d930dae57e9f",
+              "f1a324fb04e226c1906279ec",
+              "a3569d971aaf5c932f0970be"
+            ],
+            "passages": [
+              "Tội trộm cắp tài sản\n94 Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\n",
+              "đ) Tài sản là di vật, cổ vật.",
+              "95 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nDùng thủ đoạn xảo quyệt, nguy hiểm;\nđ) Hành hung để tẩu thoát;\nTài sản là bảo vật quốc gia;\nTái phạm nguy hiểm.",
+              "96 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nLợi dụng thiên tai, dịch bệnh.",
+              "94 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "95 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "96 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "97 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+              "Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng."
+            ],
+            "text": "Tội trộm cắp tài sản\n94 Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\n\n\nđ) Tài sản là di vật, cổ vật.\n\n95 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nDùng thủ đoạn xảo quyệt, nguy hiểm;\nđ) Hành hung để tẩu thoát;\nTài sản là bảo vật quốc gia;\nTái phạm nguy hiểm.\n\n96 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nLợi dụng thiên tai, dịch bệnh.\n\n94 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n95 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n96 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n97 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n\nNgười phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng.",
+            "spans": [
+              {
+                "start": 3836,
+                "end": 3856,
+                "page": 3,
+                "locator": "#/texts/52"
+              },
+              {
+                "start": 3857,
+                "end": 4106,
+                "page": 3,
+                "locator": "#/texts/53"
+              },
+              {
+                "start": 4107,
+                "end": 4185,
+                "page": 3,
+                "locator": "#/texts/54"
+              },
+              {
+                "start": 4186,
+                "end": 4353,
+                "page": 3,
+                "locator": "#/texts/55"
+              },
+              {
+                "start": 4354,
+                "end": 4409,
+                "page": 3,
+                "locator": "#/texts/56"
+              },
+              {
+                "start": 4410,
+                "end": 4481,
+                "page": 3,
+                "locator": "#/texts/57"
+              },
+              {
+                "start": 4482,
+                "end": 4511,
+                "page": 3,
+                "locator": "#/texts/58"
+              },
+              {
+                "start": 4512,
+                "end": 4600,
+                "page": 3,
+                "locator": "#/texts/59"
+              },
+              {
+                "start": 4601,
+                "end": 4612,
+                "page": 3,
+                "locator": "#/texts/60"
+              },
+              {
+                "start": 4613,
+                "end": 4640,
+                "page": 3,
+                "locator": "#/texts/61"
+              },
+              {
+                "start": 4641,
+                "end": 4713,
+                "page": 3,
+                "locator": "#/texts/62"
+              },
+              {
+                "start": 4714,
+                "end": 4749,
+                "page": 3,
+                "locator": "#/texts/63"
+              },
+              {
+                "start": 4750,
+                "end": 4776,
+                "page": 3,
+                "locator": "#/texts/64"
+              },
+              {
+                "start": 4777,
+                "end": 4805,
+                "page": 3,
+                "locator": "#/texts/65"
+              },
+              {
+                "start": 4806,
+                "end": 4825,
+                "page": 3,
+                "locator": "#/texts/66"
+              },
+              {
+                "start": 4826,
+                "end": 4914,
+                "page": 3,
+                "locator": "#/texts/67"
+              },
+              {
+                "start": 4915,
+                "end": 4988,
+                "page": 3,
+                "locator": "#/texts/68"
+              },
+              {
+                "start": 4989,
+                "end": 5019,
+                "page": 3,
+                "locator": "#/texts/69"
+              },
+              {
+                "start": 5020,
+                "end": 5225,
+                "page": 3,
+                "locator": "#/texts/70"
+              },
+              {
+                "start": 5226,
+                "end": 5431,
+                "page": 3,
+                "locator": "#/texts/71"
+              },
+              {
+                "start": 5432,
+                "end": 5637,
+                "page": 3,
+                "locator": "#/texts/72"
+              },
+              {
+                "start": 5638,
+                "end": 5726,
+                "page": 4,
+                "locator": "#/texts/74"
+              },
+              {
+                "start": 5727,
+                "end": 5779,
+                "page": 4,
+                "locator": "#/texts/75"
+              },
+              {
+                "start": 5780,
+                "end": 5832,
+                "page": 4,
+                "locator": "#/texts/76"
+              },
+              {
+                "start": 5833,
+                "end": 5910,
+                "page": 4,
+                "locator": "#/texts/77"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "44ae0f5a6c74c932acf444ea",
+                "opening": "Tội trộm cắp tài sản 94 Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp s"
+              }
+            ]
+          }
+        ],
+        "mindmap": null,
+        "steps": [
+          {
+            "tool": "search_documents",
+            "input": "Chỉ xét tình tiết giá trị tài sản trong Điều 173: trộm cắp 300 triệu đồng thuộc khung phạt tù nào? Không suy đoán mức án cụ thể."
+          },
+          {
+            "tool": "read_section",
+            "input": "b202ae25f71f35efec2af7b3"
+          }
+        ],
+        "coverage": {
+          "requested": [
+            "phạm vi áp dụng",
+            "mức phạt"
+          ],
+          "unsupported": []
+        }
+      },
+      "gold_read_coverage": 1.0,
+      "seconds": 48.94
+    },
+    {
+      "id": "fraud-value",
+      "question": "Theo Điều 174 trong tài liệu, gian dối chiếm đoạt 600 triệu đồng thuộc khung phạt tù nào?",
+      "gold_atoms": [
+        22,
+        28
+      ],
+      "expected": "12-20 years or life imprisonment; do not confuse with theft.",
+      "answerable": true,
+      "reranked_atoms": [
+        "2709d051873f62763e35feac",
+        "4c6c100be2771d986dff2d8e",
+        "489f591412fa00e1db6974db",
+        "e052f4e5b9d785b31f73f8c2",
+        "13cc45bd4f914dd32ce3586e",
+        "cdae59a512da11386d5d8a43",
+        "b3bca2d8e657490ac74b37e9",
+        "2dedc82593a5c084b544e1ea",
+        "1c66ec11125bfed7db6bd07a",
+        "57f317846677969ee393b9dd"
+      ],
+      "context_atoms": [
+        "05d66b9dff345f12431ebb7e",
+        "13cc45bd4f914dd32ce3586e",
+        "1ac5687336af1e799941e2ca",
+        "1c66ec11125bfed7db6bd07a",
+        "2709d051873f62763e35feac",
+        "2c8bbebcab4597091d55ffa5",
+        "2dedc82593a5c084b544e1ea",
+        "489f591412fa00e1db6974db",
+        "4c6c100be2771d986dff2d8e",
+        "57f317846677969ee393b9dd",
+        "5f54ee110d0f00d1e6d3ddce",
+        "6d147b14f46d4d398a099644",
+        "725749ff513422b8ff452701",
+        "7976b3eaf993379b54e693ab",
+        "7c1756607b4cb45da3a8d166",
+        "8641953bb71bf834376bbbea",
+        "94b164c58369eeab6363a27e",
+        "99f39d4f8e8c1ce15def55d9",
+        "a3500e525b939c1b3216451c",
+        "acac49455d07f41bfeb1c4ca",
+        "b3bca2d8e657490ac74b37e9",
+        "c2b5d250e5409b9cc75c875b",
+        "c97839e4ebdd6115263c2512",
+        "cd721b5fc9b3758d97436108",
+        "cdae59a512da11386d5d8a43",
+        "db8c10d1dd1ec5f3c8562c62",
+        "e052f4e5b9d785b31f73f8c2",
+        "e7ed021ba5ecba54a509f39f",
+        "e8528a77774c748970694464",
+        "fda330a9189f963d831245bf"
+      ],
+      "gold_context_coverage": 1.0,
+      "result": {
+        "answer": "Gian dối chiếm đoạt 600 triệu đồng thuộc khung phạt tù từ 12 năm đến 20 năm hoặc tù chung thân. [Source 1]",
+        "evidence": [
+          {
+            "source": 1,
+            "passage": 7,
+            "quote": "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\n101 (được bãi bỏ)\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp."
+          }
+        ],
+        "follow_up": [],
+        "parents": [
+          {
+            "id": "83b055f792ccff746cbf64cd",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "atom_ids": [
+              "2709d051873f62763e35feac",
+              "7c1756607b4cb45da3a8d166",
+              "6d147b14f46d4d398a099644",
+              "e7ed021ba5ecba54a509f39f",
+              "725749ff513422b8ff452701",
+              "2c8bbebcab4597091d55ffa5",
+              "e052f4e5b9d785b31f73f8c2",
+              "cd721b5fc9b3758d97436108"
+            ],
+            "passages": [
+              "Điều 174. Tội lừa đảo chiếm đoạt tài sản\nNgười nào bằng thủ đoạn gian dối chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 173, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\n",
+              "Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ 98 .",
+              "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nTái phạm nguy hiểm;\nđ) Lợi dụng chức vụ, quyền hạn hoặc lợi dụng danh nghĩa cơ quan, tổ chức;\nDùng thủ đoạn xảo quyệt;\n99 (được bãi bỏ)\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\n97 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "98 Cụm từ \"; tài sản là kỷ vật, di vật, đồ thờ cúng có giá trị đặc biệt về mặt tinh thần đối với người bị hại\" được bãi bỏ theo quy định tại điểm a khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "99 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\n100 (được bãi bỏ)\nLợi dụng thiên tai, dịch bệnh.",
+              "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\n101 (được bãi bỏ)\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+              "Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản."
+            ],
+            "text": "Điều 174. Tội lừa đảo chiếm đoạt tài sản\nNgười nào bằng thủ đoạn gian dối chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 173, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\n\n\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ 98 .\n\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nTái phạm nguy hiểm;\nđ) Lợi dụng chức vụ, quyền hạn hoặc lợi dụng danh nghĩa cơ quan, tổ chức;\nDùng thủ đoạn xảo quyệt;\n99 (được bãi bỏ)\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\n97 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n98 Cụm từ \"; tài sản là kỷ vật, di vật, đồ thờ cúng có giá trị đặc biệt về mặt tinh thần đối với người bị hại\" được bãi bỏ theo quy định tại điểm a khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n99 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\n100 (được bãi bỏ)\nLợi dụng thiên tai, dịch bệnh.\n\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\n101 (được bãi bỏ)\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n\nNgười phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản.",
+            "spans": [
+              {
+                "start": 5911,
+                "end": 5951,
+                "page": 4,
+                "locator": "#/texts/78"
+              },
+              {
+                "start": 5952,
+                "end": 6223,
+                "page": 4,
+                "locator": "#/texts/79"
+              },
+              {
+                "start": 6224,
+                "end": 6302,
+                "page": 4,
+                "locator": "#/texts/80"
+              },
+              {
+                "start": 6303,
+                "end": 6470,
+                "page": 4,
+                "locator": "#/texts/81"
+              },
+              {
+                "start": 6471,
+                "end": 6526,
+                "page": 4,
+                "locator": "#/texts/82"
+              },
+              {
+                "start": 6527,
+                "end": 6602,
+                "page": 4,
+                "locator": "#/texts/83"
+              },
+              {
+                "start": 6603,
+                "end": 6688,
+                "page": 4,
+                "locator": "#/texts/84"
+              },
+              {
+                "start": 6689,
+                "end": 6700,
+                "page": 4,
+                "locator": "#/texts/85"
+              },
+              {
+                "start": 6701,
+                "end": 6728,
+                "page": 4,
+                "locator": "#/texts/86"
+              },
+              {
+                "start": 6729,
+                "end": 6801,
+                "page": 4,
+                "locator": "#/texts/87"
+              },
+              {
+                "start": 6802,
+                "end": 6821,
+                "page": 4,
+                "locator": "#/texts/88"
+              },
+              {
+                "start": 6822,
+                "end": 6895,
+                "page": 4,
+                "locator": "#/texts/89"
+              },
+              {
+                "start": 6896,
+                "end": 6920,
+                "page": 4,
+                "locator": "#/texts/90"
+              },
+              {
+                "start": 6921,
+                "end": 6937,
+                "page": 4,
+                "locator": "#/texts/91"
+              },
+              {
+                "start": 6938,
+                "end": 7023,
+                "page": 4,
+                "locator": "#/texts/92"
+              },
+              {
+                "start": 7024,
+                "end": 7229,
+                "page": 4,
+                "locator": "#/texts/93"
+              },
+              {
+                "start": 7230,
+                "end": 7529,
+                "page": 4,
+                "locator": "#/texts/94"
+              },
+              {
+                "start": 7530,
+                "end": 7730,
+                "page": 4,
+                "locator": "#/texts/95"
+              },
+              {
+                "start": 7731,
+                "end": 7804,
+                "page": 5,
+                "locator": "#/texts/97"
+              },
+              {
+                "start": 7805,
+                "end": 7822,
+                "page": 5,
+                "locator": "#/texts/98"
+              },
+              {
+                "start": 7823,
+                "end": 7853,
+                "page": 5,
+                "locator": "#/texts/99"
+              },
+              {
+                "start": 7854,
+                "end": 7958,
+                "page": 5,
+                "locator": "#/texts/100"
+              },
+              {
+                "start": 7959,
+                "end": 8011,
+                "page": 5,
+                "locator": "#/texts/101"
+              },
+              {
+                "start": 8012,
+                "end": 8029,
+                "page": 5,
+                "locator": "#/texts/102"
+              },
+              {
+                "start": 8030,
+                "end": 8082,
+                "page": 5,
+                "locator": "#/texts/103"
+              },
+              {
+                "start": 8083,
+                "end": 8294,
+                "page": 5,
+                "locator": "#/texts/104"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "2709d051873f62763e35feac",
+                "opening": "Điều 174. Tội lừa đảo chiếm đoạt tài sản Người nào bằng thủ đoạn gian dối chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đ"
+              }
+            ]
+          }
+        ],
+        "mindmap": null,
+        "steps": [
+          {
+            "tool": "search_documents",
+            "input": "Theo Điều 174 trong tài liệu, gian dối chiếm đoạt 600 triệu đồng thuộc khung phạt tù nào?"
+          },
+          {
+            "tool": "read_section",
+            "input": "83b055f792ccff746cbf64cd"
+          }
+        ],
+        "coverage": {
+          "requested": [
+            "khung phạt tù"
+          ],
+          "unsupported": []
+        }
+      },
+      "gold_read_coverage": 1.0,
+      "seconds": 56.73
+    },
+    {
+      "id": "trust-value",
+      "question": "Theo Điều 175, riêng trường hợp lạm dụng tín nhiệm chiếm đoạt tài sản trị giá 300 triệu đồng có khung phạt tù nào?",
+      "gold_atoms": [
+        30,
+        36
+      ],
+      "expected": "5-12 years, not 7-15 years from theft or fraud.",
+      "answerable": true,
+      "reranked_atoms": [
+        "c2b5d250e5409b9cc75c875b",
+        "4c6c100be2771d986dff2d8e",
+        "e052f4e5b9d785b31f73f8c2",
+        "489f591412fa00e1db6974db",
+        "cdae59a512da11386d5d8a43",
+        "13cc45bd4f914dd32ce3586e",
+        "2dedc82593a5c084b544e1ea",
+        "6d147b14f46d4d398a099644",
+        "2709d051873f62763e35feac",
+        "57f317846677969ee393b9dd"
+      ],
+      "context_atoms": [
+        "05d66b9dff345f12431ebb7e",
+        "13cc45bd4f914dd32ce3586e",
+        "1ac5687336af1e799941e2ca",
+        "1c66ec11125bfed7db6bd07a",
+        "2709d051873f62763e35feac",
+        "2c8bbebcab4597091d55ffa5",
+        "2dedc82593a5c084b544e1ea",
+        "489f591412fa00e1db6974db",
+        "4c6c100be2771d986dff2d8e",
+        "57f317846677969ee393b9dd",
+        "5f54ee110d0f00d1e6d3ddce",
+        "6d147b14f46d4d398a099644",
+        "725749ff513422b8ff452701",
+        "7976b3eaf993379b54e693ab",
+        "7c1756607b4cb45da3a8d166",
+        "8641953bb71bf834376bbbea",
+        "94b164c58369eeab6363a27e",
+        "99f39d4f8e8c1ce15def55d9",
+        "a3500e525b939c1b3216451c",
+        "acac49455d07f41bfeb1c4ca",
+        "b3bca2d8e657490ac74b37e9",
+        "c2b5d250e5409b9cc75c875b",
+        "c97839e4ebdd6115263c2512",
+        "cd721b5fc9b3758d97436108",
+        "cdae59a512da11386d5d8a43",
+        "db8c10d1dd1ec5f3c8562c62",
+        "e052f4e5b9d785b31f73f8c2",
+        "e7ed021ba5ecba54a509f39f",
+        "e8528a77774c748970694464",
+        "fda330a9189f963d831245bf"
+      ],
+      "gold_context_coverage": 1.0,
+      "result": {
+        "answer": "Theo Điều 175, trường hợp lạm dụng tín nhiệm chiếm đoạt tài sản trị giá 300 triệu đồng thuộc khung phạt tù từ 05 năm đến 12 năm. [Source 1]",
+        "evidence": [
+          {
+            "source": 1,
+            "passage": 7,
+            "quote": "Phạm tội chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng, thì bị phạt tù từ 05 năm đến 12 năm."
+          }
+        ],
+        "follow_up": [],
+        "parents": [
+          {
+            "id": "9bab9d06e9fb2a0faa0787db",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "atom_ids": [
+              "c2b5d250e5409b9cc75c875b",
+              "db8c10d1dd1ec5f3c8562c62",
+              "05d66b9dff345f12431ebb7e",
+              "99f39d4f8e8c1ce15def55d9",
+              "1ac5687336af1e799941e2ca",
+              "8641953bb71bf834376bbbea",
+              "13cc45bd4f914dd32ce3586e",
+              "b3bca2d8e657490ac74b37e9",
+              "a3500e525b939c1b3216451c"
+            ],
+            "passages": [
+              "Điều 175. Tội lạm dụng tín nhiệm chiếm đoạt tài sản 102\nNgười nào thực hiện một trong các hành vi sau đây chiếm đoạt tài sản của người khác trị giá từ 4.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 4.000.000 đồng nhưng đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản hoặc đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 173, 174 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm hoặc tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nVay, mượn, thuê tài sản của người khác hoặc nhận được tài sản của người khác bằng hình thức",
+              "hợp đồng rồi dùng thủ đoạn gian dối hoặc bỏ trốn để chiếm đoạt tài sản đó hoặc đến thời hạn trả lại tài sản mặc dù có điều kiện, khả năng nhưng cố tình không trả;\nVay, mượn, thuê tài sản của người khác hoặc nhận được tài sản của người khác bằng hình thức hợp đồng và đã sử dụng tài sản đó vào mục đích bất hợp pháp dẫn đến không có khả năng trả lại tài sản.",
+              "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\n100 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "101 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "102 Điều này được sửa đổi, bổ sung theo quy định tại khoản 35 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "Có tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nLợi dụng chức vụ, quyền hạn hoặc lợi dụng danh nghĩa cơ quan, tổ chức;\nđ) Dùng thủ đoạn xảo quyệt;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTái phạm nguy hiểm.",
+              "Phạm tội chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng, thì bị phạt tù từ 05 năm đến 12 năm.",
+              "Phạm tội chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên, thì bị phạt tù từ 12 năm đến 20 năm.",
+              "Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản."
+            ],
+            "text": "Điều 175. Tội lạm dụng tín nhiệm chiếm đoạt tài sản 102\nNgười nào thực hiện một trong các hành vi sau đây chiếm đoạt tài sản của người khác trị giá từ 4.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 4.000.000 đồng nhưng đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản hoặc đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 173, 174 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm hoặc tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nVay, mượn, thuê tài sản của người khác hoặc nhận được tài sản của người khác bằng hình thức\n\nhợp đồng rồi dùng thủ đoạn gian dối hoặc bỏ trốn để chiếm đoạt tài sản đó hoặc đến thời hạn trả lại tài sản mặc dù có điều kiện, khả năng nhưng cố tình không trả;\nVay, mượn, thuê tài sản của người khác hoặc nhận được tài sản của người khác bằng hình thức hợp đồng và đã sử dụng tài sản đó vào mục đích bất hợp pháp dẫn đến không có khả năng trả lại tài sản.\n\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\n100 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n101 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n102 Điều này được sửa đổi, bổ sung theo quy định tại khoản 35 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nLợi dụng chức vụ, quyền hạn hoặc lợi dụng danh nghĩa cơ quan, tổ chức;\nđ) Dùng thủ đoạn xảo quyệt;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTái phạm nguy hiểm.\n\nPhạm tội chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng, thì bị phạt tù từ 05 năm đến 12 năm.\n\nPhạm tội chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên, thì bị phạt tù từ 12 năm đến 20 năm.\n\nNgười phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản.",
+            "spans": [
+              {
+                "start": 8295,
+                "end": 8350,
+                "page": 5,
+                "locator": "#/texts/105"
+              },
+              {
+                "start": 8351,
+                "end": 8911,
+                "page": 5,
+                "locator": "#/texts/106"
+              },
+              {
+                "start": 8912,
+                "end": 9003,
+                "page": 5,
+                "locator": "#/texts/107"
+              },
+              {
+                "start": 9004,
+                "end": 9166,
+                "page": 5,
+                "locator": "#/texts/107"
+              },
+              {
+                "start": 9167,
+                "end": 9361,
+                "page": 5,
+                "locator": "#/texts/108"
+              },
+              {
+                "start": 9362,
+                "end": 9447,
+                "page": 5,
+                "locator": "#/texts/109"
+              },
+              {
+                "start": 9448,
+                "end": 9459,
+                "page": 5,
+                "locator": "#/texts/110"
+              },
+              {
+                "start": 9460,
+                "end": 9661,
+                "page": 5,
+                "locator": "#/texts/111"
+              },
+              {
+                "start": 9662,
+                "end": 9863,
+                "page": 5,
+                "locator": "#/texts/112"
+              },
+              {
+                "start": 9864,
+                "end": 10069,
+                "page": 5,
+                "locator": "#/texts/113"
+              },
+              {
+                "start": 10070,
+                "end": 10097,
+                "page": 6,
+                "locator": "#/texts/115"
+              },
+              {
+                "start": 10098,
+                "end": 10170,
+                "page": 6,
+                "locator": "#/texts/116"
+              },
+              {
+                "start": 10171,
+                "end": 10241,
+                "page": 6,
+                "locator": "#/texts/117"
+              },
+              {
+                "start": 10242,
+                "end": 10269,
+                "page": 6,
+                "locator": "#/texts/118"
+              },
+              {
+                "start": 10270,
+                "end": 10325,
+                "page": 6,
+                "locator": "#/texts/119"
+              },
+              {
+                "start": 10326,
+                "end": 10345,
+                "page": 6,
+                "locator": "#/texts/120"
+              },
+              {
+                "start": 10346,
+                "end": 10465,
+                "page": 6,
+                "locator": "#/texts/121"
+              },
+              {
+                "start": 10466,
+                "end": 10564,
+                "page": 6,
+                "locator": "#/texts/122"
+              },
+              {
+                "start": 10565,
+                "end": 10776,
+                "page": 6,
+                "locator": "#/texts/123"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "c2b5d250e5409b9cc75c875b",
+                "opening": "Điều 175. Tội lạm dụng tín nhiệm chiếm đoạt tài sản 102 Người nào thực hiện một trong các hành vi sau đây chiếm đoạt tài sản của người khác trị giá từ 4.000.000 đồng đến dưới 50.00"
+              }
+            ]
+          },
+          {
+            "id": "c2b5d250e5409b9cc75c875b",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "atom_ids": [
+              "c2b5d250e5409b9cc75c875b"
+            ],
+            "passages": [
+              "Điều 175. Tội lạm dụng tín nhiệm chiếm đoạt tài sản 102\nNgười nào thực hiện một trong các hành vi sau đây chiếm đoạt tài sản của người khác trị giá từ 4.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 4.000.000 đồng nhưng đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản hoặc đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 173, 174 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm hoặc tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nVay, mượn, thuê tài sản của người khác hoặc nhận được tài sản của người khác bằng hình thức"
+            ],
+            "text": "Điều 175. Tội lạm dụng tín nhiệm chiếm đoạt tài sản 102\nNgười nào thực hiện một trong các hành vi sau đây chiếm đoạt tài sản của người khác trị giá từ 4.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 4.000.000 đồng nhưng đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản hoặc đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 173, 174 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm hoặc tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nVay, mượn, thuê tài sản của người khác hoặc nhận được tài sản của người khác bằng hình thức",
+            "spans": [
+              {
+                "start": 8295,
+                "end": 8350,
+                "page": 5,
+                "locator": "#/texts/105"
+              },
+              {
+                "start": 8351,
+                "end": 8911,
+                "page": 5,
+                "locator": "#/texts/106"
+              },
+              {
+                "start": 8912,
+                "end": 9003,
+                "page": 5,
+                "locator": "#/texts/107"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "c2b5d250e5409b9cc75c875b",
+                "opening": "Điều 175. Tội lạm dụng tín nhiệm chiếm đoạt tài sản 102 Người nào thực hiện một trong các hành vi sau đây chiếm đoạt tài sản của người khác trị giá từ 4.000.000 đồng đến dưới 50.00"
+              }
+            ]
+          }
+        ],
+        "mindmap": null,
+        "steps": [
+          {
+            "tool": "search_documents",
+            "input": "Theo Điều 175, riêng trường hợp lạm dụng tín nhiệm chiếm đoạt tài sản trị giá 300 triệu đồng có khung phạt tù nào?"
+          },
+          {
+            "tool": "read_section",
+            "input": "9bab9d06e9fb2a0faa0787db"
+          },
+          {
+            "tool": "read_section",
+            "input": "c2b5d250e5409b9cc75c875b"
+          }
+        ],
+        "coverage": {
+          "requested": [
+            "Khung phạt tù cho trường hợp chiếm đoạt tài sản trị giá 300 triệu đồng"
+          ],
+          "unsupported": []
+        }
+      },
+      "gold_read_coverage": 1.0,
+      "seconds": 68.77
+    },
+    {
+      "id": "theft-fine",
+      "question": "Ngoài hình phạt chính, Điều 173 quy định người phạm tội trộm cắp tài sản còn có thể bị phạt tiền bao nhiêu?",
+      "gold_atoms": [
+        13,
+        21
+      ],
+      "expected": "Optional fine VND 5-50 million, not mandatory and not VND 10-100 million.",
+      "answerable": true,
+      "reranked_atoms": [
+        "94b164c58369eeab6363a27e",
+        "44ae0f5a6c74c932acf444ea",
+        "a3500e525b939c1b3216451c",
+        "cd721b5fc9b3758d97436108",
+        "fda330a9189f963d831245bf",
+        "a3569d971aaf5c932f0970be",
+        "7976b3eaf993379b54e693ab",
+        "489f591412fa00e1db6974db",
+        "45b68dd0b65d5d469e6fd006",
+        "a0e55a1f5d59ba44439e9ea8"
+      ],
+      "context_atoms": [
+        "0518572e4d3aecd9dc46b32d",
+        "05d66b9dff345f12431ebb7e",
+        "08ee55968bdf44bdb2f8e41a",
+        "13cc45bd4f914dd32ce3586e",
+        "1ac5687336af1e799941e2ca",
+        "1c66ec11125bfed7db6bd07a",
+        "2709d051873f62763e35feac",
+        "2940bba551dc77c0eba2798b",
+        "2c287966e6ec7e3eac20cae3",
+        "2c8bbebcab4597091d55ffa5",
+        "2dedc82593a5c084b544e1ea",
+        "44ae0f5a6c74c932acf444ea",
+        "45b68dd0b65d5d469e6fd006",
+        "489f591412fa00e1db6974db",
+        "4a787b9e9a1de4a4686ada17",
+        "4c6c100be2771d986dff2d8e",
+        "51c24440fc228196ce592362",
+        "55b9c80d5c1c59848b475aed",
+        "57f317846677969ee393b9dd",
+        "57fd175d6f4e6c4aa0689239",
+        "5a5f4f6c5903bc19e7569cf2",
+        "5f54ee110d0f00d1e6d3ddce",
+        "6898ff33c1559fdc8980cded",
+        "69b714dc43c1ecf3644261cf",
+        "6d147b14f46d4d398a099644",
+        "7055be2be7d878f0795776d8",
+        "725749ff513422b8ff452701",
+        "7976b3eaf993379b54e693ab",
+        "7c1756607b4cb45da3a8d166",
+        "7f997975d83bb247579406f4",
+        "8641953bb71bf834376bbbea",
+        "8c4fdac19815d930dae57e9f",
+        "91d6af6dd87f3a1f5cbf8be2",
+        "91fd1c4797fbff86c0278153",
+        "927b71cd71a9cabedf19f92f",
+        "94b164c58369eeab6363a27e",
+        "99f39d4f8e8c1ce15def55d9",
+        "a0e55a1f5d59ba44439e9ea8",
+        "a3500e525b939c1b3216451c",
+        "a3569d971aaf5c932f0970be",
+        "a978831f93f5599c201703aa",
+        "acac49455d07f41bfeb1c4ca",
+        "b3bca2d8e657490ac74b37e9",
+        "c2b5d250e5409b9cc75c875b",
+        "c97839e4ebdd6115263c2512",
+        "cd721b5fc9b3758d97436108",
+        "cdae59a512da11386d5d8a43",
+        "db8c10d1dd1ec5f3c8562c62",
+        "de5f057c02554d7df7441c74",
+        "e052f4e5b9d785b31f73f8c2",
+        "e7ed021ba5ecba54a509f39f",
+        "e8528a77774c748970694464",
+        "f1a324fb04e226c1906279ec",
+        "fb1bd9bc71e95c7aad3822cd",
+        "fda330a9189f963d831245bf",
+        "ff2103fffc3127321afcabda"
+      ],
+      "gold_context_coverage": 1.0,
+      "result": {
+        "answer": "Ngoài hình phạt chính, người phạm tội trộm cắp tài sản theo Điều 173 còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng. [Source 1]",
+        "evidence": [
+          {
+            "source": 1,
+            "passage": 9,
+            "quote": "Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng."
+          }
+        ],
+        "follow_up": [],
+        "parents": [
+          {
+            "id": "b202ae25f71f35efec2af7b3",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "atom_ids": [
+              "44ae0f5a6c74c932acf444ea",
+              "4a787b9e9a1de4a4686ada17",
+              "ff2103fffc3127321afcabda",
+              "55b9c80d5c1c59848b475aed",
+              "fb1bd9bc71e95c7aad3822cd",
+              "57fd175d6f4e6c4aa0689239",
+              "8c4fdac19815d930dae57e9f",
+              "f1a324fb04e226c1906279ec",
+              "a3569d971aaf5c932f0970be"
+            ],
+            "passages": [
+              "Tội trộm cắp tài sản\n94 Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\n",
+              "đ) Tài sản là di vật, cổ vật.",
+              "95 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nDùng thủ đoạn xảo quyệt, nguy hiểm;\nđ) Hành hung để tẩu thoát;\nTài sản là bảo vật quốc gia;\nTái phạm nguy hiểm.",
+              "96 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nLợi dụng thiên tai, dịch bệnh.",
+              "94 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "95 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "96 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "97 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+              "Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng."
+            ],
+            "text": "Tội trộm cắp tài sản\n94 Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\n\n\nđ) Tài sản là di vật, cổ vật.\n\n95 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nDùng thủ đoạn xảo quyệt, nguy hiểm;\nđ) Hành hung để tẩu thoát;\nTài sản là bảo vật quốc gia;\nTái phạm nguy hiểm.\n\n96 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nLợi dụng thiên tai, dịch bệnh.\n\n94 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n95 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n96 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n97 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n\nNgười phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng.",
+            "spans": [
+              {
+                "start": 3836,
+                "end": 3856,
+                "page": 3,
+                "locator": "#/texts/52"
+              },
+              {
+                "start": 3857,
+                "end": 4106,
+                "page": 3,
+                "locator": "#/texts/53"
+              },
+              {
+                "start": 4107,
+                "end": 4185,
+                "page": 3,
+                "locator": "#/texts/54"
+              },
+              {
+                "start": 4186,
+                "end": 4353,
+                "page": 3,
+                "locator": "#/texts/55"
+              },
+              {
+                "start": 4354,
+                "end": 4409,
+                "page": 3,
+                "locator": "#/texts/56"
+              },
+              {
+                "start": 4410,
+                "end": 4481,
+                "page": 3,
+                "locator": "#/texts/57"
+              },
+              {
+                "start": 4482,
+                "end": 4511,
+                "page": 3,
+                "locator": "#/texts/58"
+              },
+              {
+                "start": 4512,
+                "end": 4600,
+                "page": 3,
+                "locator": "#/texts/59"
+              },
+              {
+                "start": 4601,
+                "end": 4612,
+                "page": 3,
+                "locator": "#/texts/60"
+              },
+              {
+                "start": 4613,
+                "end": 4640,
+                "page": 3,
+                "locator": "#/texts/61"
+              },
+              {
+                "start": 4641,
+                "end": 4713,
+                "page": 3,
+                "locator": "#/texts/62"
+              },
+              {
+                "start": 4714,
+                "end": 4749,
+                "page": 3,
+                "locator": "#/texts/63"
+              },
+              {
+                "start": 4750,
+                "end": 4776,
+                "page": 3,
+                "locator": "#/texts/64"
+              },
+              {
+                "start": 4777,
+                "end": 4805,
+                "page": 3,
+                "locator": "#/texts/65"
+              },
+              {
+                "start": 4806,
+                "end": 4825,
+                "page": 3,
+                "locator": "#/texts/66"
+              },
+              {
+                "start": 4826,
+                "end": 4914,
+                "page": 3,
+                "locator": "#/texts/67"
+              },
+              {
+                "start": 4915,
+                "end": 4988,
+                "page": 3,
+                "locator": "#/texts/68"
+              },
+              {
+                "start": 4989,
+                "end": 5019,
+                "page": 3,
+                "locator": "#/texts/69"
+              },
+              {
+                "start": 5020,
+                "end": 5225,
+                "page": 3,
+                "locator": "#/texts/70"
+              },
+              {
+                "start": 5226,
+                "end": 5431,
+                "page": 3,
+                "locator": "#/texts/71"
+              },
+              {
+                "start": 5432,
+                "end": 5637,
+                "page": 3,
+                "locator": "#/texts/72"
+              },
+              {
+                "start": 5638,
+                "end": 5726,
+                "page": 4,
+                "locator": "#/texts/74"
+              },
+              {
+                "start": 5727,
+                "end": 5779,
+                "page": 4,
+                "locator": "#/texts/75"
+              },
+              {
+                "start": 5780,
+                "end": 5832,
+                "page": 4,
+                "locator": "#/texts/76"
+              },
+              {
+                "start": 5833,
+                "end": 5910,
+                "page": 4,
+                "locator": "#/texts/77"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "44ae0f5a6c74c932acf444ea",
+                "opening": "Tội trộm cắp tài sản 94 Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp s"
+              }
+            ]
+          },
+          {
+            "id": "83b055f792ccff746cbf64cd",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "atom_ids": [
+              "2709d051873f62763e35feac",
+              "7c1756607b4cb45da3a8d166",
+              "6d147b14f46d4d398a099644",
+              "e7ed021ba5ecba54a509f39f",
+              "725749ff513422b8ff452701",
+              "2c8bbebcab4597091d55ffa5",
+              "e052f4e5b9d785b31f73f8c2",
+              "cd721b5fc9b3758d97436108"
+            ],
+            "passages": [
+              "Điều 174. Tội lừa đảo chiếm đoạt tài sản\nNgười nào bằng thủ đoạn gian dối chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 173, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\n",
+              "Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ 98 .",
+              "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nTái phạm nguy hiểm;\nđ) Lợi dụng chức vụ, quyền hạn hoặc lợi dụng danh nghĩa cơ quan, tổ chức;\nDùng thủ đoạn xảo quyệt;\n99 (được bãi bỏ)\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\n97 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "98 Cụm từ \"; tài sản là kỷ vật, di vật, đồ thờ cúng có giá trị đặc biệt về mặt tinh thần đối với người bị hại\" được bãi bỏ theo quy định tại điểm a khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "99 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\n100 (được bãi bỏ)\nLợi dụng thiên tai, dịch bệnh.",
+              "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\n101 (được bãi bỏ)\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+              "Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản."
+            ],
+            "text": "Điều 174. Tội lừa đảo chiếm đoạt tài sản\nNgười nào bằng thủ đoạn gian dối chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 173, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\n\n\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ 98 .\n\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nTái phạm nguy hiểm;\nđ) Lợi dụng chức vụ, quyền hạn hoặc lợi dụng danh nghĩa cơ quan, tổ chức;\nDùng thủ đoạn xảo quyệt;\n99 (được bãi bỏ)\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\n97 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 34 Điều 1 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n98 Cụm từ \"; tài sản là kỷ vật, di vật, đồ thờ cúng có giá trị đặc biệt về mặt tinh thần đối với người bị hại\" được bãi bỏ theo quy định tại điểm a khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n99 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\n100 (được bãi bỏ)\nLợi dụng thiên tai, dịch bệnh.\n\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\n101 (được bãi bỏ)\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n\nNgười phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản.",
+            "spans": [
+              {
+                "start": 5911,
+                "end": 5951,
+                "page": 4,
+                "locator": "#/texts/78"
+              },
+              {
+                "start": 5952,
+                "end": 6223,
+                "page": 4,
+                "locator": "#/texts/79"
+              },
+              {
+                "start": 6224,
+                "end": 6302,
+                "page": 4,
+                "locator": "#/texts/80"
+              },
+              {
+                "start": 6303,
+                "end": 6470,
+                "page": 4,
+                "locator": "#/texts/81"
+              },
+              {
+                "start": 6471,
+                "end": 6526,
+                "page": 4,
+                "locator": "#/texts/82"
+              },
+              {
+                "start": 6527,
+                "end": 6602,
+                "page": 4,
+                "locator": "#/texts/83"
+              },
+              {
+                "start": 6603,
+                "end": 6688,
+                "page": 4,
+                "locator": "#/texts/84"
+              },
+              {
+                "start": 6689,
+                "end": 6700,
+                "page": 4,
+                "locator": "#/texts/85"
+              },
+              {
+                "start": 6701,
+                "end": 6728,
+                "page": 4,
+                "locator": "#/texts/86"
+              },
+              {
+                "start": 6729,
+                "end": 6801,
+                "page": 4,
+                "locator": "#/texts/87"
+              },
+              {
+                "start": 6802,
+                "end": 6821,
+                "page": 4,
+                "locator": "#/texts/88"
+              },
+              {
+                "start": 6822,
+                "end": 6895,
+                "page": 4,
+                "locator": "#/texts/89"
+              },
+              {
+                "start": 6896,
+                "end": 6920,
+                "page": 4,
+                "locator": "#/texts/90"
+              },
+              {
+                "start": 6921,
+                "end": 6937,
+                "page": 4,
+                "locator": "#/texts/91"
+              },
+              {
+                "start": 6938,
+                "end": 7023,
+                "page": 4,
+                "locator": "#/texts/92"
+              },
+              {
+                "start": 7024,
+                "end": 7229,
+                "page": 4,
+                "locator": "#/texts/93"
+              },
+              {
+                "start": 7230,
+                "end": 7529,
+                "page": 4,
+                "locator": "#/texts/94"
+              },
+              {
+                "start": 7530,
+                "end": 7730,
+                "page": 4,
+                "locator": "#/texts/95"
+              },
+              {
+                "start": 7731,
+                "end": 7804,
+                "page": 5,
+                "locator": "#/texts/97"
+              },
+              {
+                "start": 7805,
+                "end": 7822,
+                "page": 5,
+                "locator": "#/texts/98"
+              },
+              {
+                "start": 7823,
+                "end": 7853,
+                "page": 5,
+                "locator": "#/texts/99"
+              },
+              {
+                "start": 7854,
+                "end": 7958,
+                "page": 5,
+                "locator": "#/texts/100"
+              },
+              {
+                "start": 7959,
+                "end": 8011,
+                "page": 5,
+                "locator": "#/texts/101"
+              },
+              {
+                "start": 8012,
+                "end": 8029,
+                "page": 5,
+                "locator": "#/texts/102"
+              },
+              {
+                "start": 8030,
+                "end": 8082,
+                "page": 5,
+                "locator": "#/texts/103"
+              },
+              {
+                "start": 8083,
+                "end": 8294,
+                "page": 5,
+                "locator": "#/texts/104"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "2709d051873f62763e35feac",
+                "opening": "Điều 174. Tội lừa đảo chiếm đoạt tài sản Người nào bằng thủ đoạn gian dối chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đ"
+              }
+            ]
+          },
+          {
+            "id": "89da7917a5f74db7edf8324b",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "atom_ids": [
+              "489f591412fa00e1db6974db",
+              "2dedc82593a5c084b544e1ea",
+              "4c6c100be2771d986dff2d8e",
+              "7976b3eaf993379b54e693ab",
+              "5f54ee110d0f00d1e6d3ddce",
+              "c97839e4ebdd6115263c2512",
+              "e8528a77774c748970694464",
+              "acac49455d07f41bfeb1c4ca"
+            ],
+            "passages": [
+              "Điều 172. Tội công nhiên chiếm đoạt tài sản\nNgười nào công nhiên chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm\nhoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 173, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ 90 .",
+              "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nHành hung để tẩu thoát;\nTái phạm nguy hiểm;\nChiếm đoạt tài sản là hàng cứu trợ;\nđ) 91 (được bãi bỏ)\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\n92 (được bãi bỏ)\nLợi dụng thiên tai, dịch bệnh.",
+              "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\n93 (được bãi bỏ)\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+              "Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến\n90 Cụm từ \"; tài sản là kỷ vật, di vật, đồ thờ cúng có giá trị đặc biệt về mặt tinh thần đối với người bị hại\" được bãi bỏ theo quy định tại điểm a khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "91 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "92 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "93 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "100.000.000 đồng.\nĐiều 173."
+            ],
+            "text": "Điều 172. Tội công nhiên chiếm đoạt tài sản\nNgười nào công nhiên chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm\nhoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nĐã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 173, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ 90 .\n\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nHành hung để tẩu thoát;\nTái phạm nguy hiểm;\nChiếm đoạt tài sản là hàng cứu trợ;\nđ) 91 (được bãi bỏ)\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\n92 (được bãi bỏ)\nLợi dụng thiên tai, dịch bệnh.\n\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\n93 (được bãi bỏ)\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n\nNgười phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến\n90 Cụm từ \"; tài sản là kỷ vật, di vật, đồ thờ cúng có giá trị đặc biệt về mặt tinh thần đối với người bị hại\" được bãi bỏ theo quy định tại điểm a khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n91 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n92 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n93 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n100.000.000 đồng.\nĐiều 173.",
+            "spans": [
+              {
+                "start": 1484,
+                "end": 1527,
+                "page": 1,
+                "locator": "#/texts/23"
+              },
+              {
+                "start": 1528,
+                "end": 1750,
+                "page": 1,
+                "locator": "#/texts/24"
+              },
+              {
+                "start": 1751,
+                "end": 1787,
+                "page": 2,
+                "locator": "#/texts/26"
+              },
+              {
+                "start": 1788,
+                "end": 1866,
+                "page": 2,
+                "locator": "#/texts/27"
+              },
+              {
+                "start": 1867,
+                "end": 2034,
+                "page": 2,
+                "locator": "#/texts/28"
+              },
+              {
+                "start": 2035,
+                "end": 2090,
+                "page": 2,
+                "locator": "#/texts/29"
+              },
+              {
+                "start": 2091,
+                "end": 2166,
+                "page": 2,
+                "locator": "#/texts/30"
+              },
+              {
+                "start": 2167,
+                "end": 2252,
+                "page": 2,
+                "locator": "#/texts/31"
+              },
+              {
+                "start": 2253,
+                "end": 2325,
+                "page": 2,
+                "locator": "#/texts/32"
+              },
+              {
+                "start": 2326,
+                "end": 2349,
+                "page": 2,
+                "locator": "#/texts/33"
+              },
+              {
+                "start": 2350,
+                "end": 2369,
+                "page": 2,
+                "locator": "#/texts/34"
+              },
+              {
+                "start": 2370,
+                "end": 2405,
+                "page": 2,
+                "locator": "#/texts/35"
+              },
+              {
+                "start": 2406,
+                "end": 2425,
+                "page": 2,
+                "locator": "#/texts/36"
+              },
+              {
+                "start": 2426,
+                "end": 2511,
+                "page": 2,
+                "locator": "#/texts/37"
+              },
+              {
+                "start": 2512,
+                "end": 2585,
+                "page": 2,
+                "locator": "#/texts/38"
+              },
+              {
+                "start": 2586,
+                "end": 2602,
+                "page": 2,
+                "locator": "#/texts/39"
+              },
+              {
+                "start": 2603,
+                "end": 2633,
+                "page": 2,
+                "locator": "#/texts/40"
+              },
+              {
+                "start": 2634,
+                "end": 2719,
+                "page": 2,
+                "locator": "#/texts/41"
+              },
+              {
+                "start": 2720,
+                "end": 2772,
+                "page": 2,
+                "locator": "#/texts/42"
+              },
+              {
+                "start": 2773,
+                "end": 2789,
+                "page": 2,
+                "locator": "#/texts/43"
+              },
+              {
+                "start": 2790,
+                "end": 2842,
+                "page": 2,
+                "locator": "#/texts/44"
+              },
+              {
+                "start": 2843,
+                "end": 2904,
+                "page": 2,
+                "locator": "#/texts/45"
+              },
+              {
+                "start": 2905,
+                "end": 3204,
+                "page": 2,
+                "locator": "#/texts/46"
+              },
+              {
+                "start": 3205,
+                "end": 3405,
+                "page": 2,
+                "locator": "#/texts/47"
+              },
+              {
+                "start": 3406,
+                "end": 3606,
+                "page": 2,
+                "locator": "#/texts/48"
+              },
+              {
+                "start": 3607,
+                "end": 3807,
+                "page": 2,
+                "locator": "#/texts/49"
+              },
+              {
+                "start": 3808,
+                "end": 3825,
+                "page": 3,
+                "locator": "#/texts/51"
+              },
+              {
+                "start": 3826,
+                "end": 3835,
+                "page": 3,
+                "locator": "#/texts/52"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "489f591412fa00e1db6974db",
+                "opening": "Điều 172. Tội công nhiên chiếm đoạt tài sản Người nào công nhiên chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng"
+              }
+            ]
+          },
+          {
+            "id": "4a5595537b6f3eaa86d554a7",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "atom_ids": [
+              "51c24440fc228196ce592362",
+              "69b714dc43c1ecf3644261cf",
+              "45b68dd0b65d5d469e6fd006"
+            ],
+            "passages": [
+              "đ) Tài sản là di vật, cổ vật.",
+              "106 Cụm từ \"dưới 500.000.000 đồng nhưng\" được bổ sung theo quy định tại điểm d khoản\n1 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số\n100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+              "Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định từ 01 năm đến 05 năm."
+            ],
+            "text": "Điều 178. Tội hủy hoại hoặc cố ý làm hư hỏng tài sản\n109 Người nào hủy hoại hoặc cố ý làm hư hỏng tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt tiền từ 10.000.000 đồng đến 50.000.000 đồng, phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\nĐã bị xử phạt vi phạm hành chính về một trong các hành vi quy định tại Điều này mà còn vi phạm;\nĐã bị kết án về tội này, chưa được xóa án tích mà còn vi phạm;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\n\n\nđ) Tài sản là di vật, cổ vật.\n\n106 Cụm từ \"dưới 500.000.000 đồng nhưng\" được bổ sung theo quy định tại điểm d khoản\n1 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số\n100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n107 Cụm từ \"hoặc vật có giá trị lịch sử, văn hóa\" được bãi bỏ theo quy định tại điểm b\nkhoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự\nsố 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.\n\n108 Cụm từ \"Điều 219 và\" được bổ sung theo quy định tại điểm đ khoản 1 Điều 2 của Luật\nsố 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu\nlực kể từ ngày 01 tháng 01 năm 2018.\n\n109 Khoản này được sửa đổi, bổ sung theo quy định tại khoản 36 Điều 1 của Luật số\n12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu\nlực kể từ ngày 01 tháng 01 năm 2018.\n\n110 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\nCó tổ chức;\nGây thiệt hại cho tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nTài sản là bảo vật quốc gia;\nDùng chất nguy hiểm về cháy, nổ hoặc thủ đoạn nguy hiểm khác;\nđ) Để che giấu tội phạm khác;\nVì lý do công vụ của người bị hại;\nTái phạm nguy hiểm.\n\n111 Phạm tội gây thiệt hại cho tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng, thì bị phạt tù từ 05 năm đến 10 năm.\n\n112 Phạm tội gây thiệt hại cho tài sản trị giá 500.000.000 đồng trở lên, thì bị phạt tù từ 10 năm đến 20 năm.\n\nNgười phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định từ 01 năm đến 05 năm.",
+            "spans": [
+              {
+                "start": 13343,
+                "end": 13395,
+                "page": 7,
+                "locator": "#/texts/148"
+              },
+              {
+                "start": 13396,
+                "end": 13718,
+                "page": 7,
+                "locator": "#/texts/149"
+              },
+              {
+                "start": 13719,
+                "end": 13814,
+                "page": 7,
+                "locator": "#/texts/150"
+              },
+              {
+                "start": 13815,
+                "end": 13877,
+                "page": 7,
+                "locator": "#/texts/151"
+              },
+              {
+                "start": 13878,
+                "end": 13933,
+                "page": 7,
+                "locator": "#/texts/152"
+              },
+              {
+                "start": 13934,
+                "end": 14005,
+                "page": 7,
+                "locator": "#/texts/153"
+              },
+              {
+                "start": 14006,
+                "end": 14035,
+                "page": 7,
+                "locator": "#/texts/154"
+              },
+              {
+                "start": 14036,
+                "end": 14120,
+                "page": 7,
+                "locator": "#/texts/155"
+              },
+              {
+                "start": 14121,
+                "end": 14206,
+                "page": 7,
+                "locator": "#/texts/156"
+              },
+              {
+                "start": 14207,
+                "end": 14266,
+                "page": 7,
+                "locator": "#/texts/157"
+              },
+              {
+                "start": 14267,
+                "end": 14353,
+                "page": 7,
+                "locator": "#/texts/158"
+              },
+              {
+                "start": 14354,
+                "end": 14442,
+                "page": 7,
+                "locator": "#/texts/159"
+              },
+              {
+                "start": 14443,
+                "end": 14505,
+                "page": 7,
+                "locator": "#/texts/160"
+              },
+              {
+                "start": 14506,
+                "end": 14592,
+                "page": 7,
+                "locator": "#/texts/161"
+              },
+              {
+                "start": 14593,
+                "end": 14683,
+                "page": 7,
+                "locator": "#/texts/162"
+              },
+              {
+                "start": 14684,
+                "end": 14720,
+                "page": 7,
+                "locator": "#/texts/163"
+              },
+              {
+                "start": 14721,
+                "end": 14802,
+                "page": 7,
+                "locator": "#/texts/164"
+              },
+              {
+                "start": 14803,
+                "end": 14890,
+                "page": 7,
+                "locator": "#/texts/165"
+              },
+              {
+                "start": 14891,
+                "end": 14927,
+                "page": 7,
+                "locator": "#/texts/166"
+              },
+              {
+                "start": 14928,
+                "end": 15017,
+                "page": 8,
+                "locator": "#/texts/168"
+              },
+              {
+                "start": 15018,
+                "end": 15029,
+                "page": 8,
+                "locator": "#/texts/169"
+              },
+              {
+                "start": 15030,
+                "end": 15109,
+                "page": 8,
+                "locator": "#/texts/170"
+              },
+              {
+                "start": 15110,
+                "end": 15138,
+                "page": 8,
+                "locator": "#/texts/171"
+              },
+              {
+                "start": 15139,
+                "end": 15200,
+                "page": 8,
+                "locator": "#/texts/172"
+              },
+              {
+                "start": 15201,
+                "end": 15230,
+                "page": 8,
+                "locator": "#/texts/173"
+              },
+              {
+                "start": 15231,
+                "end": 15265,
+                "page": 8,
+                "locator": "#/texts/174"
+              },
+              {
+                "start": 15266,
+                "end": 15285,
+                "page": 8,
+                "locator": "#/texts/175"
+              },
+              {
+                "start": 15286,
+                "end": 15416,
+                "page": 8,
+                "locator": "#/texts/176"
+              },
+              {
+                "start": 15417,
+                "end": 15526,
+                "page": 8,
+                "locator": "#/texts/177"
+              },
+              {
+                "start": 15527,
+                "end": 15694,
+                "page": 8,
+                "locator": "#/texts/178"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "0518572e4d3aecd9dc46b32d",
+                "opening": "Điều 178. Tội hủy hoại hoặc cố ý làm hư hỏng tài sản 109 Người nào hủy hoại hoặc cố ý làm hư hỏng tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dướ"
+              }
+            ]
+          }
+        ],
+        "mindmap": null,
+        "steps": [
+          {
+            "tool": "search_documents",
+            "input": "Ngoài hình phạt chính, Điều 173 quy định người phạm tội trộm cắp tài sản còn có thể bị phạt tiền bao nhiêu?"
+          },
+          {
+            "tool": "read_section",
+            "input": "b202ae25f71f35efec2af7b3"
+          }
+        ],
+        "coverage": {
+          "requested": [
+            "phạt tiền"
+          ],
+          "unsupported": []
+        }
+      },
+      "gold_read_coverage": 1.0,
+      "seconds": 58.45
+    },
+    {
+      "id": "snatching-value",
+      "question": "Chỉ xét giá trị tài sản, cướp giật tài sản 60 triệu đồng theo Điều 171 thuộc khung phạt tù nào?",
+      "gold_atoms": [
+        0,
+        1
+      ],
+      "expected": "3-10 years, not 2-7 years from theft.",
+      "answerable": true,
+      "reranked_atoms": [
+        "94b164c58369eeab6363a27e",
+        "489f591412fa00e1db6974db",
+        "44ae0f5a6c74c932acf444ea",
+        "13cc45bd4f914dd32ce3586e",
+        "e052f4e5b9d785b31f73f8c2",
+        "b3bca2d8e657490ac74b37e9",
+        "1c66ec11125bfed7db6bd07a",
+        "4c6c100be2771d986dff2d8e",
+        "cdae59a512da11386d5d8a43",
+        "2709d051873f62763e35feac"
+      ],
+      "context_atoms": [
+        "05d66b9dff345f12431ebb7e",
+        "13cc45bd4f914dd32ce3586e",
+        "1ac5687336af1e799941e2ca",
+        "1c66ec11125bfed7db6bd07a",
+        "2709d051873f62763e35feac",
+        "2c8bbebcab4597091d55ffa5",
+        "2dedc82593a5c084b544e1ea",
+        "44ae0f5a6c74c932acf444ea",
+        "489f591412fa00e1db6974db",
+        "4a787b9e9a1de4a4686ada17",
+        "4c6c100be2771d986dff2d8e",
+        "55b9c80d5c1c59848b475aed",
+        "57f317846677969ee393b9dd",
+        "57fd175d6f4e6c4aa0689239",
+        "5f54ee110d0f00d1e6d3ddce",
+        "6d147b14f46d4d398a099644",
+        "725749ff513422b8ff452701",
+        "7976b3eaf993379b54e693ab",
+        "7c1756607b4cb45da3a8d166",
+        "8641953bb71bf834376bbbea",
+        "8c4fdac19815d930dae57e9f",
+        "94b164c58369eeab6363a27e",
+        "99f39d4f8e8c1ce15def55d9",
+        "a3500e525b939c1b3216451c",
+        "a3569d971aaf5c932f0970be",
+        "acac49455d07f41bfeb1c4ca",
+        "b3bca2d8e657490ac74b37e9",
+        "c2b5d250e5409b9cc75c875b",
+        "c97839e4ebdd6115263c2512",
+        "cd721b5fc9b3758d97436108",
+        "cdae59a512da11386d5d8a43",
+        "db8c10d1dd1ec5f3c8562c62",
+        "e052f4e5b9d785b31f73f8c2",
+        "e7ed021ba5ecba54a509f39f",
+        "e8528a77774c748970694464",
+        "f1a324fb04e226c1906279ec",
+        "fb1bd9bc71e95c7aad3822cd",
+        "fda330a9189f963d831245bf",
+        "ff2103fffc3127321afcabda"
+      ],
+      "gold_context_coverage": 1.0,
+      "result": {
+        "answer": "Cướp giật tài sản trị giá 60 triệu đồng thuộc khung phạt tù từ 03 năm đến 10 năm. [Source 1]",
+        "evidence": [
+          {
+            "source": 1,
+            "passage": 2,
+            "quote": "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 03 năm đến 10 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nDùng thủ đoạn nguy hiểm;\nđ) Hành hung để tẩu thoát;\nGây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 11% đến 30%;\nPhạm tội đối với người dưới 16 tuổi, phụ nữ mà biết là có thai, người già yếu hoặc người không có khả năng tự vệ;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTái phạm nguy hiểm."
+          }
+        ],
+        "follow_up": [],
+        "parents": [
+          {
+            "id": "1c744cb6d1f8a162ee29edc7",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "atom_ids": [
+              "94b164c58369eeab6363a27e",
+              "1c66ec11125bfed7db6bd07a",
+              "cdae59a512da11386d5d8a43",
+              "57f317846677969ee393b9dd",
+              "fda330a9189f963d831245bf"
+            ],
+            "passages": [
+              "Điều 171. Tội cướp giật tài sản\nNgười nào cướp giật tài sản của người khác, thì bị phạt tù từ 01 năm đến 05 năm.",
+              "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 03 năm đến 10 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nDùng thủ đoạn nguy hiểm;\nđ) Hành hung để tẩu thoát;\nGây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 11% đến 30%;\nPhạm tội đối với người dưới 16 tuổi, phụ nữ mà biết là có thai, người già yếu hoặc người không có khả năng tự vệ;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTái phạm nguy hiểm.",
+              "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nGây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 31% đến 60%;\nLợi dụng thiên tai, dịch bệnh.",
+              "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nGây thương tích hoặc gây tổn hại cho sức khỏe của 01 người mà tỷ lệ tổn thương cơ thể 61% trở lên hoặc gây thương tích hoặc gây tổn hại cho sức khỏe của 02 người trở lên mà tỷ lệ tổn thương cơ thể của mỗi người 31% trở lên;\nLàm chết người;\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+              "Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng."
+            ],
+            "text": "Điều 171. Tội cướp giật tài sản\nNgười nào cướp giật tài sản của người khác, thì bị phạt tù từ 01 năm đến 05 năm.\n\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 03 năm đến 10 năm:\nCó tổ chức;\nCó tính chất chuyên nghiệp;\nChiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nDùng thủ đoạn nguy hiểm;\nđ) Hành hung để tẩu thoát;\nGây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 11% đến 30%;\nPhạm tội đối với người dưới 16 tuổi, phụ nữ mà biết là có thai, người già yếu hoặc người không có khả năng tự vệ;\nGây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nTái phạm nguy hiểm.\n\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\nChiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nGây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 31% đến 60%;\nLợi dụng thiên tai, dịch bệnh.\n\nPhạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nGây thương tích hoặc gây tổn hại cho sức khỏe của 01 người mà tỷ lệ tổn thương cơ thể 61% trở lên hoặc gây thương tích hoặc gây tổn hại cho sức khỏe của 02 người trở lên mà tỷ lệ tổn thương cơ thể của mỗi người 31% trở lên;\nLàm chết người;\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n\nNgười phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 31,
+                "page": 1,
+                "locator": "#/texts/1"
+              },
+              {
+                "start": 32,
+                "end": 112,
+                "page": 1,
+                "locator": "#/texts/2"
+              },
+              {
+                "start": 113,
+                "end": 198,
+                "page": 1,
+                "locator": "#/texts/3"
+              },
+              {
+                "start": 199,
+                "end": 210,
+                "page": 1,
+                "locator": "#/texts/4"
+              },
+              {
+                "start": 211,
+                "end": 238,
+                "page": 1,
+                "locator": "#/texts/5"
+              },
+              {
+                "start": 239,
+                "end": 311,
+                "page": 1,
+                "locator": "#/texts/6"
+              },
+              {
+                "start": 312,
+                "end": 336,
+                "page": 1,
+                "locator": "#/texts/7"
+              },
+              {
+                "start": 337,
+                "end": 363,
+                "page": 1,
+                "locator": "#/texts/8"
+              },
+              {
+                "start": 364,
+                "end": 467,
+                "page": 1,
+                "locator": "#/texts/9"
+              },
+              {
+                "start": 468,
+                "end": 581,
+                "page": 1,
+                "locator": "#/texts/10"
+              },
+              {
+                "start": 582,
+                "end": 637,
+                "page": 1,
+                "locator": "#/texts/11"
+              },
+              {
+                "start": 638,
+                "end": 657,
+                "page": 1,
+                "locator": "#/texts/12"
+              },
+              {
+                "start": 658,
+                "end": 743,
+                "page": 1,
+                "locator": "#/texts/13"
+              },
+              {
+                "start": 744,
+                "end": 817,
+                "page": 1,
+                "locator": "#/texts/14"
+              },
+              {
+                "start": 818,
+                "end": 921,
+                "page": 1,
+                "locator": "#/texts/15"
+              },
+              {
+                "start": 922,
+                "end": 952,
+                "page": 1,
+                "locator": "#/texts/16"
+              },
+              {
+                "start": 953,
+                "end": 1057,
+                "page": 1,
+                "locator": "#/texts/17"
+              },
+              {
+                "start": 1058,
+                "end": 1110,
+                "page": 1,
+                "locator": "#/texts/18"
+              },
+              {
+                "start": 1111,
+                "end": 1334,
+                "page": 1,
+                "locator": "#/texts/19"
+              },
+              {
+                "start": 1335,
+                "end": 1350,
+                "page": 1,
+                "locator": "#/texts/20"
+              },
+              {
+                "start": 1351,
+                "end": 1403,
+                "page": 1,
+                "locator": "#/texts/21"
+              },
+              {
+                "start": 1404,
+                "end": 1483,
+                "page": 1,
+                "locator": "#/texts/22"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "94b164c58369eeab6363a27e",
+                "opening": "Điều 171. Tội cướp giật tài sản Người nào cướp giật tài sản của người khác, thì bị phạt tù từ 01 năm đến 05 năm."
+              }
+            ]
+          },
+          {
+            "id": "94b164c58369eeab6363a27e",
+            "title": "criminal-code-excerpt-pages-70-79.pdf",
+            "document_id": "83a918bbfe6cb68a1ae64a0f",
+            "atom_ids": [
+              "94b164c58369eeab6363a27e"
+            ],
+            "passages": [
+              "Điều 171. Tội cướp giật tài sản\nNgười nào cướp giật tài sản của người khác, thì bị phạt tù từ 01 năm đến 05 năm."
+            ],
+            "text": "Điều 171. Tội cướp giật tài sản\nNgười nào cướp giật tài sản của người khác, thì bị phạt tù từ 01 năm đến 05 năm.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 31,
+                "page": 1,
+                "locator": "#/texts/1"
+              },
+              {
+                "start": 32,
+                "end": 112,
+                "page": 1,
+                "locator": "#/texts/2"
+              }
+            ],
+            "subject_context": [
+              {
+                "anchor": "94b164c58369eeab6363a27e",
+                "opening": "Điều 171. Tội cướp giật tài sản Người nào cướp giật tài sản của người khác, thì bị phạt tù từ 01 năm đến 05 năm."
+              }
+            ]
+          }
+        ],
+        "mindmap": null,
+        "steps": [
+          {
+            "tool": "search_documents",
+            "input": "Chỉ xét giá trị tài sản, cướp giật tài sản 60 triệu đồng theo Điều 171 thuộc khung phạt tù nào?"
+          },
+          {
+            "tool": "read_section",
+            "input": "94b164c58369eeab6363a27e"
+          }
+        ],
+        "coverage": {
+          "requested": [
+            "khung phạt tù"
+          ],
+          "unsupported": []
+        }
+      },
+      "gold_read_coverage": 1.0,
+      "seconds": 55.92
+    },
+    {
+      "id": "absent-tax",
+      "question": "Theo tài liệu này, thuế suất thuế thu nhập doanh nghiệp năm 2026 là bao nhiêu?",
+      "gold_atoms": [],
+      "expected": "Refuse to invent a tax rate; absence of evidence in this excerpt is not absence from all law.",
+      "answerable": false,
+      "reranked_atoms": [
+        "e1dcc484570b47b6bca7303c",
+        "acac49455d07f41bfeb1c4ca",
+        "2c8bbebcab4597091d55ffa5",
+        "0518572e4d3aecd9dc46b32d",
+        "8eb9683af196b73dc034f55b",
+        "c5b28a219a27d7519a535a53",
+        "69b714dc43c1ecf3644261cf",
+        "2709d051873f62763e35feac",
+        "352fd674e5a5876916fe3b42",
+        "44ae0f5a6c74c932acf444ea"
+      ],
+      "context_atoms": [
+        "0518572e4d3aecd9dc46b32d",
+        "2709d051873f62763e35feac",
+        "2a1df8a3400ccb5f4cfaebdc",
+        "2c8bbebcab4597091d55ffa5",
+        "2dedc82593a5c084b544e1ea",
+        "352fd674e5a5876916fe3b42",
+        "3c88f3748bc75f4b65489f87",
+        "44ae0f5a6c74c932acf444ea",
+        "45b68dd0b65d5d469e6fd006",
+        "489f591412fa00e1db6974db",
+        "4a787b9e9a1de4a4686ada17",
+        "4c6c100be2771d986dff2d8e",
+        "51c24440fc228196ce592362",
+        "55b9c80d5c1c59848b475aed",
+        "57fd175d6f4e6c4aa0689239",
+        "5a5f4f6c5903bc19e7569cf2",
+        "5f54ee110d0f00d1e6d3ddce",
+        "6898ff33c1559fdc8980cded",
+        "69b714dc43c1ecf3644261cf",
+        "6d147b14f46d4d398a099644",
+        "725749ff513422b8ff452701",
+        "7976b3eaf993379b54e693ab",
+        "7c1756607b4cb45da3a8d166",
+        "7f997975d83bb247579406f4",
+        "8c4fdac19815d930dae57e9f",
+        "8eb9683af196b73dc034f55b",
+        "91d6af6dd87f3a1f5cbf8be2",
+        "927b71cd71a9cabedf19f92f",
+        "9feecb509bd7f7e927997810",
+        "a3569d971aaf5c932f0970be",
+        "a978831f93f5599c201703aa",
+        "acac49455d07f41bfeb1c4ca",
+        "b133a7d9d2919a8052cb5964",
+        "c5b28a219a27d7519a535a53",
+        "c97839e4ebdd6115263c2512",
+        "cd721b5fc9b3758d97436108",
+        "cda2d893c20a0c7681a122f1",
+        "d361c25325cfac5ccbb4849d",
+        "e052f4e5b9d785b31f73f8c2",
+        "e1dcc484570b47b6bca7303c",
+        "e7ed021ba5ecba54a509f39f",
+        "e8528a77774c748970694464",
+        "f1a324fb04e226c1906279ec",
+        "fb1bd9bc71e95c7aad3822cd",
+        "fbcb3eb983fb91cda78054de",
+        "ff2103fffc3127321afcabda"
+      ],
+      "gold_context_coverage": null,
+      "result": {
+        "answer": "The available sources do not contain enough evidence to answer this question.",
+        "evidence": [],
+        "follow_up": [],
+        "parents": [],
+        "mindmap": null,
+        "steps": [
+          {
+            "tool": "search_documents",
+            "input": "Theo tài liệu này, thuế suất thuế thu nhập doanh nghiệp năm 2026 là bao nhiêu?"
+          },
+          {
+            "tool": "search_documents",
+            "input": "thuế suất thuế thu nhập doanh nghiệp năm 2026"
+          }
+        ],
+        "coverage": {
+          "requested": [
+            "Thuế suất thuế thu nhập doanh nghiệp năm 2026"
+          ],
+          "unsupported": [
+            "Thuế suất thuế thu nhập doanh nghiệp năm 2026"
+          ]
+        }
+      },
+      "gold_read_coverage": null,
+      "seconds": 56.26
+    },
+    {
+      "id": "absent-employment",
+      "question": "Theo tài liệu này, người lao động nghỉ việc được hưởng trợ cấp thôi việc bao nhiêu tháng lương?",
+      "gold_atoms": [],
+      "expected": "Refuse to invent an employment benefit.",
+      "answerable": false,
+      "reranked_atoms": [
+        "2709d051873f62763e35feac",
+        "06d7bf9a2e8e559089df53c0",
+        "2dedc82593a5c084b544e1ea",
+        "acac49455d07f41bfeb1c4ca",
+        "44ae0f5a6c74c932acf444ea",
+        "e1dcc484570b47b6bca7303c",
+        "0518572e4d3aecd9dc46b32d",
+        "b5dc515126bce140414c8096",
+        "7f51300f3f56081651646e6a",
+        "c5b28a219a27d7519a535a53"
+      ],
+      "context_atoms": [
+        "0518572e4d3aecd9dc46b32d",
+        "06d7bf9a2e8e559089df53c0",
+        "1e21d164c15f0f6645d6b252",
+        "2709d051873f62763e35feac",
+        "2a1df8a3400ccb5f4cfaebdc",
+        "2c8bbebcab4597091d55ffa5",
+        "2dedc82593a5c084b544e1ea",
+        "3c88f3748bc75f4b65489f87",
+        "44ae0f5a6c74c932acf444ea",
+        "45b68dd0b65d5d469e6fd006",
+        "489f591412fa00e1db6974db",
+        "4a787b9e9a1de4a4686ada17",
+        "4c6c100be2771d986dff2d8e",
+        "51c24440fc228196ce592362",
+        "55b9c80d5c1c59848b475aed",
+        "57fd175d6f4e6c4aa0689239",
+        "5a5f4f6c5903bc19e7569cf2",
+        "5f54ee110d0f00d1e6d3ddce",
+        "6898ff33c1559fdc8980cded",
+        "69b714dc43c1ecf3644261cf",
+        "6d147b14f46d4d398a099644",
+        "725749ff513422b8ff452701",
+        "7976b3eaf993379b54e693ab",
+        "7c1756607b4cb45da3a8d166",
+        "7f51300f3f56081651646e6a",
+        "7f997975d83bb247579406f4",
+        "8c4fdac19815d930dae57e9f",
+        "8eb9683af196b73dc034f55b",
+        "91d6af6dd87f3a1f5cbf8be2",
+        "927b71cd71a9cabedf19f92f",
+        "9feecb509bd7f7e927997810",
+        "a3569d971aaf5c932f0970be",
+        "a978831f93f5599c201703aa",
+        "acac49455d07f41bfeb1c4ca",
+        "b133a7d9d2919a8052cb5964",
+        "b5dc515126bce140414c8096",
+        "b6da78f8d0633caa17695cd9",
+        "c5b28a219a27d7519a535a53",
+        "c97839e4ebdd6115263c2512",
+        "cd721b5fc9b3758d97436108",
+        "d361c25325cfac5ccbb4849d",
+        "e052f4e5b9d785b31f73f8c2",
+        "e1dcc484570b47b6bca7303c",
+        "e7ed021ba5ecba54a509f39f",
+        "e8528a77774c748970694464",
+        "f1a324fb04e226c1906279ec",
+        "fb1bd9bc71e95c7aad3822cd",
+        "fbcb3eb983fb91cda78054de",
+        "ff2103fffc3127321afcabda"
+      ],
+      "gold_context_coverage": null,
+      "result": {
+        "answer": "The available sources do not contain enough evidence to answer this question.",
+        "evidence": [],
+        "follow_up": [],
+        "parents": [],
+        "mindmap": null,
+        "steps": [
+          {
+            "tool": "search_documents",
+            "input": "Theo tài liệu này, người lao động nghỉ việc được hưởng trợ cấp thôi việc bao nhiêu tháng lương?"
+          },
+          {
+            "tool": "search_documents",
+            "input": "trợ cấp thôi việc số tháng lương người lao động nghỉ việc"
+          }
+        ],
+        "coverage": {
+          "requested": [
+            "Số tháng lương trợ cấp thôi việc cho người lao động nghỉ việc"
+          ],
+          "unsupported": [
+            "Số tháng lương trợ cấp thôi việc cho người lao động nghỉ việc"
+          ]
+        }
+      },
+      "gold_read_coverage": null,
+      "seconds": 55.18
+    }
+  ]
+}

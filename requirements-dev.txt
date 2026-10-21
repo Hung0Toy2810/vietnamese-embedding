@@ -1,0 +1,7 @@
+-r requirements.txt
+-r legal_rag/requirements.txt
+pyright>=1.1.414,<2
+ruff>=0.12,<1
+scikit-learn-stubs==0.0.3
+scipy-stubs==1.14.1.6
+optype==0.9.3

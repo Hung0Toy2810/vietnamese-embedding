@@ -1,0 +1,717 @@
+{
+  "purpose": "Development audit, not a benchmark. Raw trials are retained in the ignored local workspace. The final verdict uses only the complete final run.",
+  "trials": [
+    {
+      "file": "answers-claims.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-claims.json",
+      "note": "Superseded development trial; not the final eight-question run.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 0.0,
+          "frequency_penalty": 0.0
+        },
+        "answer_prompt_sha256": "fe50248a134cbc27445fa7a1801782679c1392ecc6a24ade35a171e4c2648005"
+      },
+      "cases": [
+        {
+          "id": "theft-overview",
+          "seconds": 339.5,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "A verified answer could not be produced within the processing budget. Please try a narrower question.",
+          "completion": "model_round_budget_exhausted",
+          "coverage": {
+            "requested": [
+              "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173."
+            ],
+            "unsupported": [],
+            "unassessed": [
+              "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-conditional-value.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-conditional-value.json",
+      "note": "Superseded development trial; not the final eight-question run.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0.7,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 1.5,
+          "frequency_penalty": 0.0,
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0.0,
+          "seed": 42
+        },
+        "answer_prompt_sha256": "ab83d3127bec2aa776c18c3ff0c502b2de5a61ab68b45cec5e10df4fba170d86"
+      },
+      "cases": [
+        {
+          "id": "theft-value",
+          "seconds": 54.98,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Tội trộm cắp tài sản trị giá 300 triệu đồng thuộc khung phạt tù từ 07 năm đến 15 năm. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [],
+            "unsupported": []
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-context-recovery.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-context-recovery.json",
+      "note": "Superseded development trial; not the final eight-question run.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 0.0,
+          "frequency_penalty": 0.0
+        },
+        "answer_prompt_sha256": "4a3a3e0f733a6efc5117a337b95d11a3c8855cf6829d835e2a14bddd0483031e"
+      },
+      "cases": [
+        {
+          "id": "theft-fine",
+          "seconds": 643.98,
+          "gold_context_coverage": 1.0,
+          "error": "RuntimeError: Ollama reached a token limit before completing its response.",
+          "answer": null,
+          "completion": null,
+          "coverage": null
+        },
+        {
+          "id": "absent-tax",
+          "seconds": 78.69,
+          "gold_context_coverage": null,
+          "gold_read_coverage": null,
+          "answer": "The available sources do not contain enough evidence to answer this question.",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "thuế suất thuế thu nhập doanh nghiệp năm 2026"
+            ],
+            "unsupported": [
+              "thuế suất thuế thu nhập doanh nghiệp năm 2026"
+            ]
+          }
+        },
+        {
+          "id": "absent-employment",
+          "seconds": 76.64,
+          "gold_context_coverage": null,
+          "gold_read_coverage": null,
+          "answer": "The available sources do not contain enough evidence to answer this question.",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Số tháng lương trợ cấp thôi việc người lao động được hưởng khi nghỉ việc"
+            ],
+            "unsupported": [
+              "Số tháng lương trợ cấp thôi việc người lao động được hưởng khi nghỉ việc"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-direct.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-direct.json",
+      "note": "Superseded development trial; not the final eight-question run.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 0.0,
+          "frequency_penalty": 0.0
+        },
+        "answer_prompt_sha256": "938677ba9e130395a653681b59ee3f973326a8cc234d8937215471ea5e8d2cf4"
+      },
+      "cases": [
+        {
+          "id": "theft-overview",
+          "seconds": 433.17,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "A verified answer could not be produced within the processing budget. Please try a narrower question.",
+          "completion": "context_budget_exhausted",
+          "coverage": {
+            "requested": [
+              "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173."
+            ],
+            "unsupported": [],
+            "unassessed": [
+              "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-native-remaining.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-native-remaining.json",
+      "note": "Intermediate successes, but the theft fine was incorrectly refused.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 0.0,
+          "frequency_penalty": 0.0
+        },
+        "answer_prompt_sha256": "4a3a3e0f733a6efc5117a337b95d11a3c8855cf6829d835e2a14bddd0483031e"
+      },
+      "cases": [
+        {
+          "id": "theft-value",
+          "seconds": 93.3,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Trộm cắp tài sản trị giá 300.000.000 đồng thuộc khung phạt tù từ 07 năm đến 15 năm. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Khung phạt tù cho trộm cắp 300 triệu đồng chỉ xét giá trị tài sản theo Điều 173"
+            ],
+            "unsupported": []
+          }
+        },
+        {
+          "id": "fraud-value",
+          "seconds": 86.89,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Theo Điều 174, hành vi gian dối chiếm đoạt tài sản trị giá 600.000.000 đồng (600 triệu đồng) thuộc khung phạt tù từ 12 năm đến 20 năm hoặc tù chung thân. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Khung phạt tù cho hành vi gian dối chiếm đoạt 600 triệu đồng theo Điều 174"
+            ],
+            "unsupported": []
+          }
+        },
+        {
+          "id": "trust-value",
+          "seconds": 80.72,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Theo Điều 175, trường hợp lạm dụng tín nhiệm chiếm đoạt tài sản trị giá 300 triệu đồng bị phạt tù từ 05 năm đến 12 năm. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Khung phạt tù cho trường hợp lạm dụng tín nhiệm chiếm đoạt tài sản trị giá 300 triệu đồng theo Điều 175"
+            ],
+            "unsupported": []
+          }
+        },
+        {
+          "id": "theft-fine",
+          "seconds": 80.71,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "The available sources do not contain enough evidence to answer this question.",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Số tiền phạt tiền bổ sung cho tội trộm cắp tài sản theo Điều 173"
+            ],
+            "unsupported": [
+              "Số tiền phạt tiền bổ sung cho tội trộm cắp tài sản theo Điều 173"
+            ]
+          }
+        },
+        {
+          "id": "snatching-value",
+          "seconds": 80.11,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Cướp giật tài sản trị giá 60 triệu đồng thuộc khung phạt tù từ 03 năm đến 10 năm theo Điều 171. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Khung phạt tù cho tội cướp giật tài sản trị giá 60 triệu đồng theo Điều 171"
+            ],
+            "unsupported": []
+          }
+        },
+        {
+          "id": "absent-tax",
+          "seconds": 92.63,
+          "gold_context_coverage": null,
+          "gold_read_coverage": null,
+          "answer": "The available sources do not contain enough evidence to answer this question.",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "thuế suất thuế thu nhập doanh nghiệp năm 2026"
+            ],
+            "unsupported": [
+              "thuế suất thuế thu nhập doanh nghiệp năm 2026"
+            ]
+          }
+        },
+        {
+          "id": "absent-employment",
+          "seconds": 79.18,
+          "gold_context_coverage": null,
+          "gold_read_coverage": null,
+          "answer": "The available sources do not contain enough evidence to answer this question.",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Số tháng lương trợ cấp thôi việc khi nghỉ việc"
+            ],
+            "unsupported": [
+              "Số tháng lương trợ cấp thôi việc khi nghỉ việc không được trả lời vì các nguồn cung cấp chỉ chứa nội dung về Bộ luật Hình sự (các tội danh như lừa đảo, trộm cắp, ngược đãi, hủy hoại tài sản...) và không có thông tin về Luật Lao động hay quy định về trợ cấp thôi việc."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-native-smoke.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-native-smoke.json",
+      "note": "Superseded development trial; not the final eight-question run.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 0.0,
+          "frequency_penalty": 0.0
+        },
+        "answer_prompt_sha256": "4a3a3e0f733a6efc5117a337b95d11a3c8855cf6829d835e2a14bddd0483031e"
+      },
+      "cases": [
+        {
+          "id": "theft-overview",
+          "seconds": 153.66,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Theo Điều 173, người phạm tội trộm cắp tài sản trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm: (1) Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm; (2) Đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm; (3) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội; (4) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ; (5) Tài sản là di vật, cổ vật. [Source 1]\n\nTheo Điều 173, nếu phạm tội thuộc một trong các trường hợp sau đây thì bị phạt tù từ 02 năm đến 07 năm: (1) Có tổ chức; (2) Có tính chất chuyên nghiệp; (3) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng; (4) Dùng thủ đoạn xảo quyệt, nguy hiểm; (5) Hành hung để tẩu thoát; (6) Tài sản là bảo vật quốc gia; (7) Tái phạm nguy hiểm. [Source 1]\n\nTheo Điều 173, nếu phạm tội thuộc một trong các trường hợp sau đây thì bị phạt tù từ 07 năm đến 15 năm: (1) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng; (2) Lợi dụng thiên tai, dịch bệnh. [Source 1]\n\nTheo Điều 173, nếu phạm tội thuộc một trong các trường hợp sau đây thì bị phạt tù từ 12 năm đến 20 năm: (1) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên; (2) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp. [Source 1]\n\nNgười phạm tội trộm cắp tài sản còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Khung hình phạt chính",
+              "Các điều kiện đáng chú ý",
+              "Hình phạt bổ sung"
+            ],
+            "unsupported": []
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-ordered-fine.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-ordered-fine.json",
+      "note": "Rejected: mixed the correct theft fine with fines belonging to other offenses.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0.7,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 1.5,
+          "frequency_penalty": 0.0,
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0.0,
+          "seed": 42
+        },
+        "answer_prompt_sha256": "4a3a3e0f733a6efc5117a337b95d11a3c8855cf6829d835e2a14bddd0483031e"
+      },
+      "cases": [
+        {
+          "id": "theft-fine",
+          "seconds": 131.29,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Người phạm tội trộm cắp tài sản có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng. [Source 2]\n\nNgười phạm tội trộm cắp tài sản có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng. [Source 1] [Source 3]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Mức phạt tiền đối với người phạm tội trộm cắp tài sản theo Điều 173"
+            ],
+            "unsupported": []
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-references.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-references.json",
+      "note": "Superseded development trial; not the final eight-question run.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 0.0,
+          "frequency_penalty": 0.0
+        },
+        "answer_prompt_sha256": "11f742c81e3563defb7dcb053d733528ee44e0daf177f4fcdd2f21b8a71e86a3"
+      },
+      "cases": [
+        {
+          "id": "theft-overview",
+          "seconds": 386.51,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "A verified answer could not be produced within the processing budget. Please try a narrower question.",
+          "completion": "context_budget_exhausted",
+          "coverage": {
+            "requested": [
+              "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173."
+            ],
+            "unsupported": [],
+            "unassessed": [
+              "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-routed-fine.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-routed-fine.json",
+      "note": "Superseded development trial; not the final eight-question run.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0.7,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 1.5,
+          "frequency_penalty": 0.0,
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0.0,
+          "seed": 42
+        },
+        "answer_prompt_sha256": "a89254b695da8cec9b083fbeeca3dc39912f84e7b0f6ed3deaae74968b5e3142"
+      },
+      "cases": [
+        {
+          "id": "theft-fine",
+          "seconds": 90.25,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Người phạm tội trộm cắp tài sản quy định tại Điều 173 còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Phần tiền phạt bổ sung cho tội trộm cắp tài sản theo Điều 173"
+            ],
+            "unsupported": []
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-routed-remaining.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-routed-remaining.json",
+      "note": "The theft-value result failed validation because an answerable response had no claims.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0.7,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 1.5,
+          "frequency_penalty": 0.0,
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0.0,
+          "seed": 42
+        },
+        "answer_prompt_sha256": "a89254b695da8cec9b083fbeeca3dc39912f84e7b0f6ed3deaae74968b5e3142"
+      },
+      "cases": [
+        {
+          "id": "theft-overview",
+          "seconds": 122.68,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Theo Điều 173, nếu người phạm tội trộm cắp tài sản có trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau: đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm; đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm; gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội; tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ; hoặc tài sản là di vật, cổ vật thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm. [Source 1]\n\nTheo Điều 173, nếu phạm tội thuộc một trong các trường hợp: có tổ chức; có tính chất chuyên nghiệp; chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng; dùng thủ đoạn xảo quyệt, nguy hiểm; hành hung để tẩu thoát; tài sản là bảo vật quốc gia; tái phạm nguy hiểm thì bị phạt tù từ 02 năm đến 07 năm. [Source 1]\n\nTheo Điều 173, nếu phạm tội thuộc một trong các trường hợp: chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng; lợi dụng thiên tai, dịch bệnh thì bị phạt tù từ 07 năm đến 15 năm. [Source 1]\n\nTheo Điều 173, nếu phạm tội thuộc một trong các trường hợp: chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên; lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp thì bị phạt tù từ 12 năm đến 20 năm. [Source 1]\n\nNgoài hình phạt chính, người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Các khung hình phạt theo Điều 173",
+              "Các điều kiện đáng chú ý",
+              "Hình phạt bổ sung"
+            ],
+            "unsupported": []
+          }
+        },
+        {
+          "id": "theft-value",
+          "seconds": 59.19,
+          "gold_context_coverage": 1.0,
+          "error": "ValueError: The model did not produce a valid FinalAnswer.",
+          "answer": null,
+          "completion": null,
+          "coverage": null
+        },
+        {
+          "id": "fraud-value",
+          "seconds": 68.54,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Gian dối chiếm đoạt 600 triệu đồng thuộc khung phạt tù từ 12 năm đến 20 năm hoặc tù chung thân. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "gian dối chiếm đoạt 600 triệu đồng thuộc khung phạt tù nào"
+            ],
+            "unsupported": []
+          }
+        },
+        {
+          "id": "trust-value",
+          "seconds": 72.18,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Theo Điều 175, nếu người phạm tội chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng thì bị phạt tù từ 05 năm đến 12 năm. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "khung phạt tù cho trường hợp lạm dụng tín nhiệm chiếm đoạt tài sản trị giá 300 triệu đồng"
+            ],
+            "unsupported": []
+          }
+        },
+        {
+          "id": "snatching-value",
+          "seconds": 68.52,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Cướp giật tài sản trị giá 60 triệu đồng thuộc trường hợp chiếm đoạt tài sản từ 50.000.000 đồng đến dưới 200.000.000 đồng theo Điều 171. [Source 1]\n\nPhạm tội thuộc trường hợp chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng thì bị phạt tù từ 03 năm đến 10 năm. [Source 1]",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Khung phạt tù cho tội cướp giật tài sản trị giá 60 triệu đồng"
+            ],
+            "unsupported": []
+          }
+        },
+        {
+          "id": "absent-tax",
+          "seconds": 75.83,
+          "gold_context_coverage": null,
+          "gold_read_coverage": null,
+          "answer": "The available sources do not contain enough evidence to answer this question.",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "thuế suất thuế thu nhập doanh nghiệp năm 2026"
+            ],
+            "unsupported": [
+              "thuế suất thuế thu nhập doanh nghiệp năm 2026"
+            ]
+          }
+        },
+        {
+          "id": "absent-employment",
+          "seconds": 69.74,
+          "gold_context_coverage": null,
+          "gold_read_coverage": null,
+          "answer": "The available sources do not contain enough evidence to answer this question.",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "số tháng trợ cấp thôi việc cho người lao động nghỉ việc"
+            ],
+            "unsupported": [
+              "tài liệu chưa cung cấp thông tin về mức trợ cấp thôi việc cho người lao động nghỉ việc",
+              "không có dữ liệu cụ thể về số tháng lương được hưởng trợ cấp thôi việc"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-sampled-fine.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-sampled-fine.json",
+      "note": "Superseded development trial; not the final eight-question run.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0.7,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 1.5,
+          "frequency_penalty": 0.0,
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0.0,
+          "seed": 42
+        },
+        "answer_prompt_sha256": "4a3a3e0f733a6efc5117a337b95d11a3c8855cf6829d835e2a14bddd0483031e"
+      },
+      "cases": [
+        {
+          "id": "theft-fine",
+          "seconds": 74.64,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "The available sources do not contain enough evidence to answer this question.",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "Số tiền phạt tiền bổ sung ngoài hình phạt chính đối với tội trộm cắp tài sản theo Điều 173"
+            ],
+            "unsupported": [
+              "Không có nguồn nào cung cấp thông tin về khoản phạt tiền cụ thể cho tội trộm cắp tài sản theo Điều 173. Các nguồn chỉ đề cập đến Điều 171 (cướp giật) và Điều 173 trong phần ngữ cảnh trước đó nhưng không đưa ra nội dung đầy đủ của Điều 173 bao gồm cả hình phạt tiền. Nguồn 2 có đề cập đến 'Điều 173' ở"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers-theft-value-diagnostic.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-theft-value-diagnostic.json",
+      "note": "Confirmed the empty-claims validation failure before the conditional provider schema was added.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0.7,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 1.5,
+          "frequency_penalty": 0.0,
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0.0,
+          "seed": 42
+        },
+        "answer_prompt_sha256": "a89254b695da8cec9b083fbeeca3dc39912f84e7b0f6ed3deaae74968b5e3142"
+      },
+      "cases": [
+        {
+          "id": "theft-value",
+          "seconds": 59.53,
+          "gold_context_coverage": 1.0,
+          "error": "ValueError: The model did not produce a valid FinalAnswer.",
+          "cause": "1 validation error for FinalAnswer\n  Value error, An answerable result needs supported claims. [type=value_error, input_value={'answerable': True, 'req...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error",
+          "answer": null,
+          "completion": null,
+          "coverage": null
+        }
+      ]
+    },
+    {
+      "file": "answers-validated-json.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers-validated-json.json",
+      "note": "Superseded development trial; not the final eight-question run.",
+      "generation": {
+        "model": "qwen3.5:9b",
+        "reasoning": false,
+        "options": {
+          "temperature": 0,
+          "num_ctx": 16384,
+          "num_predict": -1,
+          "repeat_penalty": 1.0,
+          "presence_penalty": 0.0,
+          "frequency_penalty": 0.0
+        },
+        "answer_prompt_sha256": "fe50248a134cbc27445fa7a1801782679c1392ecc6a24ade35a171e4c2648005"
+      },
+      "cases": [
+        {
+          "id": "theft-overview",
+          "seconds": 328.88,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "A verified answer could not be produced within the processing budget. Please try a narrower question.",
+          "completion": "model_round_budget_exhausted",
+          "coverage": {
+            "requested": [
+              "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173."
+            ],
+            "unsupported": [],
+            "unassessed": [
+              "Theo tài liệu, trộm cắp tài sản bị xử lý như thế nào? Hãy nêu đủ các khung hình phạt, các điều kiện đáng chú ý và hình phạt bổ sung của Điều 173."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": "answers.json",
+      "archived_raw": "legal_rag/data/graph-evaluation/qa-trials/answers.json",
+      "note": "Rejected overview: ambiguous OR alternatives and an unrelated amendment note; another turn did not complete.",
+      "generation": null,
+      "cases": [
+        {
+          "id": "theft-overview",
+          "seconds": 517.44,
+          "gold_context_coverage": 1.0,
+          "gold_read_coverage": 1.0,
+          "answer": "Theo Điều 173 Bộ luật Hình sự về Tội trộm cắp tài sản, khung hình phạt được quy định như sau:\n\n**1. Khung hình phạt cơ bản (Điều kiện đáng chú ý):**\n- Tài sản trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng HOẶC dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau:\n  - Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\n  - Đã bị kết án về tội này hoặc về các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\n  - Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\n  - Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\n  - Tài sản là di vật, cổ vật.\n- **Hình phạt:** cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm. [Source 1]\n\n**2. Khung hình phạt tăng nặng (50.000.000 đồng đến dưới 200.000.000 đồng):**\n- Có tổ chức;\n- Có tính chất chuyên nghiệp;\n- Dùng thủ đoạn xảo quyệt, nguy hiểm;\n- Hành hung để tẩu thoát;\n- Tài sản là bảo vật quốc gia;\n- Tái phạm nguy hiểm.\n- **Hình phạt:** phạt tù từ 02 năm đến 07 năm. [Source 1]\n\n**3. Khung hình phạt tăng nặng hơn (200.000.000 đồng đến dưới 500.000.000 đồng):**\n- Lợi dụng thiên tai, dịch bệnh.\n- **Hình phạt:** phạt tù từ 07 năm đến 15 năm. [Source 1]\n\n**4. Khung hình phạt nghiêm trọng nhất (500.000.000 đồng trở lên):**\n- Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n- **Hình phạt:** phạt tù từ 12 năm đến 20 năm. [Source 1]\n\n**Hình phạt bổ sung:**\n- Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng. [Source 1]\n\n*Lưu ý: Một số quy định về tài sản là kỷ vật, di vật, đồ thờ cúng có giá trị đặc biệt về mặt tinh thần đã được bãi bỏ theo Luật số 12/2017/QH14 có hiệu lực từ ngày 01/01/2018.*",
+          "completion": null,
+          "coverage": {
+            "requested": [
+              "khung hình phạt",
+              "điều kiện đáng chú ý",
+              "hình phạt bổ sung của Điều 173"
+            ],
+            "unsupported": []
+          }
+        },
+        {
+          "id": "theft-value",
+          "seconds": 605.65,
+          "gold_context_coverage": 1.0,
+          "error": "RuntimeError: Ollama did not complete its inference turn.",
+          "answer": null,
+          "completion": null,
+          "coverage": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "model": "qwen3.5:9b",
+  "think": true,
+  "settings": {
+    "temperature": 0,
+    "num_ctx": 16384,
+    "num_predict": -1,
+    "stream": true,
+    "request_timeout": null
+  },
+  "system_prompt": "Bạn trả lời câu hỏi tra cứu Bộ luật Hình sự bằng tiếng Việt, ngắn gọn. Chỉ dùng các nguồn được cung cấp. Nêu đúng số điều và nguồn. Giữ rõ điều kiện và ngoại lệ. Không trộn các tội khác nhau. Nếu chưa đủ căn cứ thì nói rõ. Trả lời tối đa 180 từ.",
+  "parents": [
+    {
+      "id": "173",
+      "title": "Điều 173. Tội trộm cắp tài sản",
+      "chapter": "Chương XVI CÁC TỘI XÂM PHẠM SỞ HỮU",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 72
+        },
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 73
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 173. Tội trộm cắp tài sản\n1. Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\na) Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nb) Đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nc) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nd) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;\nđ) Tài sản là di vật, cổ vật.\n2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\na) Có tổ chức;\nb) Có tính chất chuyên nghiệp;\nc) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nd) Dùng thủ đoạn xảo quyệt, nguy hiểm;\nđ) Hành hung để tẩu thoát;\ne) Tài sản là bảo vật quốc gia;\ng) Tái phạm nguy hiểm.\n3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\na) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nb) Lợi dụng thiên tai, dịch bệnh.\n4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\na) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nb) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n5. Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng."
+    },
+    {
+      "id": "168",
+      "title": "Điều 168. Tội cướp tài sản",
+      "chapter": "Chương XVI CÁC TỘI XÂM PHẠM SỞ HỮU",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 67
+        },
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 68
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 168. Tội cướp tài sản\n1. Người nào dùng vũ lực, đe dọa dùng vũ lực ngay tức khắc hoặc có hành vi khác làm cho người bị tấn công lâm vào tình trạng không thể chống cự được nhằm chiếm đoạt tài sản, thì bị phạt tù từ 03 năm đến 10 năm.\n2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\na) Có tổ chức;\nb) Có tính chất chuyên nghiệp;\nc) Gây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 11% đến 30%;\nd) Sử dụng vũ khí, phương tiện hoặc thủ đoạn nguy hiểm khác;\nđ) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\ne) Phạm tội đối với người dưới 16 tuổi, phụ nữ mà biết là có thai, người già yếu hoặc người không có khả năng tự vệ;\ng) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nh) Tái phạm nguy hiểm.\n3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\na) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nb) Gây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 31% đến 60%;\nc) Lợi dụng thiên tai, dịch bệnh.\n4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 18 năm đến 20 năm hoặc tù chung thân:\na) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nb) Gây thương tích hoặc gây tổn hại cho sức khỏe của 01 người mà tỷ lệ tổn thương cơ thể 61% trở lên hoặc gây thương tích hoặc gây tổn hại cho sức khỏe của 02 người trở lên mà tỷ lệ tổn thương cơ thể của mỗi người 31% trở lên;\nc) Làm chết người;\nd) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n5. Người chuẩn bị phạm tội này, thì bị phạt tù từ 01 năm đến 05 năm.\n6. Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, phạt quản chế, cấm cư trú từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản."
+    },
+    {
+      "id": "172",
+      "title": "Điều 172. Tội công nhiên chiếm đoạt tài sản",
+      "chapter": "Chương XVI CÁC TỘI XÂM PHẠM SỞ HỮU",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 70
+        },
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 71
+        },
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 72
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 172. Tội công nhiên chiếm đoạt tài sản\n1. Người nào công nhiên chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\na) Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nb) Đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 173, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nc) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nd) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ.\n2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\na) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nb) Hành hung để tẩu thoát;\nc) Tái phạm nguy hiểm;\nd) Chiếm đoạt tài sản là hàng cứu trợ;\nđ) (được bãi bỏ)\n3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\na) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nb) (được bãi bỏ)\nc) Lợi dụng thiên tai, dịch bệnh.\n4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\na) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nb) (được bãi bỏ)\nc) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n5. Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng."
+    },
+    {
+      "id": "171",
+      "title": "Điều 171. Tội cướp giật tài sản",
+      "chapter": "Chương XVI CÁC TỘI XÂM PHẠM SỞ HỮU",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 70
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 171. Tội cướp giật tài sản\n1. Người nào cướp giật tài sản của người khác, thì bị phạt tù từ 01 năm đến 05 năm.\n2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 03 năm đến 10 năm:\na) Có tổ chức;\nb) Có tính chất chuyên nghiệp;\nc) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nd) Dùng thủ đoạn nguy hiểm;\nđ) Hành hung để tẩu thoát;\ne) Gây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 11% đến 30%;\ng) Phạm tội đối với người dưới 16 tuổi, phụ nữ mà biết là có thai, người già yếu hoặc người không có khả năng tự vệ;\nh) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\ni) Tái phạm nguy hiểm.\n3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\na) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nb) Gây thương tích hoặc gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 31% đến 60%;\nc) Lợi dụng thiên tai, dịch bệnh.\n4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\na) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nb) Gây thương tích hoặc gây tổn hại cho sức khỏe của 01 người mà tỷ lệ tổn thương cơ thể 61% trở lên hoặc gây thương tích hoặc gây tổn hại cho sức khỏe của 02 người trở lên mà tỷ lệ tổn thương cơ thể của mỗi người 31% trở lên;\nc) Làm chết người;\nd) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n5. Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng."
+    },
+    {
+      "id": "174",
+      "title": "Điều 174. Tội lừa đảo chiếm đoạt tài sản",
+      "chapter": "Chương XVI CÁC TỘI XÂM PHẠM SỞ HỮU",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 73
+        },
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 74
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 174. Tội lừa đảo chiếm đoạt tài sản\n1. Người nào bằng thủ đoạn gian dối chiếm đoạt tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:\na) Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;\nb) Đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 173, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\nc) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;\nd) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ.\n2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\na) Có tổ chức;\nb) Có tính chất chuyên nghiệp;\nc) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;\nd) Tái phạm nguy hiểm;\nđ) Lợi dụng chức vụ, quyền hạn hoặc lợi dụng danh nghĩa cơ quan, tổ chức;\ne) Dùng thủ đoạn xảo quyệt;\ng) (được bãi bỏ)\n3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\na) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;\nb) (được bãi bỏ)\nc) Lợi dụng thiên tai, dịch bệnh.\n4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\na) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nb) (được bãi bỏ)\nc) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.\n5. Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng, cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản."
+    }
+  ],
+  "results": [
+    {
+      "question": "Trộm cắp tài sản từ 2 triệu đồng thì bị xử lý như thế nào?",
+      "answer": "Theo Điều 173 Bộ luật Hình sự ([Nguồn 1]), trộm cắp tài sản trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm (Khoản 1).\n\nSố tiền 2 triệu đồng thuộc khung giá trị này. Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đến 50.000.000 đồng (Khoản 5).\n\nLưu ý: Nếu tài sản dưới 2.000.000 đồng nhưng thuộc các trường hợp đặc biệt tại Khoản 1 Điều 173 thì cũng bị xử lý tương tự. Các tình tiết tăng nặng quy định tại Khoản 2, 3, 4 Điều 173 sẽ dẫn đến khung hình phạt cao hơn nếu có đủ điều kiện.",
+      "thinking_characters": 11241,
+      "seconds": 214.46,
+      "done_reason": "stop",
+      "eval_count": 4274,
+      "prompt_eval_count": 3060
+    },
+    {
+      "question": "Người lần đầu trộm tài sản trị giá 3 triệu đồng, không có tình tiết tăng nặng, có nhất thiết phải từng bị xử phạt hoặc kết án mới chịu trách nhiệm hình sự không?",
+      "answer": "Không cần thiết. Theo Điều 173 Khoản 1 [Nguồn 1], tội trộm cắp tài sản cấu thành khi chiếm đoạt tài sản trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng. Các trường hợp phải từng bị xử phạt hoặc kết án (điểm a, b) chỉ áp dụng cho trường hợp tài sản dưới 2.000.000 đồng. Vì tài sản trị giá 3 triệu đồng thuộc mức từ 2.000.000 đến dưới 50.000.000 đồng, người phạm tội lần đầu vẫn chịu trách nhiệm hình sự mà không cần tình tiết bị xử phạt trước đó.",
+      "thinking_characters": 6733,
+      "seconds": 105.45,
+      "done_reason": "stop",
+      "eval_count": 2264,
+      "prompt_eval_count": 3082
+    },
+    {
+      "question": "Trộm tài sản dưới 2 triệu đồng có phải lúc nào cũng không bị truy cứu trách nhiệm hình sự không?",
+      "answer": "Không, không phải lúc nào cũng không bị truy cứu. Theo Điều 173, Khoản 1 của Nguồn 1, hành vi trộm cắp tài sản dưới 2.000.000 đồng vẫn bị xử lý hình sự nếu thuộc một trong các trường hợp sau: a) Đã bị xử phạt vi phạm hành chính về chiếm đoạt tài sản mà còn vi phạm; b) Đã bị kết án về tội này hoặc các tội liên quan chưa xóa án tích mà còn vi phạm; c) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội; d) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ; đ) Tài sản là di vật, cổ vật.\n\nChỉ khi giá trị tài sản dưới 2 triệu đồng VÀ không thuộc bất kỳ trường hợp nào nêu trên thì mới không truy cứu trách nhiệm hình sự theo quy định tại Điều 173.",
+      "thinking_characters": 12853,
+      "seconds": 229.44,
+      "done_reason": "stop",
+      "eval_count": 4872,
+      "prompt_eval_count": 3066
+    }
+  ],
+  "review": [
+    {
+      "case": 1,
+      "observation": "Phân biệt khung từ 2 triệu đến dưới 50 triệu với nhánh dưới 2 triệu; không gắn ngoại lệ của nhánh sau vào nhánh trước. Câu trả lời chưa liệt kê chi tiết mọi khung giá trị cao hơn, chỉ dẫn tới khoản 2–4."
+    },
+    {
+      "case": 2,
+      "observation": "Trả lời đúng câu hỏi trọng tâm: với giá trị 3 triệu không cần tiền xử phạt/tiền án như nhánh dưới 2 triệu."
+    },
+    {
+      "case": 3,
+      "observation": "Giữ đúng quan hệ hoặc và điều kiện một trong các trường hợp; không đảo nghĩa ở câu kết như Gemma trong lần thử cũ."
+    }
+  ],
+  "scope": "Đối chiếu có mục tiêu trên 3 câu cùng chủ đề, không phải benchmark độ chính xác pháp luật tổng quát.",
+  "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "model_details": {
+    "parent_model": "",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+      "qwen35"
+    ],
+    "parameter_size": "9.7B",
+    "quantization_level": "Q4_K_M",
+    "context_length": 262144,
+    "embedding_length": 4096,
+    "runner": "ggml"
+  },
+  "rag_integration": {
+    "question": "Phòng vệ chính đáng là gì?",
+    "model": "qwen3.5:9b",
+    "think": true,
+    "mode": "answer",
+    "candidate_count": 100,
+    "reranked_count": 10,
+    "parent_ids": [
+      "22",
+      "126",
+      "136",
+      "1",
+      "4",
+      "281",
+      "333",
+      "410",
+      "23"
+    ],
+    "answer": "Theo Điều 22 [Nguồn 1], phòng vệ chính đáng là hành vi của người vì bảo vệ quyền hoặc lợi ích chính đáng của mình, của người khác hoặc lợi ích Nhà nước mà chống trả lại một cách cần thiết người đang có hành vi xâm phạm các lợi ích nói trên. Hành vi này không phải là tội phạm.\n\nTuy nhiên, nếu vượt quá giới hạn phòng vệ chính đáng (hành vi chống trả rõ ràng quá mức cần thiết, không phù hợp với tính chất và mức độ nguy hiểm của hành vi xâm hại), người đó phải chịu trách nhiệm hình sự [Nguồn 1].",
+    "source_parent": {
+      "id": "22",
+      "title": "Điều 22. Phòng vệ chính đáng",
+      "chapter": "Chương IV NHỮNG TRƯỜNG HỢP LOẠI TRỪ TRÁCH NHIỆM HÌNH SỰ",
+      "pages": [
+        {
+          "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/9/135-vbhn-vpqh.pdf",
+          "page": 8
+        }
+      ],
+      "source": "https://chinhphu.vn/?classid=0&docid=215260&pageid=27160",
+      "version": "135/VBHN-VPQH ngày 05/09/2025",
+      "text": "Điều 22. Phòng vệ chính đáng\n1. Phòng vệ chính đáng là hành vi của người vì bảo vệ quyền hoặc lợi ích chính đáng của mình, của người khác hoặc lợi ích của Nhà nước, của cơ quan, tổ chức mà chống trả lại một cách cần thiết người đang có hành vi xâm phạm các lợi ích nói trên. Phòng vệ chính đáng không phải là tội phạm.\n2. Vượt quá giới hạn phòng vệ chính đáng là hành vi chống trả rõ ràng quá mức cần thiết, không phù hợp với tính chất và mức độ nguy hiểm cho xã hội của hành vi xâm hại. Người có hành vi vượt quá giới hạn phòng vệ chính đáng phải chịu trách nhiệm hình sự theo quy định của Bộ luật này."
+    },
+    "process_exit_code": 0
+  }
+}

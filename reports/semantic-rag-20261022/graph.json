@@ -1,0 +1,304 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "candidate_edges": 14,
+    "shortlisted_edges": 5,
+    "similarity_threshold": 0.42295217514038086,
+    "document_id": "5a05690bd67f567265e44e43",
+    "version": "f3e3f6a7fcf7419f923ddbd1f299c7f8",
+    "plan_id": "a107e7d98e3ce9e4e870972a",
+    "note": "LLM relations are hypotheses with exact-quote validation, not proven entailment."
+  },
+  "nodes": [
+    {
+      "kind": "text_unit",
+      "text": "Khách hàng được đổi sản phẩm trong vòng bảy ngày kể từ ngày nhận hàng.",
+      "start": 0,
+      "end": 70,
+      "spans": [
+        {
+          "start": 0,
+          "end": 70,
+          "page": null,
+          "locator": "text"
+        }
+      ],
+      "id": "8f2c65999697e93eef420f90"
+    },
+    {
+      "kind": "text_unit",
+      "text": "Sản phẩm đổi phải còn nguyên tem và chưa qua sử dụng.",
+      "start": 71,
+      "end": 124,
+      "spans": [
+        {
+          "start": 71,
+          "end": 124,
+          "page": null,
+          "locator": "text"
+        }
+      ],
+      "id": "fe0c928d6e584f8126489878"
+    },
+    {
+      "kind": "text_unit",
+      "text": "Không áp dụng đổi hàng đối với sản phẩm đặt làm theo yêu cầu cá nhân.",
+      "start": 125,
+      "end": 194,
+      "spans": [
+        {
+          "start": 125,
+          "end": 194,
+          "page": null,
+          "locator": "text"
+        }
+      ],
+      "id": "25fe287d1196df2bc778fd69"
+    },
+    {
+      "kind": "text_unit",
+      "text": "Nếu sản phẩm bị lỗi do nhà sản xuất, khách hàng được đổi ngay cả khi đã mở bao bì.",
+      "start": 195,
+      "end": 277,
+      "spans": [
+        {
+          "start": 195,
+          "end": 277,
+          "page": null,
+          "locator": "text"
+        }
+      ],
+      "id": "1283c1c965eb17ca48e335cd"
+    },
+    {
+      "kind": "text_unit",
+      "text": "Nhân viên phải ngắt nguồn điện trước khi vệ sinh máy pha cà phê.",
+      "start": 278,
+      "end": 342,
+      "spans": [
+        {
+          "start": 278,
+          "end": 342,
+          "page": null,
+          "locator": "text"
+        }
+      ],
+      "id": "f87707281927027285c0b2d5"
+    },
+    {
+      "kind": "text_unit",
+      "text": "Không được đổ nước trực tiếp lên bộ phận điện.",
+      "start": 343,
+      "end": 389,
+      "spans": [
+        {
+          "start": 343,
+          "end": 389,
+          "page": null,
+          "locator": "text"
+        }
+      ],
+      "id": "7b450b2f470e5d7e78124942"
+    },
+    {
+      "kind": "text_unit",
+      "text": "Khi phát hiện dây điện hở, nhân viên phải dừng sử dụng máy và báo cho quản lý.",
+      "start": 390,
+      "end": 468,
+      "spans": [
+        {
+          "start": 390,
+          "end": 468,
+          "page": null,
+          "locator": "text"
+        }
+      ],
+      "id": "068aadfe545e78d6e723c974"
+    },
+    {
+      "kind": "text_unit",
+      "text": "Khách hàng cần xuất trình hóa đơn hoặc mã đơn hàng để yêu cầu đổi sản phẩm.",
+      "start": 469,
+      "end": 544,
+      "spans": [
+        {
+          "start": 469,
+          "end": 544,
+          "page": null,
+          "locator": "text"
+        }
+      ],
+      "id": "223536474e439bf122148fe3"
+    },
+    {
+      "kind": "text_unit",
+      "text": "Tiền hoàn lại được chuyển về phương thức thanh toán ban đầu trong vòng năm ngày làm việc sau khi yêu cầu được chấp thuận.",
+      "start": 545,
+      "end": 666,
+      "spans": [
+        {
+          "start": 545,
+          "end": 666,
+          "page": null,
+          "locator": "text"
+        }
+      ],
+      "id": "49c6cf8ba632115381d1aa83"
+    },
+    {
+      "kind": "text_unit",
+      "text": "Thời gian xử lý hoàn tiền không làm thay đổi thời hạn bảy ngày được yêu cầu đổi hàng.",
+      "start": 667,
+      "end": 752,
+      "spans": [
+        {
+          "start": 667,
+          "end": 752,
+          "page": null,
+          "locator": "text"
+        }
+      ],
+      "id": "3c0c226c30511dba33e94383"
+    }
+  ],
+  "edges": [
+    {
+      "kind": "next",
+      "verified": true,
+      "grouping": false,
+      "source": "8f2c65999697e93eef420f90",
+      "target": "fe0c928d6e584f8126489878",
+      "key": 0
+    },
+    {
+      "kind": "same_subject",
+      "reason": "Both texts describe conditions for product exchange eligibility, sharing the same subject of exchange policy.",
+      "source_quote": "Khách hàng được đổi sản phẩm trong vòng bảy ngày kể từ ngày nhận hàng.",
+      "target_quote": "Nếu sản phẩm bị lỗi do nhà sản xuất, khách hàng được đổi ngay cả khi đã mở bao bì.",
+      "weight": 0.45450952649116516,
+      "verified": true,
+      "grouping": true,
+      "verification": "llm_with_exact_quote_validation",
+      "source": "8f2c65999697e93eef420f90",
+      "target": "1283c1c965eb17ca48e335cd",
+      "key": 0
+    },
+    {
+      "kind": "explains",
+      "reason": "The target text clarifies that refund processing time does not affect the seven-day limit defined in the source text.",
+      "source_quote": "Khách hàng được đổi sản phẩm trong vòng bảy ngày kể từ ngày nhận hàng.",
+      "target_quote": "Thời gian xử lý hoàn tiền không làm thay đổi thời hạn bảy ngày được yêu cầu đổi hàng.",
+      "weight": 0.42516881227493286,
+      "verified": true,
+      "grouping": true,
+      "verification": "llm_with_exact_quote_validation",
+      "source": "8f2c65999697e93eef420f90",
+      "target": "3c0c226c30511dba33e94383",
+      "key": 0
+    },
+    {
+      "kind": "next",
+      "verified": true,
+      "grouping": false,
+      "source": "fe0c928d6e584f8126489878",
+      "target": "25fe287d1196df2bc778fd69",
+      "key": 0
+    },
+    {
+      "kind": "next",
+      "verified": true,
+      "grouping": false,
+      "source": "25fe287d1196df2bc778fd69",
+      "target": "1283c1c965eb17ca48e335cd",
+      "key": 0
+    },
+    {
+      "kind": "same_subject",
+      "reason": "Both texts define rules regarding the eligibility and requirements for exchanging products.",
+      "source_quote": "Không áp dụng đổi hàng đối với sản phẩm đặt làm theo yêu cầu cá nhân.",
+      "target_quote": "Khách hàng cần xuất trình hóa đơn hoặc mã đơn hàng để yêu cầu đổi sản phẩm.",
+      "weight": 0.4702635407447815,
+      "verified": true,
+      "grouping": true,
+      "verification": "llm_with_exact_quote_validation",
+      "source": "25fe287d1196df2bc778fd69",
+      "target": "223536474e439bf122148fe3",
+      "key": 0
+    },
+    {
+      "kind": "next",
+      "verified": true,
+      "grouping": false,
+      "source": "1283c1c965eb17ca48e335cd",
+      "target": "f87707281927027285c0b2d5",
+      "key": 0
+    },
+    {
+      "kind": "same_subject",
+      "reason": "Both texts specify different conditions or requirements (defect status vs documentation) for requesting a product exchange.",
+      "source_quote": "Nếu sản phẩm bị lỗi do nhà sản xuất, khách hàng được đổi ngay cả khi đã mở bao bì.",
+      "target_quote": "Khách hàng cần xuất trình hóa đơn hoặc mã đơn hàng để yêu cầu đổi sản phẩm.",
+      "weight": 0.4766515791416168,
+      "verified": true,
+      "grouping": true,
+      "verification": "llm_with_exact_quote_validation",
+      "source": "1283c1c965eb17ca48e335cd",
+      "target": "223536474e439bf122148fe3",
+      "key": 0
+    },
+    {
+      "kind": "next",
+      "verified": true,
+      "grouping": false,
+      "source": "f87707281927027285c0b2d5",
+      "target": "7b450b2f470e5d7e78124942",
+      "key": 0
+    },
+    {
+      "kind": "next",
+      "verified": true,
+      "grouping": false,
+      "source": "7b450b2f470e5d7e78124942",
+      "target": "068aadfe545e78d6e723c974",
+      "key": 0
+    },
+    {
+      "kind": "next",
+      "verified": true,
+      "grouping": false,
+      "source": "068aadfe545e78d6e723c974",
+      "target": "223536474e439bf122148fe3",
+      "key": 0
+    },
+    {
+      "kind": "next",
+      "verified": true,
+      "grouping": false,
+      "source": "223536474e439bf122148fe3",
+      "target": "49c6cf8ba632115381d1aa83",
+      "key": 0
+    },
+    {
+      "kind": "next",
+      "verified": true,
+      "grouping": false,
+      "source": "49c6cf8ba632115381d1aa83",
+      "target": "3c0c226c30511dba33e94383",
+      "key": 0
+    },
+    {
+      "kind": "same_subject",
+      "reason": "Both texts address refund processing timelines and return policy constraints within the same service context.",
+      "source_quote": "Tiền hoàn lại được chuyển về phương thức thanh toán ban đầu trong vòng năm ngày làm việc sau khi yêu cầu được chấp thuận.",
+      "target_quote": "Thời gian xử lý hoàn tiền không làm thay đổi thời hạn bảy ngày được yêu cầu đổi hàng.",
+      "weight": 0.5385717153549194,
+      "verified": true,
+      "grouping": true,
+      "verification": "llm_with_exact_quote_validation",
+      "source": "49c6cf8ba632115381d1aa83",
+      "target": "3c0c226c30511dba33e94383",
+      "key": 1
+    }
+  ]
+}

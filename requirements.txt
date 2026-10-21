@@ -1,0 +1,5 @@
+torch==2.8.0
+numpy==2.1.2
+tokenizers==0.22.1
+pyarrow>=17,<24
+huggingface-hub>=0.34,<1

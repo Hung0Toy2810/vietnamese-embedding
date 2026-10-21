@@ -1,0 +1,16 @@
+{
+  "purpose": "Development preflight, not a held-out benchmark",
+  "source": "10-page excerpt of original pages 70-79",
+  "atoms": 79,
+  "embedding_candidate_pairs": 224,
+  "theft_subject_atom": 13,
+  "manually_required_related_atoms": [
+    14,
+    15,
+    16,
+    20,
+    21
+  ],
+  "related_atoms_proposed_by_embedding_only": [],
+  "finding": "Per-node quota alone cannot recover dependencies absent from the candidate pool. Language-reading windows are required before considering graph edge coverage."
+}

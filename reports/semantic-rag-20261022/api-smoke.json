@@ -1,0 +1,63 @@
+{
+  "question": "Sản phẩm đặt làm theo yêu cầu cá nhân có được đổi hàng không?",
+  "elapsed": 65.6093430519104,
+  "job": {
+    "id": "a38a607575694e738cbd991d489bc110",
+    "document_id": "5a05690bd67f567265e44e43",
+    "kind": "answer",
+    "status": "done",
+    "message": "Complete",
+    "payload": {
+      "document_id": "5a05690bd67f567265e44e43",
+      "question": "Sản phẩm đặt làm theo yêu cầu cá nhân có được đổi hàng không?",
+      "use_web": false,
+      "history": [],
+      "version": "f3e3f6a7fcf7419f923ddbd1f299c7f8"
+    },
+    "result": {
+      "answer": "Không, sản phẩm đặt làm theo yêu cầu cá nhân không được đổi hàng. Chính sách quy định rõ: [Source 1] \"Không áp dụng đổi hàng đối với sản phẩm đặt làm theo yêu cầu cá nhân.\"",
+      "evidence": [
+        {
+          "source": 1,
+          "passage": 1,
+          "quote": "Không áp dụng đổi hàng đối với sản phẩm đặt làm theo yêu cầu cá nhân.",
+          "title": "store-policy.txt",
+          "page": 1,
+          "pdf_url": null,
+          "url": null,
+          "document_id": "5a05690bd67f567265e44e43",
+          "version": "f3e3f6a7fcf7419f923ddbd1f299c7f8",
+          "preview_url": "/api/preview/5a05690bd67f567265e44e43?version=f3e3f6a7fcf7419f923ddbd1f299c7f8#source-125",
+          "spans": [
+            {
+              "start": 125,
+              "end": 194,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        }
+      ],
+      "follow_up": [],
+      "mindmap": null,
+      "steps": [
+        {
+          "tool": "search_documents",
+          "input": "Sản phẩm đặt làm theo yêu cầu cá nhân có được đổi hàng không?"
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Citation numbers [] do not match evidence source numbers [1]. Use literal [Source n] tags in the answer for each cited source. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        }
+      ],
+      "coverage": {
+        "requested": [
+          "Sản phẩm đặt làm theo yêu cầu cá nhân có được đổi hàng không?"
+        ],
+        "unsupported": []
+      },
+      "version": "f3e3f6a7fcf7419f923ddbd1f299c7f8"
+    },
+    "created": 1792681012.611006
+  }
+}

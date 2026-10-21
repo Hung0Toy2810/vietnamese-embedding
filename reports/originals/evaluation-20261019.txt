@@ -1,0 +1,71 @@
+Đánh giá bão hoà — checkpoint bước 249,740
+
+Kết quả ủng hộ nhận định lượt train với dữ liệu và learning rate hiện tại đã chững về chất lượng retrieval trên bộ theo dõi này. Điểm tổng mới không vượt rõ mốc 108.000 và thấp hơn mốc 190.399. Nhóm positive dài có mức giảm rõ theo khoảng tin cậy paired bootstrap.
+
+Snapshot lúc 2026-10-19T11:13:56.443276+07:00. Mọi model được chấm trên cùng 1,000 query và 3,763 passage sau kiểm tra leakage, cùng nhãn, thứ tự corpus và quy tắc tie-break.
+
+| Checkpoint / model | MRR@10 | Top 1 | Top 5 | Top 10 |
+| --- | ---: | ---: | ---: | ---: |
+| Student bước 108.000 | 0.8089 | 73.80% | 90.00% | 92.90% |
+| Student bước 190.399 | 0.8211 | 75.20% | 91.00% | 93.50% |
+| Student bước 249.740 | 0.8099 | 74.30% | 89.90% | 92.30% |
+| Student trước fine-tuning | 0.6961 | 61.20% | 81.10% | 85.90% |
+| TF-IDF ký tự | 0.7671 | 68.70% | 86.80% | 90.80% |
+| BKAI — tham chiếu | 0.9055 | 87.10% | 95.40% | 96.90% |
+
+Sau 59.341 bước thêm so với 190.399: MRR giảm 0,0112, top 1 giảm 0,9 điểm phần trăm, top 10 giảm 1,2 điểm phần trăm. Khoảng tin cậy paired cluster bootstrap 95% của chênh lệch MRR là [-0,0244; +0,0013], vẫn bao gồm 0. Vì vậy, điểm tổng có dấu hiệu giảm nhưng chưa đủ bằng chứng để tuyên bố suy giảm toàn cục chắc chắn.
+
+So với bước 108.000, sau 141.740 bước thêm, chênh lệch MRR chỉ +0,00095; CI 95% [-0,0143; +0,0158]. Đây là bằng chứng thực dụng cho việc lợi ích thêm rất nhỏ trên bộ theo dõi, không chứng minh giới hạn khả năng của kiến trúc 77M.
+
+| Nhóm | Query | MRR 108.000 | MRR 190.399 | MRR 249.740 | Top 1: 190.399 → 249.740 |
+| --- | ---: | ---: | ---: | ---: | --- |
+| mMARCO | 827 | 0.8470 | 0.8598 | 0.8552 | 80.77% → 80.29% |
+| QA | 173 | 0.6270 | 0.6362 | 0.5931 | 48.55% → 45.66% |
+| Positive 1–64 token | 232 | 0.7966 | 0.8205 | 0.8110 | 77.16% → 75.86% |
+| Positive 65–156 token | 700 | 0.8221 | 0.8332 | 0.8302 | 76.14% → 76.57% |
+| Positive 157–256 token | 68 | 0.7160 | 0.6979 | 0.5965 | 58.82% → 45.59% |
+
+Nhóm positive 157–256 token có 68 query (40 QA, 28 mMARCO). MRR giảm 0,1013 so với mốc 190.399, CI paired bootstrap 95% [-0,1541; -0,0513], hoàn toàn dưới 0. Điểm giảm xuất hiện ở cả hai nguồn trong nhóm này: QA dài 0,5822 → 0,4558; mMARCO dài 0,8631 → 0,7976. Hai phân nhóm nhỏ nên chưa suy rộng thành kết luận về mọi đoạn dài.
+
+Các nhóm độ dài được theo dõi từ lần đánh giá trước; không phải chỉ chọn nhóm xấu sau khi thấy kết quả. Nhiều nhóm được xem cùng lúc; các CI là khoảng tin cậy riêng từng nhóm, chưa hiệu chỉnh cho nhiều phép so sánh.
+
+So với mốc 190.399: 45 query từ sai thành đúng top 1, 54 query từ đúng thành sai top 1. Số ròng giảm 9 trên 1.000 query.
+
+| Checkpoint | Train loss trung bình 1.000 bước | NCE | KL có trọng số |
+| --- | ---: | ---: | ---: |
+| 108,000 | 0.1959 | 0.1646 | 0.0313 |
+| 190,399 | 0.1466 | 0.1138 | 0.0328 |
+| 249,740 | 0.1259 | 0.0940 | 0.0320 |
+
+Train loss giảm khoảng 14,1% so với mốc 190.399, trong khi retrieval trên cùng bộ theo dõi không cải thiện. Các khoảng train dùng dữ liệu/batch khác nhau; không dùng chúng như loss trên một tập cố định và không khẳng định nguyên nhân là overfitting chỉ từ các số này.
+
+Giả thuyết cần phân biệt với kết quả đo: hiện nguồn QA đã hết lượt và stream đang đi tiếp mMARCO, LR giữ cố định 1e-4. Lệch phân phối và lịch LR có thể góp phần vào việc chững/giảm. Thí nghiệm này không tách được ảnh hưởng từng yếu tố và không chứng minh nguyên nhân duy nhất.
+
+Kiểm tra leakage và khả năng so sánh:
+
+- Bộ gốc có 1.024 query / 3.836 passage được kiểm tra SHA256. Tổng cộng loại 73 passage có đoạn câu khớp với văn bản train ghi nhận trong ledger, cùng 24 query mất positive.
+- So với lần trước, thêm 28 passage và 10 query bị loại. Các checkpoint 108.000, 190.399 và 249.740 đều được chấm lại trên cùng 1.000 query / 3.763 passage còn lại; không so trực tiếp các điểm từ những corpus khác nhau.
+- Không phát hiện query hoặc nguyên passage trùng train theo 14.580 khoá seen được kiểm tra. Đối chiếu thêm context QA và biến thể văn bản qua reserved, với ledger chỉ đọc.
+- Không lọc test theo score teacher hoặc kết quả model; không sửa nhãn sau khi chấm. Các embedding lịch sử tái tạo đúng các metric lịch sử trước khi áp dụng phép loại mới.
+- Vector hữu hạn, chuẩn L2 đúng; thứ hạng kiểm tra độc lập bằng cách đếm passage vượt positive khớp với cách argsort tính metric.
+
+Giới hạn:
+
+- Lịch sử giữ hash, không đủ toàn bộ văn bản để loại hết mọi gần trùng ngữ nghĩa. Reservation train có thể gồm mẫu đã prefetch; việc loại là bảo thủ.
+- Nhãn có nhiễu và thiếu positive tương đương như đã ghi nhận trước đây. Tập theo dõi này không phải final test chưa từng xem.
+- BKAI khai báo train trên MS MARCO/SQuAD dịch tiếng Việt; điểm BKAI là tham chiếu, không bảo đảm là dữ liệu chưa thấy của họ.
+- Corpus vài nghìn passage chưa đại diện kho hàng triệu passage. Thử nghiệm giữ protocol top 1/5/10 và MRR@10; chưa đo Recall@200 cho vai trò lấy ứng viên đầu tiên.
+- Đây là dấu hiệu bão hoà của lượt train/thiết lập hiện tại trên bộ theo dõi, không phải kết luận model không thể tiến bộ với dữ liệu, khởi tạo hoặc lịch huấn luyện khác.
+
+Khuyến nghị: dừng việc tiếp tục cùng thiết lập chỉ để đọc hết dataset. Trong ba checkpoint fine-tuning được đo, bước 190.399 có điểm tổng cao nhất và được giữ lại dưới dạng snapshot trọng số. Cần quyết định riêng nếu muốn đổi dữ liệu/LR hoặc chọn checkpoint phục vụ suy luận. Báo cáo này không tự dừng, rollback hoặc sửa tiến trình train.
+
+Tệp kiểm tra:
+
+- [Số liệu đầy đủ](report.json)
+- [Metadata snapshot](snapshot.json)
+- [Kiểm tra leakage](leakage_audit.json)
+- [Dataset dùng chung](dataset.json)
+- [Train loss quanh các checkpoint](training_loss_context.json)
+- [Phân nhóm đoạn dài theo nguồn](long_group_source_analysis.json)
+
+SHA256 dataset: `4028aa037b4d6da4e0126560c1005cafcb0d5adfa750a1fd17e0a23eb8b6b55e`.

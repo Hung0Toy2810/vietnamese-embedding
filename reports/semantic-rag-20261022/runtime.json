@@ -1,0 +1,11 @@
+{
+  "torch": "2.8.0",
+  "transformers": "4.57.6",
+  "docling": "2.141.0",
+  "langchain": "1.4.6",
+  "langgraph": "1.2.16",
+  "qdrant-client": "1.20.0",
+  "networkx": "3.5",
+  "pydantic": "2.14.1",
+  "onnxruntime": "1.31.0"
+}

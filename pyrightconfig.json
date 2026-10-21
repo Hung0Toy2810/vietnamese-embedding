@@ -1,0 +1,18 @@
+{
+  "include": [
+    "*.py",
+    "tests",
+    "legal_rag",
+    "reports/**/*.py"
+  ],
+  "exclude": [
+    ".venv",
+    "data",
+    "checkpoints",
+    "runs"
+  ],
+  "pythonVersion": "3.11",
+  "typeCheckingMode": "standard",
+  "venvPath": ".",
+  "venv": ".venv"
+}

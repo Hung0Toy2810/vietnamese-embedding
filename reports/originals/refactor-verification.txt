@@ -1,0 +1,35 @@
+# Kiểm tra bản source rút gọn — 19/10/2026
+
+## Phạm vi
+
+Source chính từ 57 còn **13 file Python**. Luồng hiện tại chỉ gồm chuẩn bị dữ liệu offline một lần và train retrieval bằng **multi-positive InfoNCE**. Không còn các nhánh huấn luyện phụ hoặc bộ máy streaming.
+
+Kiến trúc và checkpoint có sẵn được giữ nguyên. Đây là pipeline mới, không phải bản tái lập chính xác lượt train lịch sử. Các metric lịch sử không được dùng làm số đo của pipeline mới.
+
+## Bảo toàn model
+
+- Kiến trúc và tên trọng số trong `model.py` giữ nguyên. Bổ sung type hint/cast cho các tầng để trình kiểm tra kiểu nhận đúng cấu trúc model; không thay đổi phép tính.
+- `checkpoints/best-step-190399.pt`: 308.357.883 byte.
+- SHA256: `70866d2abe4d881c8310dd4fd042df862c8cd09c5b85cf8d62e24f93e43e2a37`.
+- Tokenizer production, metadata và ba file báo cáo lịch sử giữ nguyên SHA256.
+- Hai văn bản kiểm tra qua model thật trước/sau cho tensor embedding khớp chính xác từng giá trị trên CPU.
+- Checkpoint gốc không có optimizer. Các lượt train mới lưu optimizer và vị trí epoch/batch để resume; không ghi đè checkpoint gốc.
+
+## Kiểm tra CPU
+
+`python tests/test_pipeline.py`: **6 tests đạt**:
+
+1. Xác minh answer span, giữ câu/đoạn và loại QA không hợp lệ.
+2. Tách query/positive theo nhóm, gộp nhiều positive, loại bộ nhãn trùng và negative sai split.
+3. Loss và toàn bộ parameter gradients của gradient caching khớp full batch.
+4. Prepare → train → resume → evaluate. Trọng số cuối và CSV của lượt resume khớp lượt chạy liên tục; checkpoint khởi tạo không thay đổi.
+5. Loss hữu hạn; phân biệt hit@k với recall@k; tìm kiếm chia block khớp full score matrix, kể cả tie-break.
+6. SIGTERM lưu sau update, khôi phục signal handler và kiểm tra giới hạn số bước/đường dẫn output.
+
+`ruff check --select F .` đạt. Prepare CLI chạy được với tokenizer production và dữ liệu giả lập local.
+
+`pyright` ở chế độ `standard` kiểm tra toàn bộ 13 module và file test: **0 errors, 0 warnings**. Các điểm đã sửa gồm kiểu model/config, phần tử `ModuleList`, gradient có thể chưa tồn tại, ID SQLite có thể là `None` và vị trí đáp án QA.
+
+## Giới hạn
+
+Kiểm tra trên Python 3.11, PyTorch 2.11.0 CPU; requirements giữ PyTorch 2.8.0 theo môi trường train gốc. Chưa profile pipeline mới trên CUDA/A4500, không tải lại dataset lớn hoặc train lại toàn bộ. Các tests không đo chất lượng retrieval tiếng Việt. Tập train và bộ theo dõi gốc không nằm trong gói local.

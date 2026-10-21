@@ -1,0 +1,32 @@
+[
+  {
+    "original_path": "checkpoints/best-step-190399.pt",
+    "preserved_path": "checkpoints/best-step-190399.pt",
+    "sha256": "70866d2abe4d881c8310dd4fd042df862c8cd09c5b85cf8d62e24f93e43e2a37"
+  },
+  {
+    "original_path": "data/production-tokenizer.json",
+    "preserved_path": "data/production-tokenizer.json",
+    "sha256": "39becf5f21ad32b15ae3114acb706409429031b7eb96a182554e4c0780e77f9e"
+  },
+  {
+    "original_path": "data/production-tokenizer.metadata.json",
+    "preserved_path": "data/production-tokenizer.metadata.json",
+    "sha256": "871003789458a422e3e91ef203faacfd8bc962914cbd526ddb3676a26a0cd0c4"
+  },
+  {
+    "original_path": "reports/evaluation-20261019.md",
+    "preserved_path": "reports/originals/evaluation-20261019.txt",
+    "sha256": "f2d6d622c378292fe1619928654e7c8928cf7beca6810762c55cd8bc7a9d9651"
+  },
+  {
+    "original_path": "reports/evaluation-20261018.md",
+    "preserved_path": "reports/originals/evaluation-20261018.txt",
+    "sha256": "5753310997d17be329ede88a65db9cf5cb0d3a39a5b1bb9486be9f4c0cab45ad"
+  },
+  {
+    "original_path": "reports/comparison-metrics.json",
+    "preserved_path": "reports/comparison-metrics.json",
+    "sha256": "2ec8502fab0495b34464fb59d13adba8b3569337547d1672641750b69cbc87b0"
+  }
+]

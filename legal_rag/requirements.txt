@@ -1,0 +1,20 @@
+# Install the root requirements first; use a dedicated virtual environment.
+PyMuPDF>=1.26,<1.29
+transformers>=4.57,<5
+sentencepiece>=0.2,<0.3
+fastapi>=0.121,<1
+uvicorn>=0.38,<1
+python-multipart>=0.0.20,<1
+pydantic>=2.12,<3
+langchain==1.4.6
+langgraph==1.2.16
+langchain-ollama==1.1.0
+docling==2.141.0
+networkx==3.5
+qdrant-client==1.20.0
+bm25s==0.3.14
+ddgs==9.16.0
+trafilatura==2.3.1
+requests>=2.32,<3
+lxml_html_clean>=0.4,<1
+onnxruntime>=1.23,<2

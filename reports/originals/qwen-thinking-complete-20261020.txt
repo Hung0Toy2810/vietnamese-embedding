@@ -1,0 +1,23 @@
+# Qwen3.5 9B — chạy suy luận đến khi hoàn tất
+
+Lượt thử ngày 20/10/2026, thực hiện lại sau khi lượt trước bị agent tự ngắt quá sớm. Dùng cùng prompt và cùng 5 điều luật như đợt so sánh trước, lần này bật suy luận và chờ `done: true`.
+
+Thiết lập: `think: true`, `stream: true`, `temperature: 0`, context 16.384 token, `num_predict: -1`, không đặt timeout đọc phản hồi. Chỉ ghi số ký tự suy luận để theo dõi tiến độ; báo cáo không lưu nội dung suy luận.
+
+| Câu hỏi | Thời gian | Token sinh, gồm suy luận và đáp án | Quan sát |
+|---|---:|---:|---|
+| Trộm cắp tài sản từ 2 triệu đồng | 214,46 giây | 4.274 | Phân biệt được nhánh từ 2 triệu đến dưới 50 triệu và nhánh dưới 2 triệu có điều kiện. Chỉ dẫn tới các khoản về khung cao hơn, chưa liệt kê chi tiết từng khung. |
+| Trộm 3 triệu lần đầu, có cần tiền xử phạt/tiền án không? | 105,45 giây | 2.264 | Không còn gắn điều kiện của nhánh dưới 2 triệu vào trường hợp 3 triệu. |
+| Dưới 2 triệu có luôn không bị truy cứu không? | 229,44 giây | 4.872 | Giữ đúng các ngoại lệ và quan hệ điều kiện ở câu kết. |
+
+Cả ba lượt kết thúc tự nhiên với `done_reason: stop`, có đáp án không rỗng. Hai lượt cần hơn 4.096 token sinh: giới hạn 800 hoặc 4.096 token và việc tự dừng theo thời gian đều không thích hợp để đánh giá những lượt này.
+
+Đây là kiểm tra có mục tiêu trên ba câu cùng chủ đề. Lỗi gộp nhánh điều kiện không tái hiện trong ba câu này; không suy ra mọi câu trả lời pháp luật đều đúng. Xem [đáp án gốc và thiết lập](qwen-thinking-complete-20261020.json).
+
+Code RAG chuyển mặc định sang `qwen3.5:9b`, bật suy luận, đọc stream đến khi hoàn tất và sinh câu trả lời có nguồn. `--verbatim` vẫn cho phép chọn và trích nguyên văn. Mất kết nối/stream không hoàn tất được báo lỗi; không coi đáp án dang dở là kết quả.
+
+Đã chạy thêm CLI thực tế với câu “Phòng vệ chính đáng là gì?”: model 77M tìm 100 child, reranker giữ 10 child, lấy 9 parent rồi Qwen hoàn tất đáp án có dẫn Điều 22/[Nguồn 1]. Phần trả lời nêu định nghĩa và phân biệt vượt quá giới hạn, phù hợp nội dung trọng tâm của Điều 22 được cung cấp. Đây là bản giải thích ngắn, không phải bản trích đầy đủ mọi đối tượng được bảo vệ trong khoản luật. Tiến trình kết thúc mã 0; trace lưu model, chế độ suy luận, các ứng viên và đáp án. Đáp án và Điều 22 đối chiếu cũng được giữ trong JSON báo cáo.
+
+Đọc stream được kiểm tra bằng 4 test giao thức, cộng 4 test dữ liệu/RAG hiện có. Pyright standard trên 22 file: 0 lỗi, 0 cảnh báo. Checkpoint và tokenizer không được ghi lại trong các lượt thử này.
+
+Tham khảo tham số sinh không giới hạn: [Ollama Modelfile Reference](https://docs.ollama.com/modelfile), mục `num_predict`.

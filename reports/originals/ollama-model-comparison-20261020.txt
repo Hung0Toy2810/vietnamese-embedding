@@ -1,0 +1,18 @@
+# Thử model khác — 20/10/2026
+
+**Báo cáo lượt cũ.** Lượt Qwen bật suy luận bị ngắt trong đợt này đã được chạy lại đến khi hoàn tất. Xem [kết quả đầy đủ](qwen-thinking-complete-20261020.md); không dùng việc bị ngắt sớm làm kết luận về chất lượng suy luận.
+
+Dùng cùng 5 parent đã lấy từ retrieval/rerank: Điều 173, 168, 172, 171, 174. Prompt và nguồn giống nhau; thử sinh câu trả lời tự do để kiểm tra lỗi diễn giải, không dùng chế độ chọn đoạn JSON của CLI. Temperature 0, context 16.384 token, giới hạn sinh 800 token, `think: false`.
+
+| Lượt thử | Kết quả quan sát |
+|---|---|
+| Gemma 3 4B, 3 câu | Câu đầu nêu được khung cơ bản nhưng không bao quát trường hợp giá trị cao hơn. Câu 2 thêm phần giải thích sai về tình tiết tăng nặng và mức phạt. Câu 3 trích đúng điều nhưng kết luận cuối lại đảo nghĩa ngoại lệ. |
+| Qwen3.5 9B, 3 câu | Câu 1 hỏi “từ 2 triệu” nhưng trả lời chủ yếu về “dưới 2 triệu”. Câu 2 gắn điều kiện của nhánh dưới 2 triệu sang tài sản 3 triệu và đưa ra kết luận sai. Câu 3 hiểu đúng ngoại lệ chính, nhưng thêm kết luận về xử phạt hành chính không được chứng minh từ 5 nguồn đã cung cấp. |
+| Qwen3.5 9B, bật suy luận, ngân sách 4.096 token | Dừng sau hơn 2 phút chưa nhận đáp án cuối. Không chấm đúng/sai lượt này. |
+| Qwen3-VL 8B | Lượt đầu hết 800 token, `done_reason: length`, nội dung trả lời rỗng; phần thinking có 2.928 ký tự dù gửi `think: false`. Dừng các lượt còn lại; không chấm độ chính xác kiến thức của model từ kết quả rỗng này. |
+
+Không có bằng chứng từ đợt thử này để chuyển mặc định sang Qwen. Giữ cách trả nguyên văn trong CLI. Chỉ 3 câu cùng chủ đề, không đủ kết luận model nào tốt hơn tổng thể. Thời gian gọi gồm nạp model, xử lý prompt và sinh đáp án; không dùng để so tốc độ suy luận thuần.
+
+Câu trả lời gốc và cấu hình nằm trong [JSON](ollama-model-comparison-20261020.json). Các lượt sinh tự do này không ghi đè `legal_rag/data/last-query.json` hay checkpoint.
+
+CLI vẫn nhận `--model TEN_MODEL`. Đã thêm `think: false`, thông báo tên model đúng với lựa chọn, và phân biệt hết ngân sách token với JSON không hợp lệ. Một số model/runtime có thể không tuân theo yêu cầu tắt suy luận; xem [issue trên Ollama](https://github.com/ollama/ollama/issues/14798). Đây là vấn đề tương thích cần kiểm tra riêng, không phải lý do để đánh giá model trả lời sai.

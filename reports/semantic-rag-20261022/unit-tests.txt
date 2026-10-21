@@ -1,0 +1,45 @@
+test_incomplete_inference_is_rejected (test_agent.AgentTests.test_incomplete_inference_is_rejected) ... ok
+test_invalid_quotes_are_repaired_before_display (test_agent.AgentTests.test_invalid_quotes_are_repaired_before_display) ... ok
+test_optional_web_access_rejects_private_addresses_and_bad_ports (test_agent.AgentTests.test_optional_web_access_rejects_private_addresses_and_bad_ports) ... ok
+test_search_read_and_mindmap_use_real_framework (test_agent.AgentTests.test_search_read_and_mindmap_use_real_framework) ... ok
+test_unanswerable_question_returns_no_evidence (test_agent.AgentTests.test_unanswerable_question_returns_no_evidence) ... ok
+test_unsupported_parts_prevent_fully_answerable_result (test_agent.AgentTests.test_unsupported_parts_prevent_fully_answerable_result) ... ok
+test_validation_budget_failure_is_not_claimed_as_missing_source (test_agent.AgentTests.test_validation_budget_failure_is_not_claimed_as_missing_source) ... ok
+test_context_reserves_room_for_generation_and_wrappers (test_budget.ContextTests.test_context_reserves_room_for_generation_and_wrappers) ... ok
+test_oversized_input_is_rejected_before_inference (test_budget.ContextTests.test_oversized_input_is_rejected_before_inference) ... ok
+test_a_quote_from_another_source_is_rejected (test_grounding.GroundingTests.test_a_quote_from_another_source_is_rejected) ... ok
+test_fabricated_or_missing_citations_are_rejected (test_grounding.GroundingTests.test_fabricated_or_missing_citations_are_rejected) ... ok
+test_invalid_source_passage_and_quote_are_rejected (test_grounding.GroundingTests.test_invalid_source_passage_and_quote_are_rejected) ... ok
+test_numeric_boolean_and_unknown_fields_are_rejected (test_grounding.GroundingTests.test_numeric_boolean_and_unknown_fields_are_rejected) ... ok
+test_translated_citation_label_preserves_source_identity (test_grounding.GroundingTests.test_translated_citation_label_preserves_source_identity) ... ok
+test_unanswerable_and_malformed_outputs_are_rejected (test_grounding.GroundingTests.test_unanswerable_and_malformed_outputs_are_rejected) ... ok
+test_valid_generic_source_is_accepted (test_grounding.GroundingTests.test_valid_generic_source_is_accepted) ... ok
+test_disconnect_is_not_reported_as_completed_answer (test_llm.StreamTests.test_disconnect_is_not_reported_as_completed_answer) ... ok
+test_server_error_is_not_silently_ignored (test_llm.StreamTests.test_server_error_is_not_silently_ignored) ... ok
+test_token_limit_is_not_reported_as_completed_answer (test_llm.StreamTests.test_token_limit_is_not_reported_as_completed_answer) ... ok
+test_waits_through_thinking_and_joins_complete_answer (test_llm.StreamTests.test_waits_through_thinking_and_joins_complete_answer) ... ok
+test_changed_model_fingerprint_requires_reindexing (test_pipeline_semantic.PipelineTests.test_changed_model_fingerprint_requires_reindexing) ... ok
+test_duplicate_ingestion_jobs_are_not_scheduled_twice (test_pipeline_semantic.PipelineTests.test_duplicate_ingestion_jobs_are_not_scheduled_twice) ... ok
+test_extraction_warnings_require_review_before_activation (test_pipeline_semantic.PipelineTests.test_extraction_warnings_require_review_before_activation) ... ok
+test_incomplete_ingestion_preserves_previous_active_version (test_pipeline_semantic.PipelineTests.test_incomplete_ingestion_preserves_previous_active_version) ... ok
+test_workflow_indexes_without_builtin_law_and_scopes_versions (test_pipeline_semantic.PipelineTests.test_workflow_indexes_without_builtin_law_and_scopes_versions) ... ok
+test_candidate_search_excludes_self_and_deduplicates_pairs (test_rag.SemanticTests.test_candidate_search_excludes_self_and_deduplicates_pairs) ... ok
+test_distant_exception_can_share_a_parent (test_rag.SemanticTests.test_distant_exception_can_share_a_parent) ... ok
+test_invented_edge_or_quote_is_rejected (test_rag.SemanticTests.test_invented_edge_or_quote_is_rejected) ... ok
+test_large_sentence_preserves_all_nonwhitespace_content (test_rag.SemanticTests.test_large_sentence_preserves_all_nonwhitespace_content) ... ok
+test_line_wrapping_does_not_change_language_windows (test_rag.SemanticTests.test_line_wrapping_does_not_change_language_windows) ... ok
+test_relation_labels_are_not_limited_to_legal_documents (test_rag.SemanticTests.test_relation_labels_are_not_limited_to_legal_documents) ... ok
+test_same_page_does_not_imply_a_semantic_relation (test_rag.SemanticTests.test_same_page_does_not_imply_a_semantic_relation) ... ok
+test_zero_token_budget_is_rejected (test_rag.SemanticTests.test_zero_token_budget_is_rejected) ... ok
+test_answers_pin_the_active_version_and_validate_history (test_web.WebTests.test_answers_pin_the_active_version_and_validate_history) ... ok
+test_empty_catalog_does_not_require_a_law_index_or_models (test_web.WebTests.test_empty_catalog_does_not_require_a_law_index_or_models) ... ok
+test_preview_is_inert_and_unknown_versions_are_rejected (test_web.WebTests.test_preview_is_inert_and_unknown_versions_are_rejected) ... ok
+test_unindexed_document_cannot_be_queried (test_web.WebTests.test_unindexed_document_cannot_be_queried) ... ok
+test_unknown_documents_and_jobs_return_404 (test_web.WebTests.test_unknown_documents_and_jobs_return_404) ... ok
+test_unsupported_fake_and_empty_files_are_rejected (test_web.WebTests.test_unsupported_fake_and_empty_files_are_rejected) ... ok
+test_upload_is_content_deduplicated_and_jobs_persist (test_web.WebTests.test_upload_is_content_deduplicated_and_jobs_persist) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 1.024s
+
+OK

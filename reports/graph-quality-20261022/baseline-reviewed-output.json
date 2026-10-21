@@ -1,0 +1,111 @@
+{
+  "complete_graph": false,
+  "stop_reason": "Rejected after scope errors; stopped at a completed model-call boundary. No generation was interrupted.",
+  "completed_batches": 2,
+  "jobs": [
+    {
+      "id": "5bf24fe406ee41e8b1f2dd62bd98a6e1",
+      "document_id": "83a918bbfe6cb68a1ae64a0f",
+      "kind": "ingest",
+      "status": "error",
+      "message": "Rejected baseline: stop between completed model calls; cached evidence retained.",
+      "payload": {
+        "work_version": "5e34467b961e49f0b347bcc22e18de03"
+      },
+      "result": null,
+      "created": 1792684888.0211189
+    }
+  ],
+  "relations": [
+    {
+      "source": "fda330a9189f963d831245bf",
+      "target": "a3569d971aaf5c932f0970be",
+      "kind": "contradicts",
+      "reason": "Both texts specify penalties for 'Người phạm tội' (offender) but with conflicting fine amounts (10-100M VND vs 5-50M VND).",
+      "source_quote": "Người phạm tội còn có thể bị phạt tiền từ 10.000.000 đồng đến 100.000.000 đồng.",
+      "target_quote": "Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng.",
+      "source_atom": 4,
+      "target_atom": 21
+    },
+    {
+      "source": "4c6c100be2771d986dff2d8e",
+      "target": "f1a324fb04e226c1906279ec",
+      "kind": "same_subject",
+      "reason": "Both texts define penalties for the same crimes (asset theft, war circumstances) but differ in clause number and status (abolished vs active).",
+      "source_quote": "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\n93 (được bãi bỏ)\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+      "target_quote": "97 Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+      "source_atom": 7,
+      "target_atom": 20
+    },
+    {
+      "source": "4c6c100be2771d986dff2d8e",
+      "target": "e052f4e5b9d785b31f73f8c2",
+      "kind": "contradicts",
+      "reason": "Both texts define penalties for the same crimes but differ in maximum penalty severity (20 years vs 20 years or life imprisonment).",
+      "source_quote": "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\n93 (được bãi bỏ)\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+      "target_quote": "Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm hoặc tù chung thân:\nChiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;\n101 (được bãi bỏ)\nLợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.",
+      "source_atom": 7,
+      "target_atom": 28
+    },
+    {
+      "source": "5f54ee110d0f00d1e6d3ddce",
+      "target": "c97839e4ebdd6115263c2512",
+      "kind": "same_subject",
+      "reason": "Both texts state that specific points are abolished under the same law, differing only in point number (91 vs 92).",
+      "source_quote": "91 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+      "target_quote": "92 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+      "source_atom": 9,
+      "target_atom": 10
+    },
+    {
+      "source": "5f54ee110d0f00d1e6d3ddce",
+      "target": "e8528a77774c748970694464",
+      "kind": "same_subject",
+      "reason": "Both texts state that specific points are abolished under the same law, differing only in point number (91 vs 93).",
+      "source_quote": "91 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+      "target_quote": "93 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+      "source_atom": 9,
+      "target_atom": 11
+    },
+    {
+      "source": "5f54ee110d0f00d1e6d3ddce",
+      "target": "725749ff513422b8ff452701",
+      "kind": "same_subject",
+      "reason": "Both texts state that specific points are abolished under the same law, differing only in point number (91 vs 99).",
+      "source_quote": "91 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+      "target_quote": "99 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+      "source_atom": 9,
+      "target_atom": 26
+    },
+    {
+      "source": "5f54ee110d0f00d1e6d3ddce",
+      "target": "99f39d4f8e8c1ce15def55d9",
+      "kind": "same_subject",
+      "reason": "Both texts state that specific points are abolished under the same law, differing only in point number (91 vs 101).",
+      "source_quote": "91 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+      "target_quote": "101 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+      "source_atom": 9,
+      "target_atom": 33
+    },
+    {
+      "source": "c97839e4ebdd6115263c2512",
+      "target": "e8528a77774c748970694464",
+      "kind": "same_subject",
+      "reason": "Both texts state that specific points are abolished under the same law, differing only in point number (92 vs 93).",
+      "source_quote": "92 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+      "target_quote": "93 Điểm này được bãi bỏ theo quy định tại điểm c khoản 3 Điều 2 của Luật số 12/2017/QH14 sửa đổi, bổ sung một số điều của Bộ luật Hình sự số 100/2015/QH13, có hiệu lực kể từ ngày 01 tháng 01 năm 2018.",
+      "source_atom": 10,
+      "target_atom": 11
+    },
+    {
+      "source": "4a787b9e9a1de4a4686ada17",
+      "target": "51c24440fc228196ce592362",
+      "kind": "same_subject",
+      "reason": "Source text 'đ) Tài sản là di vật, cổ vật.' and target text 'đ) Tài sản là di vật, cổ vật.' are identical, defining the same subject matter.",
+      "source_quote": "đ) Tài sản là di vật, cổ vật.",
+      "target_quote": "đ) Tài sản là di vật, cổ vật.",
+      "source_atom": 14,
+      "target_atom": 49
+    }
+  ]
+}

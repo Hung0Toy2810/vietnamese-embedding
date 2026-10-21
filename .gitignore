@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/
+runs/
+*.pt
+*.f16
+*.partial
+*.sqlite
+*.tmp
+.ruff_cache/

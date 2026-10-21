@@ -1,0 +1,36 @@
+# Kiểm tra từ chối khi thiếu căn cứ — 20/10/2026
+
+Dùng Qwen3.5 9B bật suy luận, stream đến khi hoàn tất, không đặt timeout đọc phản hồi hoặc giới hạn token sinh. Mỗi câu chạy qua đủ 77M lấy 100 child → BGE reranker giữ 10 child → parent → Qwen. Không bổ sung tài liệu bên ngoài và không dùng ngưỡng điểm reranker tự chọn từ hai câu này.
+
+| Câu thử | Kết quả model gốc | Kết quả hiển thị |
+|---|---|---|
+| Tôi bị trộm điện thoại. Thời hạn cơ quan công an giải quyết tố giác tội phạm là bao nhiêu ngày? | `answerable=false`, đáp án rỗng, bằng chứng rỗng | Từ chối, không đưa ra số ngày |
+| Người lao động làm thêm giờ vào ban đêm được trả thêm tối thiểu bao nhiêu phần trăm tiền lương? | `answerable=false`, đáp án rỗng, bằng chứng rỗng | Từ chối, không đưa ra tỷ lệ |
+
+Thông báo cố định: **“Không đủ căn cứ trong các điều luật được cung cấp để trả lời câu hỏi này.”**
+
+Câu đầu tìm được Điều 27 (thời hiệu truy cứu), Điều 390/19 (không tố giác), Điều 173 và một số điều trùng từ khóa. Các nguồn này không quy định trực tiếp thời hạn xử lý tố giác được hỏi. Câu thứ hai tìm được các điều về vi phạm liên quan đến bảo hiểm, cưỡng bức lao động, sử dụng người lao động, an toàn lao động và các điều khác; không có quy định trực tiếp về tỷ lệ tiền lương làm thêm ban đêm được hỏi. Không diễn giải sự thiếu nguồn này thành “pháp luật không có quy định”.
+
+Hai lượt mất tổng cộng khoảng 148 và 142 giây từng lượt, gồm cả tìm kiếm/rerank và suy luận. Câu hỏi được dùng trong lúc chỉnh prompt; đây là ví dụ kiểm tra chức năng, không phải bộ kiểm thử độc lập hay tỷ lệ chính xác tổng quát.
+
+## Thay đổi
+
+- Prompt yêu cầu xác định quy định có trực tiếp trả lời đúng yêu cầu hay không. Cấm dùng trí nhớ ngoài nguồn, suy ra từ điều chỉ trùng từ khóa, hoặc trả lời các phần chưa có căn cứ.
+- LLM trả JSON `answerable`, `answer`, `evidence`. Khi thiếu nguồn: báo false và không kèm phỏng đoán.
+- Code kiểm tra số nguồn/đoạn tồn tại và quote có thật trong đúng đoạn, sau khi chuẩn hóa Unicode/khoảng trắng. Thiếu bằng chứng, quote sai, nguồn không hợp lệ hoặc JSON sai đều bị từ chối. Không in lại văn bản chưa kiểm tra.
+- Khi quote và nguồn hợp lệ nhưng model quên ghi nhãn nguồn trong đáp án, code tự thêm nhãn từ bằng chứng đã kiểm tra. Nguồn được model dẫn nhưng không có bằng chứng hợp lệ vẫn bị từ chối.
+- Cả chế độ trả lời và `--verbatim` dùng chung kiểm tra này.
+
+## Đối chứng có đáp án
+
+Câu “Phòng vệ chính đáng là gì?” ban đầu bị code từ chối vì model quên nhãn nguồn trong câu trả lời, mặc dù model báo `answerable=true`, trả lời đúng và quote khớp nguyên văn khoản 1 Điều 22. Lỗi định dạng đã được sửa bằng cách để code bổ sung nguồn đã kiểm chứng. Phát lại cả ba phản hồi thật qua code mới cho hành vi đúng: hai câu từ chối, câu đối chứng được chấp nhận. Báo cáo JSON giữ nguyên kết quả ban đầu cùng kết quả phát lại, không ghi đè để che lần từ chối sai.
+
+Đã chạy mới lại câu đối chứng qua CLI sau khi sửa: đủ 100 child → 10 child → 9 parent → Qwen suy luận hoàn tất, đáp án phù hợp khoản 1 Điều 22, code bổ sung `[Nguồn 1]` từ bằng chứng đã xác minh, `refused=false`, tiến trình kết thúc mã 0. Vì vậy việc từ chối hai câu ngoài phạm vi không đến từ một hệ thống luôn từ chối mọi câu hỏi.
+
+## Kiểm tra và giới hạn
+
+14 test RAG/giao thức/bằng chứng đạt; Pyright standard trên 24 file: 0 lỗi, 0 cảnh báo. Không sửa checkpoint hoặc tokenizer.
+
+Kiểm tra quote chỉ xác minh chữ có trong nguồn, không tự chứng minh rằng quote đủ để suy ra mọi kết luận. Model vẫn có thể gắn một bằng chứng có thật nhưng không phù hợp; cần thêm câu hỏi đa dạng và đánh giá quan hệ giữa kết luận và bằng chứng. Hai câu từ chối đúng không phải bảo đảm tuyệt đối chống mọi suy diễn sai.
+
+Xem [ngữ cảnh, prompt, phản hồi JSON gốc và kết quả từng lượt](rag-abstention-20261020.json).

@@ -1,0 +1,21 @@
+# Kiểm tra RAG — 20/10/2026
+
+Báo cáo này ghi nhận bản Gemma ban đầu. Bản hiện tại dùng Qwen3.5 9B có suy luận; xem [lượt chạy hoàn tất](qwen-thinking-complete-20261020.md).
+
+- Nguồn: PDF chính thức 135/VBHN-VPQH ngày 05/09/2025 và bản Công báo đối chiếu cuối Điều 426. URL và SHA256 trong `legal_rag/data/source.json`.
+- Tách được 408 điều, số thứ tự 1–426 trừ 90–107 (Chương XII bị bãi bỏ, không còn được in). Điều 292 vẫn có dòng ghi bãi bỏ.
+- 923 child, vector 768 chiều chuẩn hóa L2. Toàn bộ child nằm trong giới hạn 256 token của encoder. Đã sửa trường hợp khoảng trắng có cỡ chữ khác nội dung để tránh dính từ khi đọc PDF.
+- 4 kiểm tra RAG đạt: cấu trúc luật/lỗi PDF, vector và quan hệ parent–child, bỏ trùng và giới hạn ngữ cảnh theo điều nguyên vẹn, giữ nguyên khoản và từ chối nguồn/đoạn không tồn tại.
+- 6 kiểm tra pipeline huấn luyện hiện có vẫn đạt.
+- Pyright standard: 20 file, 0 lỗi và 0 cảnh báo. Ruff kiểm tra lỗi F đạt.
+- Đã chạy thật retrieval, BGE reranker và Ollama `gemma3:4b`: “Phòng vệ chính đáng là gì?” trả Điều 22 đầu tiên sau rerank; 100 child → 10 child → 9 parent. Gemma trả lời kèm [Nguồn 1], nội dung phù hợp Điều 22 khoản 1.
+
+Khi thử câu hỏi về trộm cắp tài sản từ 2 triệu đồng: retrieval/rerank đưa Điều 173 lên đầu, 100 child → 10 child → 5 parent. Tuy nhiên chế độ sinh diễn giải tự do của Gemma 4B đã hiểu sai quan hệ “hoặc” thành điều kiện bổ sung; chỉnh prompt vẫn chưa khắc phục chắc chắn. Vì vậy bản cuối dùng JSON để Gemma chọn nguồn/đoạn, rồi code trả lại khoản nguyên văn từ dữ liệu. Không hiển thị diễn giải tự do.
+
+Đã chạy lại CLI trên chỉ mục cuối 923 child với chế độ JSON. Nội dung Điều 173 được trả nguyên văn, giữ đúng chữ “hoặc”, nhưng Gemma còn chọn thừa khoản 1 Điều 172 (tội công nhiên chiếm đoạt tài sản). Các trích đoạn được ghi tách biệt theo tên điều luật; chất lượng chọn đoạn vẫn cần cải thiện và đánh giá. Không coi việc qua test kỹ thuật là bằng chứng trả lời pháp luật chính xác.
+
+Đây là kiểm tra chạy thử, không phải benchmark chất lượng trả lời pháp luật. Các child xếp cuối top 10 có thể không liên quan dù hệ thống vẫn đưa parent vào theo cấu hình yêu cầu. Chưa hiệu chỉnh ngưỡng điểm từ chối trả lời.
+
+Chú thích sửa đổi/chuyển tiếp chưa được lập chỉ mục; phiên bản luật cố định, không tự cập nhật. Mô hình vẫn có thể chọn sai hoặc bỏ sót khoản/ngoại lệ. Nội dung hiển thị được lấy từ nguồn, không phải bằng chứng rằng các khoản được chọn đã đủ để giải quyết câu hỏi. Cần bộ câu hỏi có đáp án chuẩn trước khi đánh giá chất lượng hoặc sử dụng cho quyết định pháp lý.
+
+Kiểm tra trên CPU với Python 3.11 / PyTorch 2.11.0 / Transformers 4.57.1, Ollama local. Chưa đo VRAM hoặc kiểm thử backend CUDA/MPS. Checkpoint và tokenizer gốc giữ nguyên SHA256.

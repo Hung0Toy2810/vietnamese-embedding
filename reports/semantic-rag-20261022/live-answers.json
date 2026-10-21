@@ -1,0 +1,449 @@
+[
+  {
+    "question": "Khách hàng được đổi hàng trong bao lâu và những điều kiện, ngoại lệ nào được nêu trong tài liệu?",
+    "elapsed": 245.71944117546082,
+    "result": {
+      "answer": "Khách hàng được đổi hàng trong vòng bảy ngày kể từ ngày nhận hàng [Source 1]. Các điều kiện: sản phẩm phải còn nguyên tem và chưa qua sử dụng [Source 3]; khách hàng cần xuất trình hóa đơn hoặc mã đơn hàng để yêu cầu đổi sản phẩm [Source 4]. Ngoại lệ: nếu sản phẩm bị lỗi do nhà sản xuất, khách hàng được đổi ngay cả khi đã mở bao bì [Source 1]; không áp dụng đổi hàng đối với sản phẩm đặt làm theo yêu cầu cá nhân [Source 4]. Lưu ý: thời gian xử lý hoàn tiền (5 ngày làm việc) không làm thay đổi thời hạn bảy ngày được yêu cầu đổi hàng [Source 2].",
+      "evidence": [
+        {
+          "source": 1,
+          "passage": 1,
+          "quote": "Khách hàng được đổi sản phẩm trong vòng bảy ngày kể từ ngày nhận hàng."
+        },
+        {
+          "source": 3,
+          "passage": 1,
+          "quote": "Sản phẩm đổi phải còn nguyên tem và chưa qua sử dụng."
+        },
+        {
+          "source": 4,
+          "passage": 2,
+          "quote": "Khách hàng cần xuất trình hóa đơn hoặc mã đơn hàng để yêu cầu đổi sản phẩm."
+        },
+        {
+          "source": 1,
+          "passage": 2,
+          "quote": "Nếu sản phẩm bị lỗi do nhà sản xuất, khách hàng được đổi ngay cả khi đã mở bao bì."
+        },
+        {
+          "source": 4,
+          "passage": 1,
+          "quote": "Không áp dụng đổi hàng đối với sản phẩm đặt làm theo yêu cầu cá nhân."
+        },
+        {
+          "source": 2,
+          "passage": 2,
+          "quote": "Thời gian xử lý hoàn tiền không làm thay đổi thời hạn bảy ngày được yêu cầu đổi hàng."
+        }
+      ],
+      "follow_up": [],
+      "parents": [
+        {
+          "id": "91d5de21387639bdd3ede982",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "8f2c65999697e93eef420f90",
+            "1283c1c965eb17ca48e335cd"
+          ],
+          "passages": [
+            "Khách hàng được đổi sản phẩm trong vòng bảy ngày kể từ ngày nhận hàng.",
+            "Nếu sản phẩm bị lỗi do nhà sản xuất, khách hàng được đổi ngay cả khi đã mở bao bì."
+          ],
+          "text": "Khách hàng được đổi sản phẩm trong vòng bảy ngày kể từ ngày nhận hàng.\n\nNếu sản phẩm bị lỗi do nhà sản xuất, khách hàng được đổi ngay cả khi đã mở bao bì.",
+          "spans": [
+            {
+              "start": 0,
+              "end": 70,
+              "page": null,
+              "locator": "text"
+            },
+            {
+              "start": 195,
+              "end": 277,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "f66810b52943dd8263ce198a",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "49c6cf8ba632115381d1aa83",
+            "3c0c226c30511dba33e94383"
+          ],
+          "passages": [
+            "Tiền hoàn lại được chuyển về phương thức thanh toán ban đầu trong vòng năm ngày làm việc sau khi yêu cầu được chấp thuận.",
+            "Thời gian xử lý hoàn tiền không làm thay đổi thời hạn bảy ngày được yêu cầu đổi hàng."
+          ],
+          "text": "Tiền hoàn lại được chuyển về phương thức thanh toán ban đầu trong vòng năm ngày làm việc sau khi yêu cầu được chấp thuận.\n\nThời gian xử lý hoàn tiền không làm thay đổi thời hạn bảy ngày được yêu cầu đổi hàng.",
+          "spans": [
+            {
+              "start": 545,
+              "end": 666,
+              "page": null,
+              "locator": "text"
+            },
+            {
+              "start": 667,
+              "end": 752,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "57077888245b84de3f9c207d",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "fe0c928d6e584f8126489878"
+          ],
+          "passages": [
+            "Sản phẩm đổi phải còn nguyên tem và chưa qua sử dụng."
+          ],
+          "text": "Sản phẩm đổi phải còn nguyên tem và chưa qua sử dụng.",
+          "spans": [
+            {
+              "start": 71,
+              "end": 124,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "0468d93d2df5da6001495f92",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "25fe287d1196df2bc778fd69",
+            "223536474e439bf122148fe3"
+          ],
+          "passages": [
+            "Không áp dụng đổi hàng đối với sản phẩm đặt làm theo yêu cầu cá nhân.",
+            "Khách hàng cần xuất trình hóa đơn hoặc mã đơn hàng để yêu cầu đổi sản phẩm."
+          ],
+          "text": "Không áp dụng đổi hàng đối với sản phẩm đặt làm theo yêu cầu cá nhân.\n\nKhách hàng cần xuất trình hóa đơn hoặc mã đơn hàng để yêu cầu đổi sản phẩm.",
+          "spans": [
+            {
+              "start": 125,
+              "end": 194,
+              "page": null,
+              "locator": "text"
+            },
+            {
+              "start": 469,
+              "end": 544,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "1fc39de8708a58e9eb4c0294",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "068aadfe545e78d6e723c974"
+          ],
+          "passages": [
+            "Khi phát hiện dây điện hở, nhân viên phải dừng sử dụng máy và báo cho quản lý."
+          ],
+          "text": "Khi phát hiện dây điện hở, nhân viên phải dừng sử dụng máy và báo cho quản lý.",
+          "spans": [
+            {
+              "start": 390,
+              "end": 468,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "f8b1d9ec49e402e5f0f1900b",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "f87707281927027285c0b2d5"
+          ],
+          "passages": [
+            "Nhân viên phải ngắt nguồn điện trước khi vệ sinh máy pha cà phê."
+          ],
+          "text": "Nhân viên phải ngắt nguồn điện trước khi vệ sinh máy pha cà phê.",
+          "spans": [
+            {
+              "start": 278,
+              "end": 342,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "c8736e7ae7df91f9be43bf49",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "7b450b2f470e5d7e78124942"
+          ],
+          "passages": [
+            "Không được đổ nước trực tiếp lên bộ phận điện."
+          ],
+          "text": "Không được đổ nước trực tiếp lên bộ phận điện.",
+          "spans": [
+            {
+              "start": 343,
+              "end": 389,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        }
+      ],
+      "mindmap": null,
+      "steps": [
+        {
+          "tool": "search_documents",
+          "input": "Khách hàng được đổi hàng trong bao lâu và những điều kiện, ngoại lệ nào được nêu trong tài liệu?"
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        },
+        {
+          "tool": "validation_feedback",
+          "input": "Error: Failed to parse structured output for tool 'FinalAnswer': Failed to parse data to FinalAnswer: 1 validation error for FinalAnswer\n  Value error, Every answer needs valid source-local verbatim evidence and matching [Source n] citations. [type=value_error, input_value={'answerable': True, 'ans...'unsupported_parts': []}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error.\n Please fix your mistakes."
+        }
+      ],
+      "coverage": {
+        "requested": [
+          "Thời hạn đổi hàng",
+          "Điều kiện đổi hàng",
+          "Ngoại lệ đổi hàng"
+        ],
+        "unsupported": []
+      }
+    }
+  },
+  {
+    "question": "Cửa hàng nộp thuế thu nhập doanh nghiệp với mức thuế suất bao nhiêu?",
+    "elapsed": 28.92685604095459,
+    "result": {
+      "answer": "The available sources do not contain enough evidence to answer this question.",
+      "evidence": [],
+      "follow_up": [],
+      "parents": [
+        {
+          "id": "f66810b52943dd8263ce198a",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "49c6cf8ba632115381d1aa83",
+            "3c0c226c30511dba33e94383"
+          ],
+          "passages": [
+            "Tiền hoàn lại được chuyển về phương thức thanh toán ban đầu trong vòng năm ngày làm việc sau khi yêu cầu được chấp thuận.",
+            "Thời gian xử lý hoàn tiền không làm thay đổi thời hạn bảy ngày được yêu cầu đổi hàng."
+          ],
+          "text": "Tiền hoàn lại được chuyển về phương thức thanh toán ban đầu trong vòng năm ngày làm việc sau khi yêu cầu được chấp thuận.\n\nThời gian xử lý hoàn tiền không làm thay đổi thời hạn bảy ngày được yêu cầu đổi hàng.",
+          "spans": [
+            {
+              "start": 545,
+              "end": 666,
+              "page": null,
+              "locator": "text"
+            },
+            {
+              "start": 667,
+              "end": 752,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "91d5de21387639bdd3ede982",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "8f2c65999697e93eef420f90",
+            "1283c1c965eb17ca48e335cd"
+          ],
+          "passages": [
+            "Khách hàng được đổi sản phẩm trong vòng bảy ngày kể từ ngày nhận hàng.",
+            "Nếu sản phẩm bị lỗi do nhà sản xuất, khách hàng được đổi ngay cả khi đã mở bao bì."
+          ],
+          "text": "Khách hàng được đổi sản phẩm trong vòng bảy ngày kể từ ngày nhận hàng.\n\nNếu sản phẩm bị lỗi do nhà sản xuất, khách hàng được đổi ngay cả khi đã mở bao bì.",
+          "spans": [
+            {
+              "start": 0,
+              "end": 70,
+              "page": null,
+              "locator": "text"
+            },
+            {
+              "start": 195,
+              "end": 277,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "0468d93d2df5da6001495f92",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "25fe287d1196df2bc778fd69",
+            "223536474e439bf122148fe3"
+          ],
+          "passages": [
+            "Không áp dụng đổi hàng đối với sản phẩm đặt làm theo yêu cầu cá nhân.",
+            "Khách hàng cần xuất trình hóa đơn hoặc mã đơn hàng để yêu cầu đổi sản phẩm."
+          ],
+          "text": "Không áp dụng đổi hàng đối với sản phẩm đặt làm theo yêu cầu cá nhân.\n\nKhách hàng cần xuất trình hóa đơn hoặc mã đơn hàng để yêu cầu đổi sản phẩm.",
+          "spans": [
+            {
+              "start": 125,
+              "end": 194,
+              "page": null,
+              "locator": "text"
+            },
+            {
+              "start": 469,
+              "end": 544,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "57077888245b84de3f9c207d",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "fe0c928d6e584f8126489878"
+          ],
+          "passages": [
+            "Sản phẩm đổi phải còn nguyên tem và chưa qua sử dụng."
+          ],
+          "text": "Sản phẩm đổi phải còn nguyên tem và chưa qua sử dụng.",
+          "spans": [
+            {
+              "start": 71,
+              "end": 124,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "c8736e7ae7df91f9be43bf49",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "7b450b2f470e5d7e78124942"
+          ],
+          "passages": [
+            "Không được đổ nước trực tiếp lên bộ phận điện."
+          ],
+          "text": "Không được đổ nước trực tiếp lên bộ phận điện.",
+          "spans": [
+            {
+              "start": 343,
+              "end": 389,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "f8b1d9ec49e402e5f0f1900b",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "f87707281927027285c0b2d5"
+          ],
+          "passages": [
+            "Nhân viên phải ngắt nguồn điện trước khi vệ sinh máy pha cà phê."
+          ],
+          "text": "Nhân viên phải ngắt nguồn điện trước khi vệ sinh máy pha cà phê.",
+          "spans": [
+            {
+              "start": 278,
+              "end": 342,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        },
+        {
+          "id": "1fc39de8708a58e9eb4c0294",
+          "document_id": "5a05690bd67f567265e44e43",
+          "title": "store-policy.txt",
+          "atom_ids": [
+            "068aadfe545e78d6e723c974"
+          ],
+          "passages": [
+            "Khi phát hiện dây điện hở, nhân viên phải dừng sử dụng máy và báo cho quản lý."
+          ],
+          "text": "Khi phát hiện dây điện hở, nhân viên phải dừng sử dụng máy và báo cho quản lý.",
+          "spans": [
+            {
+              "start": 390,
+              "end": 468,
+              "page": null,
+              "locator": "text"
+            }
+          ]
+        }
+      ],
+      "mindmap": null,
+      "steps": [
+        {
+          "tool": "search_documents",
+          "input": "Cửa hàng nộp thuế thu nhập doanh nghiệp với mức thuế suất bao nhiêu?"
+        }
+      ],
+      "coverage": {
+        "requested": [
+          "mức thuế suất thu nhập doanh nghiệp của cửa hàng"
+        ],
+        "unsupported": [
+          "Thông tin về mức thuế thu nhập doanh nghiệp không có trong các nguồn đã đọc. Các tài liệu chỉ chứa chính sách cửa hàng về đổi trả, hoàn tiền và an toàn lao động."
+        ]
+      }
+    }
+  }
+]
